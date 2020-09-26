@@ -6,18 +6,19 @@ body {
 	margin:0px;
 	padding:0px;
 	background-color:#f0f0f0;
-	font-family:Helvetica, Arial, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 }
 h1 {
 	text-align: left;
 	font-family: Helvetica, Arial, sans-serif;
-	padding: 10px;
+	text-decoration: underline;
 }
 /* Webpage structure */
 #header {
 	background-position:center;
 	background-color: #262e33;
 	color: white;
+	font-family: Inconsolata-Regular;
 	width: 100%;
 	height: 80px;
 	font-size: 2em;
@@ -160,3 +161,8 @@ ul {
 	font-style:italic;
 }
 
+/* Custom Fonts */
+@font-face {
+	font-family: Inconsolata-Regular;
+	src: url(fonts/Inconsolata-Regular.ttf)
+}
