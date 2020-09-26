@@ -15,13 +15,12 @@ h1 {
 }
 /* Webpage structure */
 #header {
-	background-image:url("images/header.jpg"); /*Photo source: Me */
 	background-position:center;
-	background-color: #48af48;
+	background-color: #262e33;
 	color: white;
 	width: 100%;
 	height: 100px;
-	font-size: 3em;
+	font-size: 2em;
 	display:block;
 	padding-top:40px;
 	padding-bottom: 5px;
