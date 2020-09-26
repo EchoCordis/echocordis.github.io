@@ -23,7 +23,7 @@ h1 {
 	font-size: 2em;
 	display:inline-flex;
 	padding-top:40px;
-	padding-left: 20%;
+	padding-left: 18%;
 	text-align:left;
 	position: sticky;
 	top: 0;
@@ -78,6 +78,34 @@ img.structure {
 }
 /* End website structure */
 
+/* Navigation menu CSS */
+.navmenu {
+	list-style-type:none;
+	margin:0px;
+	width:50%;
+	color:white;
+	text-align:right;
+	font-size: 25px;
+	padding-left: 6%;
+}
+.navmenu li{
+	color:white;
+	display: inline-flex;
+	padding: 0.5%;
+}
+.navmenu li a{
+	color: white;
+	text-decoration:none;
+}
+.navmenu li a:hover{
+	color:#00b55d;
+}
+#currentpage{
+	color:#00a555;
+	text-decoration: underline;
+}
+/* End navigation menu CSS */
+
 /* Span styles */
 #headergreen {
 	color:#48af48;	
@@ -97,33 +125,6 @@ img.structure {
 	text-decoration:underline;
 }
 /* End span styles */
-
-/* Navigation menu CSS */
-.navmenu {
-	list-style-type:none;
-	margin:0px;
-	width:50%;
-	color:white;
-	text-align:right;
-	font-size: 25px;
-}
-.navmenu li{
-	color:white;
-	display: inline-flex;
-	padding: 0.5%;
-}
-.navmenu li a{
-	color: white;
-	text-decoration:none;
-}
-.navmenu li a:hover{
-	color:#00b55d;
-}
-#currentpage{
-	color:#00a555;
-	text-decoration: underline;
-}
-/* End navigation menu CSS */
 
 /* Table styles */
 table {
