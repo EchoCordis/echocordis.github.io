@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Comments</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Meta tag code snippet taken from https://www.w3schools.com/css/css_rwd_viewport.asp -->
+	<link rel="stylesheet" href="websystems.css">
+</head> 
+<body>
+	<a id="top"></a>
+	<div id="header">Comments</div>
+		<ul class="menuitems">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="past.html">Past</a></li>
+			<li><a href="future.html">Future</a></li>
+			<li id="currentitem">Comments</li>
+		</ul>
+	<div class="midcolumn">	
+		<h2>Personal comments</h2>
+		<h3>Technical Considerations</h3>
+			<img src="images/colour-palette.jpg" class="rightimg">
+			<p>The website's structure consists of four key sections: the header, the footer, the navigation menu and the middle text column.<br>
+				The <strong>header</strong> is located at the top of the page and features a coloured background and the name of the page.
+				The <strong>footer</strong> is located at the bottom of the page and contains a link to the top of the page.
+				The <strong>navigation menu</strong> is located beneath the header. It contains links to the other pages on the website.
+				The <strong>middle text column</strong> is the central area of each page. It has a white background and most of each page's content is located
+				within that area.
+			</p>
+
+			<table>
+				<tr>
+					<th class="csselement">CSS Selectors/ID</th>
+					<th class="purpose">Purpose</th>
+				</tr>
+				<tr>
+					<td>#header</td>
+					<td>Refers to the title of the current page and is located at the top of the page. Declared as an id as there is only one header on each page.</td>
+				</tr>
+				<tr>
+					<td>#footer</td>
+					<td>Refers to the bottom of the webpage, which contains a link to the top of the page, as well as my name. Declared as an id as there is only one header on each page.</td>
+				</tr>
+				<tr>
+					<td>.midcolumn</td>
+					<td>It is the center column of the website which contains the main text of each page. The </td>
+				</tr>				
+				<tr>
+					<td>.menuitems</td>
+					<td>Refers to the navigation menu and includes the links to each individual page in the website. The </td>
+				</tr>
+				<tr>
+					<td>#currentitem</td>
+					<td>
+						The current web page the user is on is coloured in yellow and underlined in the navigation menu. Used to show the user which page they are on. Declared as an id as
+						there is only one page that can be currently selected.
+					</td>
+				</tr>
+				<tr>
+					<td>table th</td>
+					<td>The header row of the column. Customised to show white text and a green background to allow it to stand out against the other rows in the table.</td>
+				</tr>
+			</table>
+			</div>
+		<div class="midcolumn">	
+		<h3>Aesthetic Considerations</h3>		
+			<p>
+				The website features a green palette, chosen because green is my favourite colour. The shades of green used are <span id="headergreen">#48af48</span> and <span class="footergreen">#00a555.</span>
+				Multiple shades of green are used so that the theme of the website remains consistent. As for the background of the website the colour #e2e2e2 is used, and the middle column of the 
+				website uses the colour white. The colour of the middle column was chosen to contrast with the background so that viewers can distinguish the text area from the background.
+				In each table, the colour of the header row has also been customised with the colour <span class="footergreen">#00a555.</span> to retain a consistent colour scheme across the website.
+			</p>
+			<p>
+				This website was designed to be simplistic and have all of the website's content located within the centre of the website. This allows for website users to be able to concentrate solely on
+				the centre of the website, without having to strain their eyes moving from the far left of the screen to the far right. This is especially helpful for users with higher resolutions and larger screens.
+			</p>
+			<p>
+				1.6 line spacing has been used in the web page so that lines are not pressed together so there is less clutter on each page. Sans-serif font has been used for the body of the page so that
+				each word can be easily read. The prioritised font is Helvetica, then Arial and the any font within the sans-serif font family.
+			</p>
+						
+			<div class="clearer"></div>
+			<h4>Colour Palette<img src="images/colour-palette.jpg" alt="Colour Palette" class="palette"></h4>
+			<ul>
+				<li>#48af48</li>
+				<li>#00b55d</li>
+				<li>#00a555</li>
+				<li>#007a3e</li>
+				<li>#0c374d</li>
+				<li>#ffd728</li>
+				<li>#e2e2e2</li>
+				<li>#ffffff</li>
+			</ul>
+		</div>
+			<div class="midcolumn">	
+		<h3>Accessibility Considerations</h3>
+			<p>Different elements have been added to the website to provide users with ease of accessibility.</p>
+			<table>		
+				<tr>
+					<th class="csselement">HTML/CSS element</th>
+					<th class="purpose">Purpose</th>
+				</tr>
+				<tr>
+					<td>Viewport meta element</td>
+					<td>
+						A viewport meta element has been added to the head section of the HTML page. 
+						This allows for the website to automatically adjust its width depending on the size of the user's device.
+					</td>
+				</tr>
+				<tr>
+					<td>Different coloured text</td>
+					<td>
+						Text in the header, navigation menu and footer have been coloured in white. This allows for the text to stand out against the green background. The current page
+						selected in the navigation menu is coloured in #ffd728 to notify the user what page they're currently on.
+					</td>
+				</tr>
+				<tr>
+					<td>Menu item hover</td>
+					<td>
+						When the cursor hovers over the menu item, the item's background colour changes from <span class="footergreen">#00a555</span> to <span id="hovergreen">#00b55d</span>.
+						This helps users identify which page they are currently hovering on.
+					</td>
+				</tr>
+				<tr>
+					<td>Sticky navigation menu</td>
+					<td>
+						The code, <span class="quote">position: sticky;</span>, was added to the website's stylesheet. This allows for the menu to remain at the top of the screen no matter how far down they scroll.
+						Users can then access other pages without having to scroll to the top everytime.
+					</td>
+				</tr>
+			</table>		
+	</div>
+	<div id="footer">
+		<a href="#top" id="toplink">Back to top</a> <span>|  Donavan Le 13555406</span>
+	</div>
+</body>
+</html>
