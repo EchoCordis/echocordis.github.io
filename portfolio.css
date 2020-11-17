@@ -161,6 +161,20 @@ ul {
 	font-style:italic;
 }
 
+/* Hide mobile nav menu on desktop */
+@media only screen and (min-width: 981px) {
+    .hide-desktop {
+        display: none;
+    }
+}
+
+/* Hide desktop nav menu on mobile */
+@media only screen and (max-width: 980px) {
+    .hide-mobile {
+        display: none;
+    }
+}
+
 /* Custom Fonts */
 @font-face {
 	font-family: Inconsolata-Regular;
