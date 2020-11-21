@@ -29,6 +29,13 @@ h1 {
 	position: sticky;
 	top: 0;
 }
+
+/* Fix to automatically resize the header's height on mobile.
+Needed so that the header is sticky for mobile views */
+.sticky-container {
+    height: auto !important;
+} 
+
 #footer {
 	background-color: #00a555;
 	color: white;
