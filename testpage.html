@@ -207,18 +207,6 @@
 	<div id="footer">
 		<a href="#top" id="toplink">Back to top</a> <span>| Donavan Le 13555406</span>
 	</div>
-
-	<script>
-		var prevScrollPos = window.pageYOffset;
-		window.onscroll = function () {
-			var currentScrollPos = window.pageYOffset;
-			if (prevScrollPos > currentScrollPos) {
-				document.getElementById("navbar").style.top = "0";
-			} else {
-				document.getElementById("navbar").style.top = "-10%";
-			}
-			prevScrollPos = currentScrollPos;
-		}
-	</script>
+	<script src="navmenu.js"></script>
 </body>
 </html>
