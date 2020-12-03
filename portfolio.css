@@ -192,6 +192,7 @@ ul {
 	align-items: center;
 	height: 10%;
 	margin-top: 0;
+	box-shadow: 0 0 25px 0 black;
 	/* Header Font Settings */
 	font-family: Inconsolata-Regular;
 	font-size: 1.5em;
