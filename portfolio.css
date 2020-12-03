@@ -191,7 +191,7 @@ ul {
 	justify-content: center;
 	align-items: center;
 	height: 10%;
-	margin: 0;
+	margin-top: 0;
 	/* Header Font Settings */
 	font-family: Inconsolata-Regular;
 	font-size: 1.5em;
@@ -230,7 +230,7 @@ ul {
 	float: left;
 }
 
-/* Desktop layout changes */
+/* Desktop layout */
 @media only screen and (min-width: 981px) {
     .hide-desktop {
         display: none;
@@ -245,7 +245,7 @@ ul {
 	}
 }
 
-/* Mobile layout changes */
+/* Mobile layout */
 @media only screen and (max-width: 980px) {
     .hide-mobile {
         display: none;
