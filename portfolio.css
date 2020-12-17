@@ -141,6 +141,18 @@ ul {
 	font-family: Inconsolata-Regular;
 }
 
+/* Sets the middle column of the page bigger than other columns */
+#main > div:nth-of-type(odd) {flex-grow: 0.5;}
+#main > div:nth-of-type(even) {flex-grow: 2;}
+
+#header > div:nth-of-type(odd) {flex-grow: 0.5;}
+#header > div:nth-of-type(even) {flex-grow: 5;}
+
+body {
+	/* Padding to compensate for the fixed navigation bar */
+	padding-top: 20%;
+}
+
 /* Navigation menu bar at the top of the screen */
 #navmenu {
 	display:flex;
@@ -178,10 +190,12 @@ ul {
 
 .logotext {
 	margin-right: auto;
+	font-size: 1em;
 }
 
 .menuitems {
 	list-style-type: none;
+	display: none;
 }
 
 /* Indicates the current page the user has accessed. */
@@ -190,36 +204,10 @@ ul {
 	text-decoration: underline;
 }
 
-/* End navigation menu bar CSS */
+/* <---- Other Devices ----> */
 
-/* Mobile layout */
-@media only screen and (max-width: 700px) {
-    .hide-mobile {
-        display: none;
-	}
-	/* Sets the middle column of the page bigger than other columns */
-	#main > div:nth-of-type(odd) {flex-grow: 0.5;}
-	#main > div:nth-of-type(even) {flex-grow: 2;}
-
-	#header > div:nth-of-type(odd) {flex-grow: 0.5;}
-	#header > div:nth-of-type(even) {flex-grow: 5;}
-
-	body {
-		/* Padding to compensate for the fixed navigation bar */
-		padding-top: 20%;
-	}
-
-	.logotext {
-		font-size: 1em;
-	}
-
-	.menuitems {
-		display: none;
-	}
-}
-
-/* Tablet layout */
-@media only screen and (min-width:701px) {
+/* Tablet layout - Portrait */
+@media only screen and (min-width:700px) and (max-width: 1024px) and (orientation: Portrait) {
 	.hide-tablet {
         display: none;
 	}
@@ -232,7 +220,26 @@ ul {
 
 	body {
 		/* Padding to compensate for the fixed navigation bar */
-		padding-top: 5%;
+		padding-top: 15%;
+	}
+
+	.logotext {
+		font-size: 1.25em;
+	}
+}
+
+/* Tablet layout - Landscape */
+@media only screen and (min-width:700px) and (max-width: 1024px) and (orientation: Landscape){
+	/* Sets the middle column of the page bigger than other columns */
+	#main > div:nth-of-type(odd) {flex-grow: 0.5;}
+	#main > div:nth-of-type(even) {flex-grow: 1;}
+
+	#header > div:nth-of-type(odd) {flex-grow: 0.5;}
+	#header > div:nth-of-type(even) {flex-grow: 0.8;}
+
+	body {
+		/* Padding to compensate for the fixed navigation bar */
+		padding-top: 7.5%;
 	}
 
 	.logotext {
@@ -241,10 +248,7 @@ ul {
 }
 
 /* Desktop layout */
-@media only screen and (min-width: 981px) {
-    .hide-desktop {
-        display: none;
-	}
+@media only screen and (min-width: 1025px) {
 	/* Sets the middle column of the page bigger than other columns */
 	#main > div:nth-of-type(odd) {flex-grow: 0.5;}
 	#main > div:nth-of-type(even) {flex-grow: 1;}
