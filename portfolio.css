@@ -160,7 +160,7 @@ ul {
 	text-align: center;
 	padding: 0.5%;
 	list-style-type: none;
-	display: inline-block;
+	/* display: inline-block; */
 	align-items: center;	
 }
 
@@ -177,8 +177,11 @@ ul {
 }
 
 .logotext {
-	font-size: 1.5em;
 	margin-right: auto;
+}
+
+.menuitems {
+	list-style-type: none;
 }
 
 /* Indicates the current page the user has accessed. */
@@ -201,10 +204,13 @@ ul {
 	#header > div:nth-of-type(odd) {flex-grow: 0.5;}
 	#header > div:nth-of-type(even) {flex-grow: 0.8;}
 
-	
 	body {
 		/* Padding to compensate for the fixed navigation bar */
 		padding-top: 5%;
+	}
+
+	.logotext {
+		font-size: 1.5em;
 	}
 }
 
@@ -218,12 +224,19 @@ ul {
 	#main > div:nth-of-type(even) {flex-grow: 2;}
 
 	#header > div:nth-of-type(odd) {flex-grow: 0.5;}
-	#header > div:nth-of-type(even) {flex-grow: 2.8;}
-
+	#header > div:nth-of-type(even) {flex-grow: 5;}
 
 	body {
 		/* Padding to compensate for the fixed navigation bar */
 		padding-top: 20%;
+	}
+
+	.logotext {
+		font-size: 1em;
+	}
+
+	.menuitems {
+		display: none;
 	}
 }
 
