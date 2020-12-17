@@ -229,7 +229,7 @@ body {
 }
 
 /* Tablet layout - Landscape */
-@media only screen and (min-width:700px) and (max-width: 1024px) and (orientation: Landscape){
+@media only screen and (min-width:700px) and (max-width: 1399px) and (orientation: Landscape){
 	/* Sets the middle column of the page bigger than other columns */
 	#main > div:nth-of-type(odd) {flex-grow: 0.5;}
 	#main > div:nth-of-type(even) {flex-grow: 1;}
@@ -239,16 +239,23 @@ body {
 
 	body {
 		/* Padding to compensate for the fixed navigation bar */
-		padding-top: 7.5%;
+		padding-top: 10%;
 	}
 
 	.logotext {
 		font-size: 1.25em;
 	}
+	.menuitems {
+		display: inline-block;
+	}
+
+	#header {
+		height: 12.5%;
+	}
 }
 
 /* Desktop layout */
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1400px) {
 	/* Sets the middle column of the page bigger than other columns */
 	#main > div:nth-of-type(odd) {flex-grow: 0.5;}
 	#main > div:nth-of-type(even) {flex-grow: 1;}
@@ -263,6 +270,10 @@ body {
 
 	.logotext {
 		font-size: 1.5em;
+	}
+
+	.menuitems {
+		display: inline-block;
 	}
 }
 
