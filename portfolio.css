@@ -198,6 +198,11 @@ body {
 	display: none;
 }
 
+.menutoggle {
+	order: 1;
+	font-size: 1em;
+}
+
 /* Indicates the current page the user has accessed. */
 #currentpage {
 	color:#00b55d !important;
@@ -252,6 +257,10 @@ body {
 	#header {
 		height: 12.5%;
 	}
+
+	.menutoggle {
+		display: none;
+	}
 }
 
 /* Desktop layout */
@@ -274,6 +283,10 @@ body {
 
 	.menuitems {
 		display: inline-block;
+	}
+
+	.menutoggle {
+		display: none;
 	}
 }
 
