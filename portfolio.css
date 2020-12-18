@@ -200,7 +200,7 @@ body {
 
 .menutoggle {
 	order: 1;
-	font-size: 1em;
+	font-size: 1.25em;
 }
 
 /* Indicates the current page the user has accessed. */
