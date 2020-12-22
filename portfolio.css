@@ -274,7 +274,7 @@ body {
 	}
 
 	#header > div:nth-of-type(odd) {flex-grow: 0.5;}
-	#header > div:nth-of-type(even) {flex-grow: 2;}
+	#header > div:nth-of-type(even) {flex-grow: 0.8;}
 
 	body {
 		/* Padding to compensate for the fixed navigation bar */
