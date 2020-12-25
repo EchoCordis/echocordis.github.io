@@ -198,6 +198,11 @@ body {
 	text-decoration: underline;
 }
 
+/* Mobile/tablet menu for the navmenu */
+.mobilemenu {
+	display:none;
+}
+
 /* <---- Other Devices ----> */
 
 /* Tablet layout - Portrait */
