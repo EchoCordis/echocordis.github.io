@@ -5,7 +5,12 @@ window.onscroll = function () {
     if (prevScrollPos > currentScrollPos) {
         document.getElementById("header").style.top = "0";
     } else {
-        document.getElementById("header").style.top = "-10%";
+        if (screen.height > 1025){
+            document.getElementById("header").style.top = "-10%";
+        }
+        else {
+            document.getElementById("header").style.top = "-12.5%";
+        }
     }
     prevScrollPos = currentScrollPos;
 }
