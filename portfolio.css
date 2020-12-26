@@ -135,7 +135,7 @@ ul {
 	transition: top 0.3s;
 	justify-content: center;
 	align-items: center;
-	height: 10%;
+	/* height: 10%; */
 	margin-top: 0;
 	box-shadow: 0 0.1vh 2vh 0 black;
 	/* Header Font Settings */
@@ -151,14 +151,14 @@ ul {
 
 body {
 	/* Padding to compensate for the fixed navigation bar */
-	padding-top: 20%;
+	padding-top: 27.5%;
 }
 
 /* Navigation menu bar at the top of the screen */
 #navmenu {
 	display:flex;
 	font-size: 1.5rem;
-	line-height: 3em;
+	line-height: 2em;
 	padding:0;
 }
 

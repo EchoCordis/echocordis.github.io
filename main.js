@@ -1,4 +1,4 @@
-var prevScrollPos = window.pageYOffset;
+/* var prevScrollPos = window.pageYOffset;
 
 window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
@@ -6,11 +6,11 @@ window.onscroll = function () {
         document.getElementById("header").style.top = "0";
     } else {
         if (screen.height > 1025){
-            document.getElementById("header").style.top = "-10%";
+            document.getElementById("header").style.top = "-11%";
         }
         else {
-            document.getElementById("header").style.top = "-12.5%";
+            document.getElementById("header").style.top = "-18%";
         }
     }
     prevScrollPos = currentScrollPos;
-}
+} */
