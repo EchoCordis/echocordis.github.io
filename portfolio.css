@@ -151,7 +151,7 @@ ul {
 
 body {
 	/* Padding to compensate for the fixed navigation bar */
-	padding-top: 27.5%;
+	padding-top: 10vh;
 }
 
 /* Navigation menu bar at the top of the screen */
@@ -218,7 +218,7 @@ body {
 
 	body {
 		/* Padding to compensate for the fixed navigation bar */
-		padding-top: 15%;
+		padding-top: 7.5vh;
 	}
 
 	.logotext {
@@ -237,7 +237,7 @@ body {
 
 	body {
 		/* Padding to compensate for the fixed navigation bar */
-		padding-top: 10%;
+		padding-top: 12.5vh;
 	}
 
 	.logotext {
@@ -271,7 +271,7 @@ body {
 
 	body {
 		/* Padding to compensate for the fixed navigation bar */
-		padding-top: 5%;
+		padding-top: 9vh;
 	}
 
 	.logotext {
