@@ -180,7 +180,7 @@ body {
 }
 
 .menuitems {
-	/* display: none; */
+	display: none;
 	transition: top 0.3s;
 	padding: 0.5%;
 	order: 2;

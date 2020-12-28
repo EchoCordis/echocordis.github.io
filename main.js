@@ -30,6 +30,8 @@ function menuToggle() {
 
     for (var i = 0; i < menuItems.length; i++){
         var item = menuItems[i].style;
-        item.display = item.display === 'none' ? 'block' : 'none';
+        item.display = item.display === 'block'  ? 'none': 'block';
+        /* item.opacity = item.opacity === 1 ? 1 : 0;  */
+        /* item.visibility = item.visibility === 'hidden' ? 'visible' : 'hidden';  */
     }
 }
