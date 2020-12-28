@@ -181,12 +181,12 @@ body {
 
 .menuitems {
 	/* display: none; */
+	transition: top 0.3s;
 	padding: 0.5%;
 	order: 2;
 	line-height: 2em;
 	/* width: 100%; */
 	flex-basis:100%;
-	/* box-sizing: border-box;  */
 }
 
 .logotext {

@@ -14,5 +14,22 @@ window.onscroll = function () {
     }
     prevScrollPos = currentScrollPos;
 } */
+const toggle = document.querySelector(".menutoggle");
+const menuItems = document.querySelectorAll(".menuitems");
+var toggleInfo = true;
 
-const menuToggle = document.querySelector("#menuToggle");
+function menuToggle() {
+    if (toggleInfo) {
+        toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i>";
+        toggleInfo = false;
+    }
+    else {
+        toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
+        toggleInfo = true;
+    }
+
+    for (var i = 0; i < menuItems.length; i++){
+        var item = menuItems[i].style;
+        item.display = item.display === 'none' ? 'block' : 'none';
+    }
+}
