@@ -318,20 +318,18 @@ body {
 	.menuitems {
 		display: inline-block;
 		flex-basis: unset;
+		line-height: 1.5em;
 	}
 
 	.logotext {
 		margin-right: auto;
 		font-size: 1.5em;
+		line-height: 1em;
 		flex-basis: unset;
 	}
 
 	.menutoggle {
 		display: none;
-	}
-
-	#navmenu {
-		line-height: 2em;
 	}
 
 	#navmenu li a{
