@@ -132,7 +132,6 @@ ul {
 	top: 0;
 	width: 100%;
 	display: flex;
-	/* transition: top 0.3s; */
 	justify-content: center;
 	align-items: center;
 	/* height: 10%; */
@@ -162,6 +161,7 @@ body {
 	font-size: 1.5rem;
 	line-height: 1em;
 	padding: 0;
+	position: inherit; 
 }
 
 #navmenu li {
@@ -181,7 +181,8 @@ body {
 
 .menuitems {
 	display: none;
-	transition: top 0.3s;
+	/* visibility: hidden; */
+	/* transition: top 0.3s; */
 	padding: 0.5%;
 	order: 2;
 	line-height: 2em;
@@ -190,11 +191,11 @@ body {
 }
 
 .logotext {
-	/* margin-right: auto; */
+	margin-right: auto;
 	font-size: 1em;
-	line-height: 1em;
+	line-height: 1em; 
 	/* width: 50%; */
-	flex-basis: 48%;
+	/* flex-basis: 48%; */
 }
 
 .menutoggle {
@@ -203,7 +204,7 @@ body {
 	font-size: 1.25em;
 	line-height: 1em;
 	/* width: 47.5%; */
-	flex-basis: 48%;
+	/* flex-basis: 48%; */
 }
 
 /* Indicates the current page the user has accessed. */
@@ -280,7 +281,6 @@ body {
 		margin-right: auto;
 		font-size: 1.25em;
 		line-height: 1em;
-		flex-basis: unset;
 	}
 
 	.menutoggle {
@@ -325,7 +325,6 @@ body {
 		margin-right: auto;
 		font-size: 1.5em;
 		line-height: 1em;
-		flex-basis: unset;
 	}
 
 	.menutoggle {
