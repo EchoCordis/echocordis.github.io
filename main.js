@@ -43,3 +43,5 @@ function menuToggle() {
         item.visibility = item.visibility === 'hidden' ? 'visible' : 'hidden'; 
     } */
 }
+
+toggle.addEventListener('click', menuToggle);
