@@ -188,6 +188,11 @@ body {
 	line-height: 2em;
 	/* width: 100%; */
 	flex-basis:100%;
+	
+}
+
+.menuitems_show {
+	display: block;
 }
 
 .logotext {
