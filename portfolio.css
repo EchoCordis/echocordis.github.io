@@ -225,7 +225,8 @@ body {
 	box-sizing: border-box;
     /* position:fixed is need for the navmenu to overlay on the content */
     position:fixed;
-    top:0;  /* Used to keep the navbar at the top */
+	top:0;  /* Used to keep the navbar at the top */
+	margin-top: 0;	/* Removes gap at the top of the navbar */
     width:100%;
     background-color: #262e33;
     text-transform: uppercase;
@@ -331,10 +332,6 @@ body {
 		margin-right: auto;
 		font-size: 1.25em;
 		line-height: 1em;
-	}
-
-	.menutoggle {
-		/* display: none; */
 	}
 }
 

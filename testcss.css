@@ -40,32 +40,6 @@ h1 {
 	padding-bottom:20px;
 	text-align:center;
 }
-
-#toplink {
-	color:#ffd728;
-}
-.leftimg {
-	max-width:100%;
-	max-height:100%;
-	float:left;
-	padding-right:10px;
-}
-img.palette {
-	max-width:200px;
-	max-height:500px;
-	float:right;
-	margin-left:10px;
-	border: 3px solid black;
-	margin-bottom: 10px;
-}
-img.structure {
-	max-width:200px;
-	max-height:500px;
-	float:right;
-	margin-left:10px;
-	border: 3px solid black;
-	margin-bottom: 10px;
-}
 /* End website structure */
 
 /* Span styles */
@@ -87,42 +61,6 @@ img.structure {
 	text-decoration:underline;
 }
 /* End span styles */
-
-/* Table styles */
-table {
-	width:100%;
-	table-layout:fixed;
-}
-table, th, td {
-	border: 1px solid #007a3e;
-	border-collapse: collapse;
-}
-table td {
-	padding-left:10px;
-	padding-right:5px;
-}
-table th {
-	background-color: #007a3e;
-	color:white;
-	text-align: center;
-	overflow: auto;
-}
-.purpose {
-	min-width:60%;
-	padding-right:10px;
-}
-.csselement {
-	min-width:40%;
-}
-/* End table styles */
-
-ul {
-	list-style-position:inside;
-}
-.quote {
-	font-size:1em;
-	font-style:italic;
-}
 
 /* Main Website Structure Flexbox */
 #main {
