@@ -15,7 +15,7 @@ window.onscroll = function () {
     prevScrollPos = currentScrollPos;
 } */
 const toggle = document.querySelector(".menutoggle");
-const menuItems = document.querySelectorAll(".menuitems");
+const menuItems = document.querySelectorAll(".menuitem");
 var toggleInfo = true;
 
 function menuToggle() {

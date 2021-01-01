@@ -14,6 +14,12 @@ body {
     background-color: #262e33;
     text-transform: uppercase;
     padding: 0 0.5%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Inconsolata-Regular, Arial, Helvetica, sans-serif;
 }
 
 #navmenu li {
@@ -25,6 +31,7 @@ body {
     color:#f2f2f2;
     text-decoration:none;
     padding: 0.5em 0;
+    display:block;
 }
 
 #navmenu li a:before {    
@@ -52,12 +59,24 @@ body {
     left: 0; 
 }
 
-.item {
+.menuitem {
+    order:2;
     padding: 0.75em;
 }
 
 .logotext {
     color:#f2f2f2;
-    font-size: 2em;
+    font-size: 1.25em;
     padding: 0.75em;
+}
+
+.menutoggle {
+    order: 1;
+    font-size: 1.25em;
+}
+
+/* Custom Fonts */
+@font-face {
+	font-family: Inconsolata-Regular;
+	src: url(fonts/Inconsolata-Regular.ttf)
 }
