@@ -26,7 +26,8 @@ body {
 h1 {
 	text-align: left;
 	font-family: Helvetica, Arial, sans-serif;
-	text-decoration: underline;
+    text-decoration: underline;
+    padding-bottom: 0.5em;
 }
 
 /* Webpage structure */
@@ -223,6 +224,11 @@ ul {
 
 /* Desktop layout */
 @media only screen and (min-width: 1400px) {
+    html {
+        height:100%;
+        font-size: 16px;
+    }
+
 	/* Sets the middle column of the page bigger than other columns */
 	#main > div:nth-of-type(odd) {flex-grow: 0.5;}
 	#main > div:nth-of-type(even) {flex-grow: 1;}
