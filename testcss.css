@@ -62,6 +62,8 @@ body {
 .menuitem {
     order:2;
     padding: 0.75em;
+    width: 100%;
+    text-align: center;
 }
 
 .logotext {
@@ -73,6 +75,7 @@ body {
 .menutoggle {
     order: 1;
     font-size: 1.25em;
+    padding: 0 0.75em;
 }
 
 /* Custom Fonts */
