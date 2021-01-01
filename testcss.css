@@ -93,3 +93,28 @@ body {
 	font-family: Inconsolata-Regular;
 	src: url(fonts/Inconsolata-Regular.ttf)
 }
+
+@media only screen and (min-width: 1400px) {
+    #navmenu {
+        justify-content: center;
+        padding-right: 25vw;
+    }
+
+    .menuitem {
+        display:block;
+        width: auto;
+    }
+
+    .logotext {
+        flex:1;
+        padding-left: 25vw;
+    }
+
+    .menutoggle{
+        display:none;
+    }
+
+    .menuitem > li:nth-of-type(3) {
+        padding-right: 10vw;
+    }
+}
