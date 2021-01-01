@@ -4,14 +4,148 @@
     box-sizing: border-box;
 }
 
-body {
-    padding-top: 10vh;
+/* Custom Fonts */
+@font-face {
+	font-family: Inconsolata-Regular;
+	src: url(fonts/Inconsolata-Regular.ttf)
+}
+
+html {
     height:100%;
-    font-family: sans-serif;
     font-size: 16px;
 }
 
-#navmenu {
+body {
+    /* Padding to compensate for the fixed navigation bar */
+    padding-top: 10vh;
+    background-color:#f0f0f0;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: left;
+}
+
+h1 {
+	text-align: left;
+	font-family: Helvetica, Arial, sans-serif;
+	text-decoration: underline;
+}
+
+/* Webpage structure */
+#footer {
+	background-color: #262e33;
+	color: white;
+	width: 100%;
+	height: 40px;
+	font-size: 1.4rem;
+	padding-top:25px;
+	padding-bottom:20px;
+	text-align:center;
+}
+
+#toplink {
+	color:#ffd728;
+}
+.leftimg {
+	max-width:100%;
+	max-height:100%;
+	float:left;
+	padding-right:10px;
+}
+img.palette {
+	max-width:200px;
+	max-height:500px;
+	float:right;
+	margin-left:10px;
+	border: 3px solid black;
+	margin-bottom: 10px;
+}
+img.structure {
+	max-width:200px;
+	max-height:500px;
+	float:right;
+	margin-left:10px;
+	border: 3px solid black;
+	margin-bottom: 10px;
+}
+/* End website structure */
+
+/* Span styles */
+#headergreen {
+	color:#48af48;	
+}
+.footergreen {
+	color:#00a555;	
+}
+#hovergreen {
+	color:#00b55d;	
+}
+.tablecolour {
+	color:#007a3e;
+}
+.highlight {
+	color:#0C374D;
+	font-weight:800;
+	text-decoration:underline;
+}
+/* End span styles */
+
+/* Table styles */
+table {
+	width:100%;
+	table-layout:fixed;
+}
+table, th, td {
+	border: 1px solid #007a3e;
+	border-collapse: collapse;
+}
+table td {
+	padding-left:10px;
+	padding-right:5px;
+}
+table th {
+	background-color: #007a3e;
+	color:white;
+	text-align: center;
+	overflow: auto;
+}
+.purpose {
+	min-width:60%;
+	padding-right:10px;
+}
+.csselement {
+	min-width:40%;
+}
+/* End table styles */
+
+ul {
+	list-style-position:inside;
+}
+.quote {
+	font-size:1em;
+	font-style:italic;
+}
+
+/* Main Website Structure Flexbox */
+#main {
+	width: 100%;
+	min-height: 80vh;
+	height: auto;
+	display: flex;
+	flex-basis: 0 0 50%;
+}
+
+/* Sets the middle column of the page bigger than other columns */
+#main > div:nth-of-type(odd) {flex-grow: 0.5;}
+#main > div:nth-of-type(even) {flex-grow: 2;}
+
+/* Centre column in the middle of the screen used for each page's content. */
+#middlecol {
+	width: 10%;
+	padding: 5px 20px;
+	line-height: 1.6;
+}
+
+/* Website Navigation Bar */
+#navbar {
     /* position:fixed is need for the navmenu to overlay on the content */
     position:fixed;
     top:0;  /* Used to keep the navbar at the top */
@@ -24,14 +158,15 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 0.1vh 2vh 0 black;
     font-family: Inconsolata-Regular, Arial, Helvetica, sans-serif;
 }
 
-#navmenu li {
+#navbar li {
     list-style-type: none;
 }
 
-#navmenu li a {
+#navbar li a {
     position: relative;
     color:#f2f2f2;
     text-decoration:none;
@@ -39,34 +174,9 @@ body {
     display:block;
 }
 
-#navmenu li a:before {    
-    content: "";
-    display: block;
-    height: 0.1em;
-    /* 
-        Replace this value with left/right to change ending point of underline anim.
-        I.e. left: 0; ends on the left, right: 0; ends on the right. 
-    */
-    right: 0;	
-    position: absolute;
-    background-color: #00b55d;
-    width: 0;
-    bottom: 0;
-    transition: all 0.3s ease-in-out 0s;
-}
-
-#navmenu li a:hover:before { 
-    width: 100%; 
-    /* 
-        Replace this value with left/right to change starting point of underline.
-        I.e. left: 0; starts from the left, right: 0; starts from the right. 
-    */
-    left: 0; 
-}
-
 .menuitem {
     order:2;
-    padding: 0.75em;
+    padding: 0.25em;
     width: 100%;
     text-align: center;
     display: none;
@@ -88,33 +198,84 @@ body {
     padding: 0 0.75em;
 }
 
-/* Custom Fonts */
-@font-face {
-	font-family: Inconsolata-Regular;
-	src: url(fonts/Inconsolata-Regular.ttf)
+/* Indicates the current page the user has accessed. */
+#currentpage {
+	color:#00b55d !important;
+	text-decoration: underline;
 }
 
+/* <---- Other Devices ----> */
+/* Tablet layout - Portrait */
+@media only screen and (min-width:700px) and (max-width: 1024px) and (orientation: Portrait) {
+	/* Sets the middle column of the page bigger than other columns */
+	#main > div:nth-of-type(odd) {flex-grow: 0.5;}
+	#main > div:nth-of-type(even) {flex-grow: 1;}
+
+	body {
+		/* Padding to compensate for the fixed navigation bar */
+		padding-top: 7.5vh;
+	}
+
+	.logotext {
+		font-size: 1.25em;
+	}
+}
+
+/* Desktop layout */
 @media only screen and (min-width: 1400px) {
-    #navmenu {
+	/* Sets the middle column of the page bigger than other columns */
+	#main > div:nth-of-type(odd) {flex-grow: 0.5;}
+	#main > div:nth-of-type(even) {flex-grow: 1;}
+
+	body {
+		/* Padding to compensate for the fixed navigation bar */
+		padding-top: 9vh;
+	}
+
+    #navbar {
         justify-content: center;
         padding-right: 25vw;
+        box-shadow: 0 0.1vh 2vh 0 black;
+    }
+
+    #navbar li a:before {    
+        content: "";
+        display: block;
+        height: 0.1em;
+        /* 
+            Replace this value with left/right to change ending point of underline anim.
+            I.e. left: 0; ends on the left, right: 0; ends on the right. 
+        */
+        right: 0;	
+        position: absolute;
+        background-color: #00b55d;
+        width: 0;
+        bottom: 0;
+        transition: all 0.3s ease-in-out 0s;
+    }
+    
+    #navbar li a:hover:before { 
+        width: 100%; 
+        /* 
+            Replace this value with left/right to change starting point of underline.
+            I.e. left: 0; starts from the left, right: 0; starts from the right. 
+        */
+        left: 0; 
     }
 
     .menuitem {
         display:block;
         width: auto;
+        padding: 0.75em 0.5em;
     }
 
     .logotext {
         flex:1;
-        padding-left: 25vw;
+        font-size: 1.5em;
+        padding-left: 23vw;
     }
 
     .menutoggle{
         display:none;
-    }
-
-    .menuitem > li:nth-of-type(3) {
-        padding-right: 10vw;
     }
 }

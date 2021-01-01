@@ -53,8 +53,6 @@ img.structure {
 }
 /* End website structure */
 
-/* End navigation menu CSS */
-
 /* Span styles */
 #headergreen {
 	color:#48af48;	
@@ -122,7 +120,7 @@ ul {
 /* Centre column in the middle of the screen used for each page's content. */
 #middlecol {
 	width: 10%;
-	padding: 5px 20px 5px 20px;
+	padding: 5px 20px;
 	line-height: 1.6;
 }
 
@@ -216,11 +214,6 @@ body {
 #currentpage {
 	color:#00b55d !important;
 	text-decoration: underline;
-}
-
-/* Mobile/tablet menu for the navmenu */
-.mobilemenu {
-	display:none;
 }
 
 /* <---- Other Devices ----> */
