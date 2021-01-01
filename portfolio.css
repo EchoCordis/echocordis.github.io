@@ -1,3 +1,4 @@
+/* <---- Styling for Mobile Devices ----> */
 html {
 	height:100%;
 	font-size: 16px;
@@ -109,6 +110,11 @@ ul {
 }
 
 /* Main Website Structure Flexbox */
+body {
+	/* Padding to compensate for the fixed navigation bar */
+	padding-top: 10vh;
+}
+
 #main {
 	width: 100%;
 	min-height: 80vh;
@@ -117,101 +123,15 @@ ul {
 	flex-basis: 0 0 50%;
 }
 
+/* Sets the middle column of the page bigger than other columns */
+#main > div:nth-of-type(odd) {flex-grow: 0.5;}
+#main > div:nth-of-type(even) {flex-grow: 2;}
+
 /* Centre column in the middle of the screen used for each page's content. */
 #middlecol {
 	width: 10%;
 	padding: 5px 20px;
 	line-height: 1.6;
-}
-
-#header {
-	background-color: #262e33;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	/* height: 10%; */
-	margin-top: 0;
-	box-shadow: 0 0.1vh 2vh 0 black;
-	/* Header Font Settings */
-	font-family: Inconsolata-Regular;
-}
-
-/* Sets the middle column of the page bigger than other columns */
-#main > div:nth-of-type(odd) {flex-grow: 0.5;}
-#main > div:nth-of-type(even) {flex-grow: 2;}
-
-#header > div:nth-of-type(odd) {flex-grow: 0.5;}
-#header > div:nth-of-type(even) {flex-grow: 5;}
-
-body {
-	/* Padding to compensate for the fixed navigation bar */
-	padding-top: 10vh;
-}
-
-/* Navigation menu bar at the top of the screen */
-#navmenu {
-	display:flex;
-	flex-direction: row;
-	flex-wrap:wrap;
-	font-size: 1.5rem;
-	line-height: 1em;
-	padding: 0;
-	position: inherit; 
-}
-
-#navmenu li {
-	color: #f2f2f2;
-	text-align: center;
-	padding: 0.5%;
-	list-style-type: none;
-	align-items: center;	
-	text-transform: uppercase;
-}
-
-#navmenu li a {
-	color: #f2f2f2;
-	text-decoration:none;
-	text-align: right;
-}
-
-.menuitems {
-	display: none;
-	/* visibility: hidden; */
-	/* transition: top 0.3s; */
-	padding: 0.5%;
-	order: 2;
-	line-height: 2em;
-	/* width: 100%; */
-	flex-basis:100%;
-	
-}
-
-.menuitems_show {
-	display: block;
-}
-
-.logotext {
-	margin-right: auto;
-	font-size: 1em;
-	line-height: 1em; 
-	/* width: 50%; */
-	/* flex-basis: 48%; */
-}
-
-.menutoggle {
-	/* margin-left: auto; */
-	/* order: 1;
-	font-size: 1.25em;
-	line-height: 1em; */
-	/* width: 47.5%; */
-	/* flex-basis: 48%; */
-
-	order: 1;
-    font-size: 1.25em;
-    padding: 0 0.75em;
 }
 
 /* Indicates the current page the user has accessed. */
@@ -264,25 +184,25 @@ body {
     display:block;
 }
 
-.logo {
+.logotext {
     color:#f2f2f2;
     font-size: 1.25em;
     padding: 0.75em;
 }
-/* <---- Other Devices ----> */
+
+.menutoggle {
+	order: 1;
+    font-size: 1.25em;
+    padding: 0 0.75em;
+}
+
+/* <---- Settings for Other Devices ----> */
 
 /* Tablet layout - Portrait */
 @media only screen and (min-width:700px) and (max-width: 1024px) and (orientation: Portrait) {
-	.hide-tablet {
-        display: none;
-	}
-
 	/* Sets the middle column of the page bigger than other columns */
 	#main > div:nth-of-type(odd) {flex-grow: 0.5;}
 	#main > div:nth-of-type(even) {flex-grow: 1;}
-
-	#header > div:nth-of-type(odd) {flex-grow: 0.5;}
-	#header > div:nth-of-type(even) {flex-grow: 0.8;}
 
 	body {
 		/* Padding to compensate for the fixed navigation bar */
@@ -296,71 +216,26 @@ body {
 
 /* Tablet layout - Landscape */
 @media only screen and (min-width:700px) and (max-width: 1399px) and (orientation: Landscape){
-
-	/* Sets the middle column of the page bigger than other columns */
-	#main > div:nth-of-type(odd) {flex-grow: 0.5;}
-	#main > div:nth-of-type(even) {flex-grow: 1;}
-
-	#header {
-		height: 12.5%;
-	}
-
-	#header > div:nth-of-type(odd) {flex-grow: 0.5;}
-	#header > div:nth-of-type(even) {flex-grow: 0.8;}
-
-	#navmenu {
-		display:flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
-		font-size: 1.5rem;
-		line-height: 1em;
-		padding:0;
-	}
-
 	body {
 		/* Padding to compensate for the fixed navigation bar */
 		padding-top: 12.5vh;
 	}
 
-	.menuitems {
-		display: inline-block;
-		flex-basis: unset;
-		line-height: 1em;
-	}
-
-	.logotext {
-		margin-right: auto;
-		font-size: 1.25em;
-		line-height: 1em;
-	}
+	/* Sets the middle column of the page bigger than other columns */
+	#main > div:nth-of-type(odd) {flex-grow: 0.5;}
+	#main > div:nth-of-type(even) {flex-grow: 1;}
 }
 
 /* Desktop layout */
 @media only screen and (min-width: 1400px) {
-	/* Sets the middle column of the page bigger than other columns */
-	#main > div:nth-of-type(odd) {flex-grow: 0.5;}
-	#main > div:nth-of-type(even) {flex-grow: 1;}
-
-	#header {
-		box-shadow: 0 0.1vh 2vh 0 black;
-	}
-
-	#header > div:nth-of-type(odd) {flex-grow: 0.5;}
-	#header > div:nth-of-type(even) {flex-grow: 0.8;}
-
-	#navmenu {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
-		font-size: 1.5rem;
-		line-height: 1em;
-		padding:0;
-	}
-
 	body {
 		/* Padding to compensate for the fixed navigation bar */
 		padding-top: 9vh;
 	}
+
+	/* Sets the middle column of the page bigger than other columns */
+	#main > div:nth-of-type(odd) {flex-grow: 0.5;}
+	#main > div:nth-of-type(even) {flex-grow: 1;}
 
 	.menuitems {
 		display: inline-block;
@@ -372,41 +247,6 @@ body {
 		margin-right: auto;
 		font-size: 1.5em;
 		line-height: 1em;
-	}
-
-	.menutoggle {
-		display: none;
-	}
-
-	#navmenu li a{
-		position: relative;
-		padding: 0.5em 0;
-	}
-	
-	#navmenu li a:before {    
-		/* background: none repeat scroll 0 0 transparent; */
-		content: "";
-		/* display: block; */
-		height: 0.1em;
-		/* 
-			Replace this value with left/right to change ending point of underline anim.
-			I.e. left: 0; ends on the left, right: 0; ends on the right. 
-		*/
-		right: 0;	
-		position: absolute;
-		background-color: #00b55d;
-		width: 0;
-		bottom: 0;
-		transition: all 0.3s ease-in-out 0s;
-	}
-	
-	#navmenu li a:hover:before { 
-		width: 100%; 
-		/* 
-			Replace this value with left/right to change starting point of underline.
-			I.e. left: 0; starts from the left, right: 0; starts from the right. 
-		*/
-		left: 0; 
 	}
 
 	#navbar {
@@ -446,11 +286,15 @@ body {
         padding: 0.75em 0.5em;
     }
 
-    .logo {
+    .logotext {
         flex:1;
         font-size: 1.5em;
         padding-left: 23vw;
-    }
+	}
+	
+	.menutoggle {
+		display: none;
+	}
 }
 
 /* Custom Fonts */
