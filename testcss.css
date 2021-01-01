@@ -1,7 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 
 /* Custom Fonts */
@@ -147,6 +146,7 @@ ul {
 
 /* Website Navigation Bar */
 #navbar {
+    box-sizing: border-box;
     /* position:fixed is need for the navmenu to overlay on the content */
     position:fixed;
     top:0;  /* Used to keep the navbar at the top */
@@ -187,7 +187,7 @@ ul {
     display:block;
 }
 
-.logotext {
+.logo {
     color:#f2f2f2;
     font-size: 1.25em;
     padding: 0.75em;
@@ -217,7 +217,7 @@ ul {
 		padding-top: 7.5vh;
 	}
 
-	.logotext {
+	.logo {
 		font-size: 1.25em;
 	}
 }
@@ -275,7 +275,7 @@ ul {
         padding: 0.75em 0.5em;
     }
 
-    .logotext {
+    .logo {
         flex:1;
         font-size: 1.5em;
         padding-left: 23vw;

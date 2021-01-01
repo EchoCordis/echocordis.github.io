@@ -203,11 +203,15 @@ body {
 
 .menutoggle {
 	/* margin-left: auto; */
-	order: 1;
+	/* order: 1;
 	font-size: 1.25em;
-	line-height: 1em;
+	line-height: 1em; */
 	/* width: 47.5%; */
 	/* flex-basis: 48%; */
+
+	order: 1;
+    font-size: 1.25em;
+    padding: 0 0.75em;
 }
 
 /* Indicates the current page the user has accessed. */
@@ -216,6 +220,54 @@ body {
 	text-decoration: underline;
 }
 
+/* Website Navigation Bar */
+#navbar {
+	box-sizing: border-box;
+    /* position:fixed is need for the navmenu to overlay on the content */
+    position:fixed;
+    top:0;  /* Used to keep the navbar at the top */
+    width:100%;
+    background-color: #262e33;
+    text-transform: uppercase;
+    padding: 0 0.5%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0.1vh 2vh 0 black;
+    font-family: Inconsolata-Regular, Arial, Helvetica, sans-serif;
+}
+
+#navbar li {
+    list-style-type: none;
+}
+
+#navbar li a {
+    position: relative;
+    color:#f2f2f2;
+    text-decoration:none;
+    padding: 0.5em 0;
+    display:block;
+}
+
+.menuitem {
+    order:2;
+    padding: 0.25em;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.menuitems_show {
+    display:block;
+}
+
+.logo {
+    color:#f2f2f2;
+    font-size: 1.25em;
+    padding: 0.75em;
+}
 /* <---- Other Devices ----> */
 
 /* Tablet layout - Portrait */
@@ -282,7 +334,7 @@ body {
 	}
 
 	.menutoggle {
-		display: none;
+		/* display: none; */
 	}
 }
 
@@ -359,6 +411,49 @@ body {
 		*/
 		left: 0; 
 	}
+
+	#navbar {
+        justify-content: center;
+        padding-right: 25vw;
+        box-shadow: 0 0.1vh 2vh 0 black;
+	}
+	
+    #navbar li a:before {    
+        content: "";
+        display: block;
+        height: 0.1em;
+        /* 
+            Replace this value with left/right to change ending point of underline anim.
+            I.e. left: 0; ends on the left, right: 0; ends on the right. 
+        */
+        right: 0;	
+        position: absolute;
+        background-color: #00b55d;
+        width: 0;
+        bottom: 0;
+        transition: all 0.3s ease-in-out 0s;
+    }
+    
+    #navbar li a:hover:before { 
+        width: 100%; 
+        /* 
+            Replace this value with left/right to change starting point of underline.
+            I.e. left: 0; starts from the left, right: 0; starts from the right. 
+        */
+        left: 0; 
+    }
+
+    .menuitem {
+        display:block;
+        width: auto;
+        padding: 0.75em 0.5em;
+    }
+
+    .logo {
+        flex:1;
+        font-size: 1.5em;
+        padding-left: 23vw;
+    }
 }
 
 /* Custom Fonts */
