@@ -30,7 +30,10 @@ function menuToggle() {
     }
 
     /* menuItems.forEach(item => item.classList.toggle('menuitems_show')); */
-    menu.classList.toggle(".menuitems_show");
+    
+    /* Might be slightly more efficient than forEach? */
+    menu.classList.toggle("menuitems_show");
+
     /* item.height = item.height === '0' ? '100vh' : '0'; */
 }
 
