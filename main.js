@@ -15,8 +15,9 @@ window.onscroll = function () {
     prevScrollPos = currentScrollPos;
 } */
 const toggle = document.querySelector(".menutoggle");
-const menuItems = document.querySelectorAll(".menuitem");
 const menu = document.querySelector("#navbar");
+/* const menuItems = document.querySelectorAll(".menuitem"); */
+
 var toggleInfo = true;
 
 function menuToggle() {
@@ -37,7 +38,7 @@ function menuToggle() {
     /* item.height = item.height === '0' ? '100vh' : '0'; */
 }
 
-function closeMenu() {
+function closeMenu(e) {
 
 }
 
