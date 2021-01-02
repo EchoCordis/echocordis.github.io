@@ -30,18 +30,7 @@ function menuToggle() {
 
     menuItems.forEach(item => item.classList.toggle('menuitems_show'));
 
-    /* for (var i = 0; i < menuItems.length; i++){
-        var item = menuItems[i].style;
-        item.height = item.height === '0' ? '100vh' : '0';
-        if (item.height == 0){
-            item.height = '5vh';
-        }
-        else {
-            item.height = 0;
-        }
-        item.opacity = item.opacity === 1 ? 1 : 0; 
-        item.visibility = item.visibility === 'hidden' ? 'visible' : 'hidden'; 
-    } */
+    /* item.height = item.height === '0' ? '100vh' : '0'; */
 }
 
 toggle.addEventListener('click', menuToggle);
