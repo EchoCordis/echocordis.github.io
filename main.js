@@ -19,6 +19,7 @@ const menu = document.querySelector("#navbar");
 /* const menuItems = document.querySelectorAll(".menuitem"); */
 
 var toggleInfo = true;
+var resizeMenu = true;
 
 function menuToggle() {
     if (toggleInfo) {
@@ -34,13 +35,24 @@ function menuToggle() {
     
     /* Might be slightly more efficient than forEach? */
     menu.classList.toggle("menuitems_show");
-
-    /* item.height = item.height === '0' ? '100vh' : '0'; */
 }
 
 function closeMenu(e) {
 
 }
+
+window.addEventListener('resize', () => {
+    if (document.body.clientWidth > 720) {
+        if (resizeMenu) {
+            menuToggle();
+            resizeMenu = false;
+        }
+        else {
+            resizeMenu = true;
+        }
+    }
+    { passive: false }
+});
 
 toggle.addEventListener('click', menuToggle);
 document.addEventListener('click', closeMenu);

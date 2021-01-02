@@ -157,7 +157,8 @@ body {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 0.1vh 2vh 0 black;
-    font-family: Inconsolata-Regular, Arial, Helvetica, sans-serif;
+	font-family: Inconsolata-Regular, Arial, Helvetica, sans-serif;
+	overflow:hidden;
 }
 
 #navbar li {
@@ -173,16 +174,18 @@ body {
 }
 
 .menuitem {
-    order:2;
-    padding: 0.25em;
+	order:2;
+	height: 0;
+    /* padding: 0.25em; */
     width: 100%;
-    text-align: center;
-	display: none;
-	/* border-bottom: 0.1em solid #ffffff; */
+	text-align: center;
+	transition: 250ms height ease-in-out;
+	/* display: none; */
 }
 
 .menuitems_show .menuitem {
-    display:block;
+	/* display:block; */
+	height: 8vh;
 }
 
 .logotext {
@@ -213,6 +216,10 @@ body {
 	.logotext {
 		font-size: 1.25em;
 	}
+
+	.menuitems_show .menuitem {
+		height: 5vh;
+	}
 }
 
 /* Tablet layout - Landscape */
@@ -228,7 +235,8 @@ body {
 
 	.menuitem {
         display:block;
-        width: auto;
+		width: auto;
+		height: auto;
         padding: 0.75em 0.5em;
 	}
 	
@@ -252,18 +260,6 @@ body {
 	/* Sets the middle column of the page bigger than other columns */
 	#main > div:nth-of-type(odd) {flex-grow: 0.5;}
 	#main > div:nth-of-type(even) {flex-grow: 1;}
-
-	.menuitems {
-		display: inline-block;
-		flex-basis: unset;
-		line-height: 1.5em;
-	}
-
-	.logotext {
-		margin-right: auto;
-		font-size: 1.5em;
-		line-height: 1em;
-	}
 
 	#navbar {
         justify-content: center;
@@ -298,7 +294,8 @@ body {
 
     .menuitem {
         display:block;
-        width: auto;
+		width: auto;
+		height:auto;
         padding: 0.75em 0.5em;
     }
 
