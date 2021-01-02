@@ -180,7 +180,7 @@ body {
     display: none;
 }
 
-.menuitems_show {
+.menuitems_show .menuitem {
     display:block;
 }
 

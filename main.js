@@ -16,6 +16,7 @@ window.onscroll = function () {
 } */
 const toggle = document.querySelector(".menutoggle");
 const menuItems = document.querySelectorAll(".menuitem");
+const menu = document.querySelector("#navbar");
 var toggleInfo = true;
 
 function menuToggle() {
@@ -28,9 +29,14 @@ function menuToggle() {
         toggleInfo = true;
     }
 
-    menuItems.forEach(item => item.classList.toggle('menuitems_show'));
-
+    /* menuItems.forEach(item => item.classList.toggle('menuitems_show')); */
+    menu.classList.toggle(".menuitems_show");
     /* item.height = item.height === '0' ? '100vh' : '0'; */
 }
 
+function closeMenu() {
+
+}
+
 toggle.addEventListener('click', menuToggle);
+document.addEventListener('click', closeMenu);
