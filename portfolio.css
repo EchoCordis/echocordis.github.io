@@ -177,7 +177,8 @@ body {
     padding: 0.25em;
     width: 100%;
     text-align: center;
-    display: none;
+	display: none;
+	/* border-bottom: 0.1em solid #ffffff; */
 }
 
 .menuitems_show .menuitem {
@@ -224,6 +225,21 @@ body {
 	/* Sets the middle column of the page bigger than other columns */
 	#main > div:nth-of-type(odd) {flex-grow: 0.5;}
 	#main > div:nth-of-type(even) {flex-grow: 1;}
+
+	.menuitem {
+        display:block;
+        width: auto;
+        padding: 0.75em 0.5em;
+	}
+	
+	.menutoggle {
+		display: none;
+	}
+
+	.logotext {
+        flex:1;
+        font-size: 1.5em;
+	}
 }
 
 /* Desktop layout */
