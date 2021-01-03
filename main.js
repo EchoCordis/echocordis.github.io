@@ -26,7 +26,7 @@ function menuToggle() {
         toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i>";
         toggleInfo = false;
         /* Darkens overlay opacity to hide page content */
-        document.querySelector(".navOverlay").style.backgroundColor = "rgba(0, 0, 0, 0.4)";
+        document.querySelector(".navOverlay").style.backgroundColor = "rgba(0, 0, 0, 0.5)";
     }
     else {
         toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
@@ -41,15 +41,19 @@ function menuToggle() {
     menu.classList.toggle("menuitems_show");
 }
 
-function closeMenu(e) {
-
-}
-
-/* window.addEventListener('resize', () => {
-    if (document.body.clientWidth > 720) {
+/* Closes navbar menu when the device's size is changed. */
+window.addEventListener('resize', () => {
+    if (document.body.clientWidth > 720 && !toggleInfo) {
         menuToggle();
     }
-}); */
+});
+
+/* Closes navbar menu when the device's orientation is closed. */
+window.addEventListener('orientationchange', () => {
+    if (!toggleInfo) {
+        menuToggle();
+    }
+});
 
 toggle.addEventListener('click', menuToggle);
 document.addEventListener('click', closeMenu);
