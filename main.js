@@ -55,4 +55,10 @@ window.addEventListener('orientationchange', () => {
     }
 });
 
+document.addEventListener('click', (e) => {
+    if(!menu.contains(e.target) && toggleInfo){
+        menuToggle();
+    }
+});
+
 toggle.addEventListener('click', menuToggle);
