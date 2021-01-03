@@ -25,10 +25,14 @@ function menuToggle() {
     if (toggleInfo) {
         toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i>";
         toggleInfo = false;
+        /* Darkens website opacity */
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
     }
     else {
         toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
         toggleInfo = true;
+        /* Reverts opacity of the website background */
+        document.body.style.backgroundColor = "#f0f0f0";
     }
 
     /* menuItems.forEach(item => item.classList.toggle('menuitems_show')); */
@@ -41,18 +45,11 @@ function closeMenu(e) {
 
 }
 
-window.addEventListener('resize', () => {
+/* window.addEventListener('resize', () => {
     if (document.body.clientWidth > 720) {
-        if (resizeMenu) {
-            menuToggle();
-            resizeMenu = false;
-        }
-        else {
-            resizeMenu = true;
-        }
+        menuToggle();
     }
-    { passive: false }
-});
+}); */
 
 toggle.addEventListener('click', menuToggle);
 document.addEventListener('click', closeMenu);

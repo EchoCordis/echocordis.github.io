@@ -8,6 +8,7 @@ body {
 	margin:0px;
 	padding:0px;
 	background-color:#f0f0f0;
+	transition: background-color .25s;
 	font-family: Helvetica, Arial, sans-serif;
 }
 h1 {
@@ -218,7 +219,7 @@ body {
 	}
 
 	.menuitems_show .menuitem {
-		height: 5vh;
+		height: 5.5vh;
 	}
 }
 
