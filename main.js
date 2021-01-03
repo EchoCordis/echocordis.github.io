@@ -56,4 +56,3 @@ window.addEventListener('orientationchange', () => {
 });
 
 toggle.addEventListener('click', menuToggle);
-document.addEventListener('click', closeMenu);
