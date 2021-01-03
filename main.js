@@ -25,14 +25,14 @@ function menuToggle() {
     if (toggleInfo) {
         toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i>";
         toggleInfo = false;
-        /* Darkens website opacity */
-        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        /* Darkens overlay opacity to hide page content */
+        document.querySelector(".navOverlay").style.backgroundColor = "rgba(0, 0, 0, 0.4)";
     }
     else {
         toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
         toggleInfo = true;
-        /* Reverts opacity of the website background */
-        document.body.style.backgroundColor = "#f0f0f0";
+        /* Reverts overlay opacity to show page content*/
+        document.querySelector(".navOverlay").style.backgroundColor = "rgba(0, 0, 0, 0)";
     }
 
     /* menuItems.forEach(item => item.classList.toggle('menuitems_show')); */
