@@ -30,6 +30,16 @@ h1 {
 	text-align:center;
 }
 
+.linkIcon {
+	color: white;
+	font-size: 2rem;
+}
+
+.linkIcon:hover {
+	color: #00b55d;
+	transition: color 0.5s ease;
+}
+
 #toplink {
 	color:#ffd728;
 }
@@ -218,6 +228,7 @@ ul {
 	transition: all 300ms ease;
 }
 
+/* <---- Animations ----> */
 @keyframes fadeIn {
 	0% {
         opacity: 0;
