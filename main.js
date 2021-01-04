@@ -3,13 +3,15 @@
 window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollPos > currentScrollPos) {
-        document.getElementById("header").style.top = "0";
+        document.getElementById("navbar").style.boxShadow = "0 0.1vh 2vh 0 #000000";
     } else {
         if (screen.height > 1025){
-            document.getElementById("header").style.top = "-11%";
+            document.getElementById("navbar").style.boxShadow = "none";
+            console.log("Inside");
         }
         else {
-            document.getElementById("header").style.top = "-18%";
+            document.getElementById("navbar").style.boxShadow = "none";
+            console.log("Inside");
         }
     }
     prevScrollPos = currentScrollPos;
@@ -56,8 +58,11 @@ window.addEventListener('orientationchange', () => {
 });
 
 document.addEventListener('click', (e) => {
-    if(!menu.contains(e.target) && toggleInfo){
+    if(!menu.contains(e.target) && menu.querySelector(".menuitems_show")){
         menuToggle();
+    }
+    else{
+        console.log("Inside");
     }
 });
 
