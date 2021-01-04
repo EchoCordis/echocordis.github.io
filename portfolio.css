@@ -30,9 +30,17 @@ h1 {
 	text-align:center;
 }
 
+.linkSet{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
 .linkIcon {
 	color: white;
 	font-size: 2rem;
+	padding: 1em 1em;
 }
 
 .linkIcon:hover {
@@ -43,12 +51,14 @@ h1 {
 #toplink {
 	color:#ffd728;
 }
+
 .leftimg {
 	max-width:100%;
 	max-height:100%;
 	float:left;
 	padding-right:10px;
 }
+
 img.palette {
 	max-width:200px;
 	max-height:500px;
@@ -57,6 +67,7 @@ img.palette {
 	border: 3px solid black;
 	margin-bottom: 10px;
 }
+
 img.structure {
 	max-width:200px;
 	max-height:500px;
