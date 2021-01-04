@@ -11,6 +11,7 @@ body {
 	font-family: Helvetica, Arial, sans-serif;
 	/* Padding to compensate for the fixed navigation bar */
 	padding-top: 10vh;
+	animation: fadeIn 2s ease;
 }
 h1 {
 	text-align: left;
@@ -215,6 +216,15 @@ ul {
 	pointer-events: none;
 	z-index:1; /* Overlays page content */
 	transition: all 300ms ease;
+}
+
+@keyframes fadeIn {
+	0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* <---- Settings for Other Devices ----> */
