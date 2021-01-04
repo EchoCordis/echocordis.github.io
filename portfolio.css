@@ -11,7 +11,7 @@ body {
 	font-family: Helvetica, Arial, sans-serif;
 	/* Padding to compensate for the fixed navigation bar */
 	padding-top: 10vh;
-	animation: fadeIn 2s ease;
+	animation: fadeIn 1.25s ease;
 }
 h1 {
 	text-align: left;
@@ -40,7 +40,7 @@ h1 {
 .linkIcon {
 	color: white;
 	font-size: 2rem;
-	padding: 1em 1em;
+	margin: 1em;
 }
 
 .linkIcon:hover {
