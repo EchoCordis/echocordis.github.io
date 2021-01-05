@@ -246,16 +246,6 @@ ul {
 	z-index: -10;
 }
 
-/* <---- Animations ----> */
-@keyframes fadeIn {
-	0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 /* <---- Settings for Other Devices ----> */
 
 /* Tablet layout - Portrait */
@@ -363,6 +353,19 @@ ul {
 	.menutoggle {
 		display: none;
 	}
+}
+
+
+/* <---- Animations ----> */
+
+/* Fade-in animation on page load */
+@keyframes fadeIn {
+	0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Custom Fonts */
