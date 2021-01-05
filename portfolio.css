@@ -167,7 +167,7 @@ ul {
 	top:0;  /* Used to keep the navbar at the top */
 	margin-top: 0;	/* Removes gap at the top of the navbar */
     width:100%;
-    background-color: #262e33;
+    background-color: #202020fa;
     text-transform: uppercase;
     padding: 0 0.5%;
     font-size: 1.5rem;
