@@ -7,10 +7,11 @@ body {
 	text-align: left;
 	margin:0px;
 	padding:0px;
-	background-color:#000000;
+	background-color:#f0f0f0;
+	/* background-color:#000000; */
 	font-family: Helvetica, Arial, sans-serif;
-	/* Padding to compensate for the fixed navigation bar */
-	/* padding-top: 10vh; */
+	/* Padding to compensate for the fixed navigation bar on mobile */
+	padding-top: 10vh;
 	animation: fadeIn 1.25s ease;
 }
 h1 {
@@ -21,7 +22,7 @@ h1 {
 /* Webpage structure */
 #footer {
 	background-color: #262e33;
-/* 	border-top: 0.1vh solid rgb(167, 167, 167); */
+	border-top: .5vh solid #00b55d;
 	color: rgb(167, 167, 167);
 	width: 100%;
 	height: auto;
@@ -32,8 +33,8 @@ h1 {
 
 /* Main Website Structure Flexbox */
 #main {
-	color:#f0f0f0;
-	/* color:#000000; */
+	/* color:#f0f0f0; */
+	color:#000000;
 	width: 100%;
 	min-height: 80vh;
 	height: auto;
@@ -49,7 +50,7 @@ h1 {
 /* Centre column in the middle of the screen used for each page's content. */
 #middlecol {
 	/* background-color: #f0f0f0; */
-	background-color:#0000009c;
+	/* background-color:#0000009c; */
 	z-index:1;
 	width: 10%;
 	padding: 5px 20px;
