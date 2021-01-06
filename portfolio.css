@@ -19,17 +19,6 @@ h1 {
 	font-family: Helvetica, Arial, sans-serif;
 	text-decoration: underline;
 }
-/* Webpage structure */
-#footer {
-	background-color: #262e33;
-	color: #a7a7a7;
-	/* border-top: .5vh solid #00b55d; */
-	width: 100%;
-	height: auto;
-	font-size: 1.4rem;
-	padding: 2vh 0;
-	text-align:center;
-}
 
 /* Main Website Structure Flexbox */
 #main {
@@ -150,6 +139,18 @@ h1 {
 	position:fixed;
 	z-index: -10;
 }
+
+#footer {
+	background-color: #262e33;
+	color: #a7a7a7;
+	/* border-top: .5vh solid #00b55d; */
+	width: 100%;
+	height: auto;
+	font-size: 1.4rem;
+	padding: 2vh 0;
+	text-align:center;
+}
+
 
 .linkSet{
 	display:flex;
