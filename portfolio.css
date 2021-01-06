@@ -22,8 +22,8 @@ h1 {
 /* Webpage structure */
 #footer {
 	background-color: #262e33;
-	border-top: .5vh solid #00b55d;
-	color: rgb(167, 167, 167);
+	color: #a7a7a7;
+	/* border-top: .5vh solid #00b55d; */
 	width: 100%;
 	height: auto;
 	font-size: 1.4rem;
@@ -122,6 +122,8 @@ h1 {
 #currentPage {
 	color: #00b55d !important;
 	font-weight: 600;
+	pointer-events: none;
+	cursor:default;
 }
 
 /* Darkens screen when the navbar is opened */
