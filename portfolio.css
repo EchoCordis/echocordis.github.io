@@ -141,6 +141,11 @@ h1 {
 	transition: all 300ms ease;
 }
 
+/* Page banner that appears at the top of every page */
+#banner {
+
+}
+
 /* Settings for the particles in the BG */
 #particles-js {
 	width:100%;
@@ -159,7 +164,6 @@ h1 {
 	padding: 2vh 0;
 	text-align:center;
 }
-
 
 .linkSet{
 	display:flex;

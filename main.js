@@ -72,14 +72,13 @@ particlesJS.load('particles-js', 'particles.json', function() {
     console.log('callback - particles.js config loaded');
 });
 
+/* Changes navbar's BG opacity based on vertical scroll distance */
 window.onscroll = function() {
     if (window.pageYOffset >= 200) {
-        console.log("Showing nav");
         menu.classList.add("navbar_filled");
         menu.classList.remove("navbar_opac");
     }
     else {
-        console.log("Hidden nav");
         menu.classList.add("navbar_opac");
         menu.classList.remove("navbar_filled");
     }
