@@ -54,7 +54,7 @@ h1 {
 	top:0;  /* Used to keep the navbar at the top */
 	margin-top: 0;	/* Removes gap at the top of the navbar */
     width:100%;
-    background-color: #262e33;
+	background-color: rgb(38, 46, 51);
     text-transform: uppercase;
     padding: 0 0.5%;
     font-size: 1.5rem;
@@ -66,6 +66,15 @@ h1 {
 	font-family: Inconsolata-Regular, Arial, Helvetica, sans-serif;
 	overflow:hidden;
 	z-index:2;	/* Displays above overlay and page content */
+	transition: 300ms background-color ease-in-out;
+}
+
+.navbar_opac {
+	background-color: rgba(38, 46, 51, 0.5) !important;
+}
+
+.navbar_filled {
+	background-color: rgb(38, 46, 51) !important;
 }
 
 #navbar li {
