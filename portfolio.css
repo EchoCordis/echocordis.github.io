@@ -167,7 +167,12 @@ h1 {
 #banner h1 {
 	text-align: center;
 	text-decoration: none;
-	font-size: 5rem;
+	font-size: 2rem;
+}
+
+#banner h2 {
+	font-weight: 400;
+	/* font-size: 1.25rem; */
 }
 
 /* Settings for the particles in the BG */
@@ -334,6 +339,10 @@ ul {
 	.menuitems_show .menuitem {
 		height: 5.5vh;
 	}
+
+	#banner h2 {
+		font-size: 1rem;
+	}
 }
 
 /* Tablet layout - Landscape */
@@ -422,9 +431,8 @@ ul {
 		display: none;
 	}
 
-	#banner {
-		/* Padding to compensate for the fixed navigation bar */
-		/* margin-top: 8vh; */
+	#banner h1{
+		font-size: 5rem;
 	}
 }
 
