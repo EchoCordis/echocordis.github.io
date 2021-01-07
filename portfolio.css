@@ -72,7 +72,7 @@ h1 {
 }
 
 .navbar_opac {
-	background-color: rgba(38, 46, 51, 0.5) !important;
+	background-color: rgba(38, 46, 51, 0) !important;
 }
 
 .navbar_filled {
@@ -147,7 +147,7 @@ h1 {
 /* Page banner that appears at the top of every page */
 #banner {
 	/* background-color: #000000; */
-	background-color: #262e33;
+	/* background-color: #262e33; */
 	display: flex;
 	width: 100%;
 	height: 60vh;
@@ -160,14 +160,12 @@ h1 {
 	width: 100%;
 	position: absolute;
 	text-align: center;
-	z-index: 1;
 	color: #f0f0f0;
 	font-family: Inconsolata-Regular, Arial, Helvetica, sans-serif;
 }
 
 #banner h1 {
 	text-align: center;
-	z-index: 1;
 }
 
 /* Settings for the particles in the BG */
@@ -366,7 +364,7 @@ ul {
 @media only screen and (min-width: 1400px) {
 	body {
 		/* Padding to compensate for the fixed navigation bar */
-		padding-top: 8vh;
+		/* padding-top: 8vh; */
 	}
 
 	/* Sets the middle column of the page bigger than other columns */
@@ -418,6 +416,11 @@ ul {
 	
 	.menutoggle {
 		display: none;
+	}
+
+	#banner {
+		/* Padding to compensate for the fixed navigation bar */
+		/* margin-top: 8vh; */
 	}
 }
 
