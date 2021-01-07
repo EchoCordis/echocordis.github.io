@@ -180,13 +180,13 @@ h1 {
 
 #infoRec {
 	display:flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	background-color: #4d5c66;
 	width: auto;
-	height: 10vh;
+	min-height: 10vh;
 	justify-content: center;
 	align-items: center;
-	padding: 5vh 0;
+	/* margin: 5vh 0; */
 	
 }
 
@@ -194,6 +194,8 @@ h1 {
 	color: #f0f0f0;
 	flex-grow: 1;
 	text-align: center;
+	padding: 3vh 0;
+	height: 100%;
 }
 
 #footer {
