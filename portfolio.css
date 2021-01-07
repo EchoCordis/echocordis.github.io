@@ -225,6 +225,7 @@ h1 {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	min-height: 35vh;
 	width: auto;
+	margin: 5vh 0;
 }
 
 .projectImg {
@@ -410,6 +411,10 @@ ul {
         flex:1;
         font-size: 1.5em;
 	}
+
+	.project {
+		flex-wrap: nowrap;
+	}
 }
 
 /* Desktop layout */
@@ -479,6 +484,7 @@ ul {
 	}
 
 	.project {
+		flex-wrap: nowrap;
 		margin: 0 10vh;
 	}
 }
