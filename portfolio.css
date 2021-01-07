@@ -31,7 +31,7 @@ h1 {
 	height: auto;
 	display: flex;
 	flex-basis: 0 0 50%;
-	margin: 1vh 0;
+	/* margin: 1vh 0; */
 }
 
 /* Sets the middle column of the page bigger than other columns */
@@ -121,7 +121,7 @@ h1 {
 /* Indicates the currently accessed page */
 #currentPage {
 	color: #a7a7a7 !important;
-	text-decoration: line-through #00b55d;
+	/* text-decoration: line-through #00b55d; */
 	/* font-weight: 600; */
 	pointer-events: none;
 	cursor:default;
@@ -182,9 +182,20 @@ h1 {
 
 #infoRec {
 	display:flex;
+	flex-wrap: wrap;
 	background-color: #4d5c66;
 	width: auto;
 	height: 10vh;
+	justify-content: center;
+	align-items: center;
+	padding: 5vh 0;
+	
+}
+
+#infoRec div {
+	color: #f0f0f0;
+	flex-grow: 1;
+	text-align: center;
 }
 
 #footer {
