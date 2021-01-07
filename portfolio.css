@@ -194,6 +194,7 @@ h1 {
 	min-height: 10vh;
 	justify-content: center;
 	align-items: center;
+	font-family: Inconsolata-Regular, Arial, Helvetica, sans-serif;
 }
 
 #infoRec div {
@@ -202,6 +203,15 @@ h1 {
 	text-align: center;
 	padding: 3vh 0;
 	height: 100%;
+}
+
+#infoRec h2 {
+	color: #00b55d;
+	text-transform: uppercase;
+}
+
+#infoRec p {
+	font-size: 1.2rem;
 }
 
 #footer {
