@@ -166,6 +166,8 @@ h1 {
 
 #banner h1 {
 	text-align: center;
+	text-decoration: none;
+	font-size: 5rem;
 }
 
 /* Settings for the particles in the BG */
