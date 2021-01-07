@@ -5,8 +5,8 @@ RewriteCond %{REQUEST_FILENAME} !-d
 
 # Check for file in directory with .html extension
 
-RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}\.html -f
 
 # Show page with .html extension
 
-RewriteRule ^([^\.]+)$ $1.html [NC, L] 
+RewriteRule ^(.*)$ $1.html [NC,L]
