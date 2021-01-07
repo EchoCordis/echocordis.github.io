@@ -193,8 +193,6 @@ h1 {
 	min-height: 10vh;
 	justify-content: center;
 	align-items: center;
-	/* margin: 5vh 0; */
-	
 }
 
 #infoRec div {
@@ -433,6 +431,10 @@ ul {
 
 	#banner h1{
 		font-size: 5rem;
+	}
+
+	#infoRec {
+		padding: 0 45vh;
 	}
 }
 
