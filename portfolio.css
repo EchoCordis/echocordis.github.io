@@ -8,6 +8,7 @@ body {
 	margin:0px;
 	padding:0px;
 	background-color:#f0f0f0;
+	background-color: #262e33;
 	/* background-color:#000000; */
 	font-family: Helvetica, Arial, sans-serif;
 	/* Padding to compensate for the fixed navigation bar on mobile */
@@ -23,6 +24,7 @@ h1 {
 /* Main Website Structure Flexbox */
 #main {
 	/* color:#f0f0f0; */
+	background-color:#f0f0f0;
 	color:#000000;
 	width: 100%;
 	min-height: 80vh;
@@ -54,7 +56,7 @@ h1 {
 	top:0;  /* Used to keep the navbar at the top */
 	margin-top: 0;	/* Removes gap at the top of the navbar */
     width:100%;
-	background-color: rgb(38, 46, 51);
+	background-color: #262e33;
     text-transform: uppercase;
     padding: 0 0.5%;
     font-size: 1.5rem;
@@ -143,14 +145,35 @@ h1 {
 
 /* Page banner that appears at the top of every page */
 #banner {
+	/* background-color: #000000; */
+	display: flex;
+	width: 100%;
+	height: 50vh;
+	justify-content: center;
+	align-items: center;
+	/* padding: 10vh 0; */
+}
 
+.bannerText {
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	z-index: 1;
+	color: #f0f0f0;
+}
+
+#banner h1 {
+	text-align: center;
+	z-index: 1;
 }
 
 /* Settings for the particles in the BG */
 #particles-js {
-	width:100%;
+	background-color: #000000;
+	background-color: #262e33;
+	width: 100%;
 	height: 100%;
-	position:fixed;
+	/* position:fixed; */
 	z-index: -10;
 }
 
