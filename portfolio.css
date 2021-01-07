@@ -157,11 +157,11 @@ h1 {
 }
 
 .bannerText {
-	width: 100%;
 	position: absolute;
 	text-align: center;
 	color: #f0f0f0;
 	font-family: Inconsolata-Regular, Arial, Helvetica, sans-serif;
+	padding: 0 5vh;
 }
 
 #banner h1 {
@@ -366,7 +366,7 @@ ul {
 @media only screen and (min-width: 1400px) {
 	body {
 		/* Padding to compensate for the fixed navigation bar */
-		/* padding-top: 8vh; */
+		padding-top: 8vh;
 	}
 
 	/* Sets the middle column of the page bigger than other columns */
