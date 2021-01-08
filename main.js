@@ -58,7 +58,7 @@ particlesJS.load('particles-js', 'particles.json', function() {
 });
 
 /* Changes navbar's BG opacity based on vertical scroll distance */
-window.onscroll = function() {
+/* window.onscroll = function() {
     let vh = window.innerHeight * 0.01;
 
     if (window.pageYOffset >= 50 * vh) {
@@ -71,4 +71,4 @@ window.onscroll = function() {
         menu.classList.remove("navbar_filled");
         console.log("Invisible");
     }
-};
+}; */
