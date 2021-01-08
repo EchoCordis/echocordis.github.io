@@ -173,7 +173,7 @@ h1 {
 
 #banner h2 {
 	font-weight: 400;
-	/* font-size: 1.25rem; */
+	font-size: 1.25rem;
 }
 
 /* Settings for the particles in the BG */
@@ -405,7 +405,7 @@ ul {
 	}
 
 	#banner h2 {
-		font-size: 1rem;
+		font-size: 1.25rem;
 	}
 }
 
@@ -501,6 +501,10 @@ ul {
 
 	#banner h1{
 		font-size: 5rem;
+	}
+
+	#banner h2 {
+		font-size: 1.5rem;
 	}
 
 	#infoRec {

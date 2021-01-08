@@ -23,6 +23,7 @@ const menu = document.querySelector("#navbar");
 var toggleInfo = true;
 var resizeMenu = true;
 
+/* Controls the opening/closing of the mobile navmenu */
 function menuToggle() {
     if (toggleInfo) {
         toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i>";
