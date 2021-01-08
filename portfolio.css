@@ -68,7 +68,7 @@ h1 {
     /* box-shadow: 0 0.1vh 1vh rgb(75, 75, 75); */
 	font-family: Inconsolata-Regular, Arial, Helvetica, sans-serif;
 	overflow:hidden;
-	z-index:2;	/* Displays above overlay and page content */
+	z-index:6;	/* Displays above overlay and page content */
 	transition: 300ms background-color ease-in-out;
 }
 
@@ -141,7 +141,7 @@ h1 {
 	bottom: 0;
 	left: 0;
 	pointer-events: none;
-	z-index:1; /* Overlays page content */
+	z-index: 5; /* Overlays page content */
 	transition: all 300ms ease;
 }
 
@@ -404,6 +404,10 @@ ul {
 		height: 5.5vh;
 	}
 
+	#banner h1{
+		font-size: 3rem;
+	}
+
 	#banner h2 {
 		font-size: 1.25rem;
 	}
@@ -438,6 +442,10 @@ ul {
 
 	.project {
 		flex-wrap: nowrap;
+	}
+
+	#banner h1{
+		font-size: 3rem;
 	}
 }
 

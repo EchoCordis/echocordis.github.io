@@ -44,6 +44,8 @@ function menuToggle() {
     menu.classList.toggle("menuitems_show");
 }
 
+toggle.addEventListener('click', menuToggle);
+
 /* Closes navbar menu when the device's size is changed. */
 window.addEventListener('resize', () => {
     if (document.body.clientWidth > 720 && !toggleInfo) {
@@ -67,8 +69,6 @@ window.addEventListener('orientationchange', () => {
     }
 }); */
 
-toggle.addEventListener('click', menuToggle);
-
 particlesJS.load('particles-js', 'particles.json', function() {
     console.log('callback - particles.js config loaded');
 });
@@ -80,9 +80,11 @@ window.onscroll = function() {
     if (window.pageYOffset >= 50 * vh) {
         menu.classList.add("navbar_filled");
         menu.classList.remove("navbar_opac");
+        console.log("Visible");
     }
     else {
         menu.classList.add("navbar_opac");
         menu.classList.remove("navbar_filled");
+        console.log("Invisible");
     }
 };
