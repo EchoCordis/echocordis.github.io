@@ -121,9 +121,8 @@ h1 {
 
 /* Indicates the currently accessed page */
 #currentPage {
-	color: #a7a7a7 !important;
-	/* text-decoration: line-through #00b55d; */
-	/* font-weight: 600; */
+	text-decoration: underline #00b55d;
+	/* text-decoration-thickness: 0.2rem; */
 	pointer-events: none;
 	cursor:default;
 }
@@ -272,7 +271,6 @@ h1 {
 #footer {
 	background-color: #262e33;
 	color: #a7a7a7;
-	/* border-top: .5vh solid #00b55d; */
 	width: 100%;
 	height: auto;
 	font-size: 1.4rem;
