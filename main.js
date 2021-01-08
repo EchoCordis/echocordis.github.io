@@ -1,27 +1,9 @@
-/* var prevScrollPos = window.pageYOffset;
-
-window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollPos > currentScrollPos) {
-        document.getElementById("navbar").style.boxShadow = "0 0.1vh 2vh 0 #000000";
-    } else {
-        if (screen.height > 1025){
-            document.getElementById("navbar").style.boxShadow = "none";
-            console.log("Inside");
-        }
-        else {
-            document.getElementById("navbar").style.boxShadow = "none";
-            console.log("Inside");
-        }
-    }
-    prevScrollPos = currentScrollPos;
-} */
+/* The navbar's toggle button on mobile */
 const toggle = document.querySelector(".menutoggle");
+/* The navbar on mobile */
 const menu = document.querySelector("#navbar");
-/* const menuItems = document.querySelectorAll(".menuitem"); */
-
+/* Boolean to control if the menu items in the navbar are shown */
 var toggleInfo = true;
-var resizeMenu = true;
 
 /* Controls the opening/closing of the mobile navmenu */
 function menuToggle() {
@@ -44,6 +26,7 @@ function menuToggle() {
     menu.classList.toggle("menuitems_show");
 }
 
+/* Adds menuToggle as an event */
 toggle.addEventListener('click', menuToggle);
 
 /* Closes navbar menu when the device's size is changed. */
@@ -69,6 +52,7 @@ window.addEventListener('orientationchange', () => {
     }
 }); */
 
+/* Loads the particles.js module onto the page */
 particlesJS.load('particles-js', 'particles.json', function() {
     console.log('callback - particles.js config loaded');
 });
