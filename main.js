@@ -53,7 +53,7 @@ window.addEventListener('orientationchange', () => {
 }); */
 
 /* Loads the particles.js module onto the page */
-particlesJS.load('particles-js', 'particles.json', function() {
+particlesJS.load('particles-js', '/particles.json', function() {
     console.log('callback - particles.js config loaded');
 });
 
