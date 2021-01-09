@@ -209,8 +209,22 @@ h1 {
 	text-transform: uppercase;
 }
 
-#infoRec p {
+#infoTable {
+	width: 100%;
+	min-height: 10vh;
+	table-layout: fixed;
+	text-align: center;
+	font-family: inherit;
+}
+
+#infoTable th {
+	padding-top: 4vh;
+}
+
+#infoTable td {
+	color: #f0f0f0;
 	font-size: 1.2rem;
+	padding-bottom: 4vh;
 }
 
 #projectCase {
@@ -345,41 +359,6 @@ img.structure {
 	text-decoration:underline;
 }
 /* End span styles */
-
-/* Table styles */
-table {
-	width:100%;
-	table-layout:fixed;
-}
-table, th, td {
-	border: 1px solid #007a3e;
-	border-collapse: collapse;
-}
-table td {
-	padding-left:10px;
-	padding-right:5px;
-}
-table th {
-	background-color: #007a3e;
-	color:white;
-	text-align: center;
-	overflow: auto;
-}
-.purpose {
-	min-width:60%;
-	padding-right:10px;
-}
-.csselement {
-	min-width:40%;
-}
-/* End table styles */
-ul {
-	list-style-position:inside;
-}
-.quote {
-	font-size:1em;
-	font-style:italic;
-}
 
 /* <---- Settings for Other Devices ----> */
 
