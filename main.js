@@ -1,5 +1,3 @@
-/* Swup instance */
-/* const swup = new Swup(); */
 /* The navbar's toggle button on mobile */
 const toggle = document.querySelector(".menutoggle");
 /* The navbar on mobile */
@@ -58,6 +56,9 @@ window.addEventListener('orientationchange', () => {
 particlesJS.load('particles-js', '/particles.json', function() {
     console.log('callback - particles.js config loaded');
 });
+
+/* Swup instance */
+const swup = new Swup();
 
 /* Changes navbar's BG opacity based on vertical scroll distance */
 /* window.onscroll = function() {
