@@ -1,3 +1,5 @@
+/* Swup instance */
+/* const swup = new Swup(); */
 /* The navbar's toggle button on mobile */
 const toggle = document.querySelector(".menutoggle");
 /* The navbar on mobile */
