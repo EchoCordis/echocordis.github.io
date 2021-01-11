@@ -58,7 +58,7 @@ particlesJS.load('particles-js', '/particles.json', function() {
 });
 
 /* Swup instance */
-const swup = new Swup();
+/* const swup = new Swup(); */
 
 /* Changes navbar's BG opacity based on vertical scroll distance */
 /* window.onscroll = function() {
