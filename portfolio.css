@@ -308,51 +308,6 @@ h1 {
 	color:#ffd728;
 }
 
-.leftimg {
-	max-width:100%;
-	max-height:100%;
-	float:left;
-	padding-right:10px;
-}
-
-img.palette {
-	max-width:200px;
-	max-height:500px;
-	float:right;
-	margin-left:10px;
-	border: 3px solid black;
-	margin-bottom: 10px;
-}
-
-img.structure {
-	max-width:200px;
-	max-height:500px;
-	float:right;
-	margin-left:10px;
-	border: 3px solid black;
-	margin-bottom: 10px;
-}
-/* End website structure */
-
-/* Span styles */
-#headergreen {
-	color:#48af48;	
-}
-.footergreen {
-	color:#00a555;	
-}
-#hovergreen {
-	color:#00b55d;	
-}
-.tablecolour {
-	color:#007a3e;
-}
-.highlight {
-	color:#0C374D;
-	font-weight:800;
-	text-decoration:underline;
-}
-/* End span styles */
 
 /* <---- Settings for Other Devices ----> */
 
