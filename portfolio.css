@@ -227,6 +227,7 @@ body {
 
 #overview {
 	display:flex;
+	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: center;
 	width: auto;
@@ -235,6 +236,7 @@ body {
 	color: #f0f0f0;
 	font-family: Inconsolata-Regular, Arial, Helvetica, sans-serif;
 	font-size: 1.2rem;
+	padding: 3vh 1vh;
 }
 
 #overview a {
@@ -467,6 +469,10 @@ body {
 	}
 
 	#infoRec {
+		padding: 0 45vh;
+	}
+
+	#overview {
 		padding: 0 45vh;
 	}
 
