@@ -245,7 +245,7 @@ body {
 }
 
 #overview h2 {
-	color: #00b55d;
+	color: #00994f;
 	text-transform: uppercase;
 }
 
@@ -258,6 +258,28 @@ body {
 	font-size: 1.2rem;
 	padding-bottom: 3vh;
 	line-height: 1.5rem;
+}
+
+.links {
+	position: relative;
+}
+
+.links::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 0.1rem;
+	bottom: -0.2vh;
+	left: 0;
+	background-color: #00b55d;
+	/* visibility: hidden;
+	transform: scaleX(0); */
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.links:hover:before {
+	height: 0.4rem;
+	bottom: -1vh;
 }
 
 .project {
