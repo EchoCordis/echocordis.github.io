@@ -244,6 +244,11 @@ body {
 	color: #f0f0f0;
 }
 
+#overview h2 {
+	color: #00b55d;
+	text-transform: uppercase;
+}
+
 #ovTable {
 	text-align: center;
 }
@@ -252,7 +257,7 @@ body {
 	color: #f0f0f0;
 	font-size: 1.2rem;
 	padding-bottom: 3vh;
-	line-height: 2vh;
+	line-height: 1.5rem;
 }
 
 .project {
