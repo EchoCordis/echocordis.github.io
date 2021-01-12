@@ -225,6 +225,18 @@ h1 {
 	padding-bottom: 4vh;
 }
 
+#overview {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+	min-height: 10vh;
+	background-color: #2d363b;
+	color: #f0f0f0;
+	font-family: Inconsolata-Regular, Arial, Helvetica, sans-serif;
+	font-size: 1.2rem;
+}
+
 .project {
 	font-family: Inconsolata-Regular, Arial, Helvetica, sans-serif;
 	display: flex;
