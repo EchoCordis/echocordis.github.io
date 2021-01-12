@@ -237,8 +237,13 @@ body {
 	font-size: 1.2rem;
 }
 
-#overview h1 {
+#overview a {
+	text-decoration: none;
+	color: #f0f0f0;
+}
 
+#ovTable {
+	text-align: center;
 }
 
 .project {
