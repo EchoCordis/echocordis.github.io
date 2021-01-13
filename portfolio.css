@@ -272,8 +272,6 @@ body {
 	bottom: -0.2vh;
 	left: 0;
 	background-color: #00b55d;
-	/* visibility: hidden;
-	transform: scaleX(0); */
 	transition: all 0.3s ease-in-out 0s;
 }
 
@@ -369,6 +367,9 @@ body {
 	color:#ffd728;
 }
 
+.greenHighlight {
+	color: #00ec7a;
+}
 
 /* <---- Settings for Other Devices ----> */
 
