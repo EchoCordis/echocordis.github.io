@@ -27,7 +27,10 @@ function menuToggle() {
 }
 
 /* Adds menuToggle as an event */
-toggle.addEventListener('click', menuToggle);
+if (toggle){
+    toggle.addEventListener('click', menuToggle);
+}
+
 
 /* Closes navbar menu when the device's size is changed. */
 window.addEventListener('resize', () => {
