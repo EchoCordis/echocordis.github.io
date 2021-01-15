@@ -566,6 +566,10 @@ input[type=submit]:hover {
 		margin: 0 10vh;
 		margin-bottom: 5vh;
 	}
+
+	#emailForm {
+		width: 80%;
+	}
 }
 
 /* <---- Animations ----> */
