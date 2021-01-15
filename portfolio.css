@@ -389,10 +389,11 @@ input[type=text], textarea {
 	border-bottom: 0.2rem solid #00b55d;
 	background-color: #f0f0f0;
 	width: 100%;
-	margin: 1vh 0;
+	margin: 2vh 0;
 	font-size: 1.2rem;
 	font-family: Helvetica, Arial, sans-serif;
 	min-height: 1.8rem;
+	margin-bottom: 1rem;
 }
 
 textarea {
@@ -407,6 +408,7 @@ input[type=submit] {
 	background-color: #00b55d;
 	border: 0.2vh solid #00b55d;
 	cursor: pointer;
+	margin: 2vh 0;
 	padding: 1vh 2vh;
 	transition-duration: 0.4s;
 }
@@ -563,7 +565,7 @@ input[type=submit]:hover {
 
 	.project {
 		flex-wrap: nowrap;
-		margin: 0 10vh;
+		margin: 0 5vh;
 		margin-bottom: 5vh;
 	}
 
