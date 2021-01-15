@@ -22,6 +22,11 @@ body {
 	text-decoration: underline;
 } */
 
+h2, h3 {
+	color:#222222;
+	font-family: Inconsolata-Regular, Helvetica, Arial, sans-serif;
+}
+
 /* Main Website Structure Flexbox */
 #main {
 	/* color:#f0f0f0; */
@@ -67,7 +72,7 @@ body {
     justify-content: space-between;
     align-items: center;
     /* box-shadow: 0 0.1vh 1vh rgb(75, 75, 75); */
-	font-family: Inconsolata-Regular, Arial, Helvetica, sans-serif;
+	font-family: Inconsolata-Regular, Helvetica, Arial, sans-serif;
 	overflow:hidden;
 	z-index:6;	/* Displays above overlay and page content */
 	transition: 300ms background-color ease-in-out;
@@ -159,7 +164,7 @@ body {
 	position: absolute;
 	text-align: center;
 	color: #f0f0f0;
-	font-family: Inconsolata-Regular, Arial, Helvetica, sans-serif;
+	font-family: Inconsolata-Regular, Helvetica, Arial, sans-serif;
 	padding: 0 5vh;
 }
 
@@ -172,6 +177,7 @@ body {
 #banner h2 {
 	font-weight: 400;
 	font-size: 1.25rem;
+	color: #f0f0f0;
 }
 
 /* Settings for the particles in the BG */
@@ -192,7 +198,7 @@ body {
 	min-height: 10vh;
 	justify-content: center;
 	align-items: center;
-	font-family: Inconsolata-Regular, Arial, Helvetica, sans-serif;
+	font-family: Inconsolata-Regular, Helvetica, Arial, sans-serif;
 }
 
 #infoRec div {
@@ -235,7 +241,7 @@ body {
 	min-height: 15vh;
 	background-color: #25292b;
 	color: #f0f0f0;
-	font-family: Inconsolata-Regular, Arial, Helvetica, sans-serif;
+	font-family: Inconsolata-Regular, Helvetica, Arial, sans-serif;
 	font-size: 1.2rem;
 	padding: 3vh 1vh;
 }
@@ -282,7 +288,7 @@ body {
 }
 
 .project {
-	font-family: Inconsolata-Regular, Arial, Helvetica, sans-serif;
+	font-family: Inconsolata-Regular, Helvetica, Arial, sans-serif;
 	display: flex;
 	flex-wrap: wrap;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -316,7 +322,7 @@ body {
 }
 
 .projectTxt button {
-	font-family: Inconsolata-Regular, Arial, Helvetica, sans-serif;
+	font-family: Inconsolata-Regular, Helvetica, Arial, sans-serif;
 	font-size: 1rem;
 	color: #f0f0f0;
 	background-color: #00b55d;
@@ -377,7 +383,6 @@ body {
 	justify-content: center;
 	align-items: center;
 	/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-	padding: 1vh 0;
 }
 
 #emailForm {
@@ -402,7 +407,7 @@ textarea {
 }
 
 input[type=submit] {
-	font-family: Inconsolata-Regular, Arial, Helvetica, sans-serif;
+	font-family: Inconsolata-Regular, Helvetica, Arial, sans-serif;
 	font-size: 1.1rem;
 	color: #f0f0f0;
 	background-color: #00b55d;
