@@ -397,7 +397,7 @@ input[type=text], textarea {
 
 textarea {
 	resize: vertical;
-	min-height: 3rem;
+	min-height: 10rem;
 }
 
 input[type=submit] {
