@@ -19,16 +19,15 @@ function menuToggle() {
         /* Reverts overlay opacity to show page content*/
         document.querySelector(".navOverlay").style.backgroundColor = "rgba(0, 0, 0, 0)";
     }
-
     /* menuItems.forEach(item => item.classList.toggle('menuitems_show')); */
     
-    /* Might be slightly more efficient than forEach? */
     menu.classList.toggle("menuitems_show");
 }
 
 /* Adds menuToggle as an event */
 if (toggle){
     toggle.addEventListener('click', menuToggle);
+    console.log("event listener added");
 }
 
 
@@ -59,10 +58,6 @@ window.addEventListener('orientationchange', () => {
 particlesJS.load('particles-js', '/particles.json', function() {
     console.log('callback - particles.js config loaded');
 });
-
-/* AOS.init({
-    duration: 1200,
-}); */
 
 /* Swup instance */
 /* const swup = new Swup(); */
