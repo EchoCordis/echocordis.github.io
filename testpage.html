@@ -39,8 +39,8 @@
 	</nav>
 	<div id="banner">
 		<div class="bannerText">
-			<h1 data-aos="fade-up" data-aos-duration="100000000">TEST PAGE</h1>
-			<h2>This is a test description to test how long the description can go for. Yabble dabble do.</h2>
+			<h1 data-aos="fade-up">TEST PAGE</h1>
+			<h2 data-aos="fade-up" data-aos-delay="500">This is a test description to test how long the description can go for. Yabble dabble do.</h2>
 		</div>
 		<div id="particles-js"></div>
 	</div>
@@ -154,7 +154,9 @@
 		© 2021 Donavan Le
 	</div>
 	<script>
-		AOS.init();
+		AOS.init({
+			duration: "1000",
+		});
    </script>
 </body>
 </html>
