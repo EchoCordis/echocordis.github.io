@@ -60,6 +60,10 @@ particlesJS.load('particles-js', '/particles.json', function() {
     console.log('callback - particles.js config loaded');
 });
 
+/* AOS.init({
+    duration: 1200,
+}); */
+
 /* Swup instance */
 /* const swup = new Swup(); */
 
