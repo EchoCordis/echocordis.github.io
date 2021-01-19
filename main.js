@@ -43,6 +43,10 @@ window.addEventListener('orientationchange', () => {
     if (!toggleInfo) {
         menuToggle();
     }
+    if (toggle){
+        toggle.addEventListener('click', menuToggle);
+        console.log("event listener added");
+    }
 });
 
 /* document.addEventListener('click', (e) => {
