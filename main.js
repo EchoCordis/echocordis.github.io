@@ -59,8 +59,6 @@ window.addEventListener('orientationchange', () => {
     }
 }); */
 
-
-
 /* Swup instance */
 /* const swup = new Swup(); */
 

@@ -203,12 +203,12 @@ h2, h3 {
 #indexBanner h1 {
 	text-align: center;
 	text-decoration: none;
-	font-size: 5rem;
+	font-size: 2rem;
 }
 
 #indexBanner h2 {
 	font-weight: 400;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	color: #f0f0f0;
 	font-family: Inconsolata-Regular, Helvetica, Arial, sans-serif;
 }
@@ -485,6 +485,14 @@ input[type=submit]:hover {
 	#banner h2 {
 		font-size: 1.25rem;
 	}
+
+	#indexBanner h1{
+		font-size: 3rem;
+	}
+
+	#indexBanner h2 {
+		font-size: 1.25rem;
+	}
 }
 
 /* Tablet layout - Landscape */
@@ -519,6 +527,10 @@ input[type=submit]:hover {
 	}
 
 	#banner h1{
+		font-size: 3rem;
+	}
+
+	#indexBanner h1{
 		font-size: 3rem;
 	}
 }
@@ -586,6 +598,14 @@ input[type=submit]:hover {
 	}
 
 	#banner h2 {
+		font-size: 1.5rem;
+	}
+
+	#indexBanner h1{
+		font-size: 5rem;
+	}
+
+	#indexBanner h2 {
 		font-size: 1.5rem;
 	}
 
