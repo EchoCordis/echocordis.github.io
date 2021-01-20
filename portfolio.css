@@ -75,7 +75,6 @@ h2, h3 {
 	font-family: Inconsolata-Regular, Helvetica, Arial, sans-serif;
 	overflow:hidden;
 	z-index:6;	/* Displays above overlay and page content */
-	transition: 300ms background-color ease-in-out;
 }
 
 .navbar_opac {
@@ -181,6 +180,7 @@ h2, h3 {
 	font-family: Inconsolata-Regular, Helvetica, Arial, sans-serif;
 }
 
+/* Special version of the banner for the index page only */
 #indexBanner {
 	position: absolute; 
 	top: 0; 

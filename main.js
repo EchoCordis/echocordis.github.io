@@ -1,3 +1,8 @@
+/* Loads the particles.js module onto the page */
+particlesJS.load('particles-js', '/particles.json', function() {
+    console.log('callback - particles.js config loaded');
+});
+
 /* The navbar's toggle button on mobile */
 const toggle = document.querySelector(".menutoggle");
 /* The navbar on mobile */
@@ -54,10 +59,7 @@ window.addEventListener('orientationchange', () => {
     }
 }); */
 
-/* Loads the particles.js module onto the page */
-particlesJS.load('particles-js', '/particles.json', function() {
-    console.log('callback - particles.js config loaded');
-});
+
 
 /* Swup instance */
 /* const swup = new Swup(); */
