@@ -25,10 +25,7 @@ function menuToggle() {
 }
 
 /* Adds menuToggle as an event */
-if (toggle){
-    toggle.addEventListener('click', menuToggle);
-    console.log("event listener added");
-}
+toggle.addEventListener('click', menuToggle);
 
 
 /* Closes navbar menu when the device's size is changed. */
@@ -45,7 +42,6 @@ window.addEventListener('orientationchange', () => {
     }
     if (toggle){
         toggle.addEventListener('click', menuToggle);
-        console.log("event listener added");
     }
 });
 
