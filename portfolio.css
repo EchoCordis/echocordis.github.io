@@ -405,7 +405,7 @@ h2, h3 {
 
 .indexLinkIcon {
 	color: white;
-	font-size: 3rem;
+	font-size: 2rem;
 	margin: 1em;
 }
 
@@ -502,7 +502,12 @@ input[type=submit]:hover {
 	}
 
 	#indexBanner h2 {
-		font-size: 1.25rem;
+		font-size: 1.35rem;
+	}
+
+
+	.indexLinkIcon {
+		font-size: 2.5rem;
 	}
 }
 
@@ -543,6 +548,14 @@ input[type=submit]:hover {
 
 	#indexBanner h1{
 		font-size: 3rem;
+	}
+
+	#indexBanner h2 {
+		font-size: 1.35rem;
+	}
+
+	.indexLinkIcon {
+		font-size: 2.5rem;
 	}
 }
 
@@ -636,6 +649,10 @@ input[type=submit]:hover {
 		flex-wrap: nowrap;
 		margin: 0 5vh;
 		margin-bottom: 5vh;
+	}
+
+	.indexLinkIcon {
+		font-size: 3rem;
 	}
 
 /* 	#emailForm {
