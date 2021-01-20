@@ -181,6 +181,38 @@ h2, h3 {
 	font-family: Inconsolata-Regular, Helvetica, Arial, sans-serif;
 }
 
+#indexBanner {
+	position: absolute; 
+	top: 0; 
+	left: 0;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.indexBannerText {
+	position: absolute;
+	text-align: center;
+	color: #f0f0f0;
+	font-family: Inconsolata-Regular, Helvetica, Arial, sans-serif;
+	padding: 0 5vh;
+}
+
+#indexBanner h1 {
+	text-align: center;
+	text-decoration: none;
+	font-size: 5rem;
+}
+
+#indexBanner h2 {
+	font-weight: 400;
+	font-size: 1.5rem;
+	color: #f0f0f0;
+	font-family: Inconsolata-Regular, Helvetica, Arial, sans-serif;
+}
+
 /* Settings for the particles in the BG */
 #particles-js {
 	/* background-color: #000000; */
