@@ -213,6 +213,24 @@ h2, h3 {
 	font-family: Inconsolata-Regular, Helvetica, Arial, sans-serif;
 }
 
+#indexButton {
+	font-family: Inconsolata-Regular, Helvetica, Arial, sans-serif;
+	font-size: 1.5rem;
+	color: #f0f0f0;
+	background-color: #00b55d;
+	border: 0.2vh solid #00b55d;
+	cursor: pointer;
+	padding: 1vh 2vh;
+	margin: 3vh 0 2vh 0;
+}
+
+#indexButton:hover {
+	background-color: #f0f0f0;
+	border: 0.2vh solid #00b55d;
+	color: rgb(27, 27, 27);
+	transition: background-color 0.4s;
+}
+
 /* Settings for the particles in the BG */
 #particles-js {
 	/* background-color: #000000; */
@@ -504,7 +522,6 @@ input[type=submit]:hover {
 	#indexBanner h2 {
 		font-size: 1.35rem;
 	}
-
 
 	.indexLinkIcon {
 		font-size: 2.5rem;
