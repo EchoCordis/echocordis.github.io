@@ -4,11 +4,12 @@
 	<title>Donavan Le - Projects</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/portfolio.css">
 	<meta content="utf-8" http-equiv="encoding">
+	<link rel="stylesheet" href="/portfolio.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<script src="https://kit.fontawesome.com/46b8ebbbd6.js" crossorigin="anonymous"></script>
-	<script src="/main.js" async defer></script>
 	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 	<!-- Favicon for the different platforms -->
 	<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
@@ -33,8 +34,8 @@
 	</nav>
 	<div id="banner">
 		<div class="bannerText">
-			<h1>PROJECTS</h1>
-			<h2>A comprehensive list of my latest projects.</h2>
+			<h1 data-aos="fade-up">PROJECTS</h1>
+			<h2 data-aos="fade-up" data-aos-delay="500">A comprehensive list of my latest projects.</h2>
 		</div>
 		<div id="particles-js"></div>
 	</div>
@@ -44,7 +45,7 @@
 		<div></div>
 		<div id="middlecol">
 			<div id="projectCase">
-				<div class="project">
+				<div class="project" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
 					<div class="projectImg">
 						<img src="/images/structure.jpg">
 					</div>
@@ -55,7 +56,7 @@
 						<button onclick="window.location.href='/projects">View Project</button>
 					</div>
 				</div>
-				<div class="project">
+				<div class="project" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
 					<div class="projectImg">
 						<img src="/images/structure.jpg">
 					</div>
@@ -66,7 +67,7 @@
 						<button onclick="window.location.href='/projects/zenith';">View Project</button>
 					</div>
 				</div>
-				<div class="project">
+				<div class="project" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
 					<div class="projectImg">
 						<img src="/images/structure.jpg">
 					</div>
@@ -89,5 +90,13 @@
 		</div>
 		© 2021 Donavan Le
 	</div>
+	<!-- Main.js goes here so that querySelector works. -->
+	<script src="/main.js" async defer></script>
+	<script>
+		AOS.init({
+			once: true,
+			duration: "1000",
+		});
+	</script>
 </body>
 </html>

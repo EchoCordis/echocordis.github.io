@@ -5,11 +5,12 @@
 	<title>Donavan Le - About</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/portfolio.css">
 	<meta content="utf-8" http-equiv="encoding">
+	<link rel="stylesheet" href="/portfolio.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<script src="https://kit.fontawesome.com/46b8ebbbd6.js" crossorigin="anonymous"></script>
-	<script src="/main.js" async defer></script>
 	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 	<!-- Favicon for the different platforms -->
 	<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
@@ -27,7 +28,7 @@
 	<nav>
 		<ul id="navbar">
             <li class="logotext">Donavan Le</li>
-            <li class="menuitem" id="currentPage" tabindex="0"><a href="#">About</a></li>
+            <li class="menuitem" tabindex="0"><a href="#" id="currentPage">About</a></li>
             <li class="menuitem"><a href="projects">Projects</a></li>
             <li class="menuitem"><a href="contact">Contact</a></li>
 			<li class="menutoggle"><a href="javascript:void(0);"><i class="fas fa-bars"></i></a></li>
@@ -35,24 +36,12 @@
 	</nav>
 	<div id="banner">
 		<div class="bannerText">
-			<h1>ABOUT ME</h1>
-			<h2>This is a test description to test how long the description can go for. Yabble dabble do.</h2>
+			<h1 data-aos="fade-up">ABOUT ME</h1>
+			<h2 data-aos="fade-up" data-aos-delay="500">This is a test description to test how long the description can go for. Yabble dabble do.</h2>
 		</div>
 		<div id="particles-js"></div>
 	</div>
 	<div id="infoRec">
-		<div>
-			<h2>Role</h2>
-			<p>Creator</p>
-		</div>
-		<div>
-			<h2>Context</h2>
-			<p>Personal Project</p>
-		</div>
-		<div>
-			<h2>Date</h2>
-			<p>2021</p>
-		</div>
 	</div>
 	<div id="main">
 		<div></div>
@@ -79,5 +68,13 @@
 		</div>
 		© 2021 Donavan Le
 	</div>
+	<!-- Main.js goes here so that querySelector works. -->
+	<script src="/main.js" async defer></script>
+	<script>
+		AOS.init({
+			once: true,
+			duration: "1000",
+		});
+   </script>
 </body>
 </html>
