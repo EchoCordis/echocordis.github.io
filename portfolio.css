@@ -496,6 +496,12 @@ input[type=submit]:hover {
 	color: black;
 }
 
+#contactList {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
 /* <---- Settings for Other Devices ----> */
 
 /* Tablet layout - Portrait */
