@@ -58,6 +58,7 @@ h2, h3 {
 
 #middlecol h1 {
 	font-family: Helvetica, Arial, sans-serif;
+	border-bottom: 0.25rem solid #00b55d;
 }
 
 #middlecol h2 {
@@ -138,8 +139,6 @@ h2, h3 {
 /* Indicates the currently accessed page */
 #currentPage {
 	color:#00b55d !important;
-	text-decoration: underline #00b55d;
-	/* text-decoration-thickness: 0.2rem; */
 	pointer-events: none;
 	cursor:default;
 }
