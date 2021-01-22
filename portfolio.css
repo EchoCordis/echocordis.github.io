@@ -348,6 +348,15 @@ h2, h3 {
 	bottom: -1vh;
 }
 
+.midtextLink {
+	transition: all 0.3s ease-in-out 0s;
+	color: #00ec7a !important;
+}
+
+.midtextLink:hover {
+	color: #008344 !important;
+}
+
 .project {
 	font-family: Inconsolata-Regular, Helvetica, Arial, sans-serif;
 	display: flex;
