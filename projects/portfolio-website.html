@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Donavan Le | Portfolio Website</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta content="utf-8" http-equiv="encoding">
+	<link rel="stylesheet" href="/portfolio.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<script src="https://kit.fontawesome.com/46b8ebbbd6.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+	<!-- Favicon for the different platforms -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+	<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="/images/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+	<div class="navOverlay"></div>
+	<a name="top"></a>
+	<nav>
+		<ul id="navbar">
+            <li class="logotext">Donavan Le</li>
+            <li class="menuitem" tabindex="0"><a href="/about">About</a></li>
+            <li class="menuitem"><a href="/projects">Projects</a></li>
+            <li class="menuitem"><a href="/contact">Contact</a></li>
+			<li class="menutoggle"><a href="javascript:void(0);"><i class="fas fa-bars"></i></a></li>
+        </ul>
+	</nav>
+	<div id="banner">
+		<div class="bannerText">
+			<h1 data-aos="fade-up">PERSONAL PORTFOLIO WEBSITE</h1>
+			<h2 data-aos="fade-up" data-aos-delay="500">
+				A personal portfolio website built to showcase my projects.
+			</h2>
+		</div>
+		<div id="particles-js"></div>
+	</div>
+	<div id="infoRec">
+		<table id="infoTable">
+			<tr>
+				<th><h2>Role</h2></th>
+				<th><h2>Context</h2></th>
+				<th><h2>Date</h2></th>
+			</tr>
+			<tr>
+				<td>Creator</td>
+				<td>Personal Project</td>
+				<td>2021</td>
+			</tr>
+		</table>
+	</div>
+	<div id="overview">
+		<table id="ovTable">
+			<tr>
+				<th colspan="2"><h2>OVERVIEW</h2></th>
+			</tr>
+			<tr>
+				<td colspan="2">
+					Zenith was developed during a group assignment that was structured similarily to a game jam, which required the project to incorporate two themes: 
+					<span class="greenHighlight">"Let's try this again"</span> & <span class="greenHighlight">"Change your perspective"</span>.
+					<br><br>This project was developed in partnership with Thalia Johnson and Peter Deghaim.
+				</td>
+			</tr>
+			<tr>
+				<td><a href="https://thesaxyshay.itch.io/zenith" target="_blank" class="links"><i class="fab fa-itch-io"></i> View Site <i class="fas fa-arrow-right"></i></a></td>
+			</tr>
+		</table>
+	</div>
+	<div id="main">
+		<div></div>
+		<div id="middlecol">
+			<p>
+				My preferred future career would be a career as a <span class="highlight">game developer</span>. It
+				wouldn't matter if I worked for a major gaming company or as an independent game developer. However, I
+				wouldn't mind
+				working for a company like <span class="highlight">Valve or Nintendo</span>, as they have made some of
+				my favourite games. Personally, I want to develop a game inspired by Kingdom Hearts and the game should
+				have a fast-paced combat system.
+				It would be pretty difficult for me to make design and develop a game all by myself, as I'm not a good
+				artist or a musician because art and music are extremely important for a good game. I could always just
+				make a text-based adventure game, but that would be pretty boring.
+			</p>
+		</div>
+		<div></div>
+	</div>
+	<div id="footer">
+		<div class="linkSet">
+			<a href="mailto:donavan.le@gmail.com" class="linkIcon"><i class="fas fa-envelope"></i></a>
+			<a href="https://github.com/EchoCordis" class="linkIcon" target="_blank"><i class="fab fa-github"></i></a>
+			<a href="https://www.linkedin.com/in/donavan-le-573831183/" class="linkIcon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+		</div>
+		© 2021 Donavan Le
+	</div>
+	<!-- Main.js goes here so that querySelector works. -->
+	<script src="/main.js" async defer></script>
+	<script>
+		AOS.init({
+			once: true,
+			duration: "1000",
+		});
+   </script>
+</body>
+</html>
