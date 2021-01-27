@@ -3,9 +3,10 @@
         $to = "donavan.le@gmail.com";
         $from = $_POST['email'];
         $name = $_POST['name'];
-        $subject = $_POST['subject'];
+        $subject = "Portfolio Contact - " . $_POST['subject'];
         $message = "A message from: " .$name. ".\n\n". $_POST['message'];
 
+        $headers = 'MIME-Version: 1.0' . "\r\n";
         $headers .= 'Content-Type: text/html; charset=utf-8' . "\r\n";
         $headers .= "From:" . $from;
 
