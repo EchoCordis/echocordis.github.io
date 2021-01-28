@@ -511,10 +511,6 @@ input[type=submit]:disabled {
 	cursor: not-allowed;
 }
 
-.error {
-	color: rgb(197, 31, 31);
-}
-
 #contactList {
 	margin: 0;
 	padding: 0;
