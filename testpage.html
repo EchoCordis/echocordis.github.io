@@ -104,14 +104,15 @@
 			<div id="emailDiv">
 				<form id="emailForm" method="POST">
 				<!-- <form id="emailForm" method="POST" action="/emailform.php"> -->
-					<input type="text" name="name" placeholder="Name" required
+					<input type="text" name="name" placeholder="Name *" required
 						oninvalid="this.setCustomValidity('Please enter your name!')">
-					<input type="email" name="email" placeholder="Email Address" required
+					<input type="email" name="email" placeholder="Email Address *" required
 						oninvalid="this.setCustomValidity('Please enter a valid email!')">
-					<input type="text" name="subject" placeholder="Subject" required
+					<input type="text" name="subject" placeholder="Subject *" required
 						oninvalid="this.setCustomValidity('Please enter a subject!')">
-					<textarea name="message" placeholder="Your Message" required
-						oninvalid="this.setCustomValidity('Please enter your message!')"></textarea>
+					<textarea name="message" placeholder="Your Message *" required
+						oninvalid="this.setCustomValidity('Please enter your message!')"
+						oninput="setCustomValidity('')"></textarea>
 					<input type="submit" value="Send Message">
 				</form>
 			</div>
