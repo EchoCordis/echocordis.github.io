@@ -505,6 +505,16 @@ input[type=submit]:hover {
 	color: black;
 }
 
+input[type=submit]:disabled {
+	background-color: #00b55e88;
+	color: #f0f0f0;
+	cursor: not-allowed;
+}
+
+.error {
+	color: rgb(197, 31, 31);
+}
+
 #contactList {
 	margin: 0;
 	padding: 0;

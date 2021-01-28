@@ -13,5 +13,8 @@
 
             mail($to,$subject,$message,$headers);
         }
+        else {
+            echo("Not a valid email address!");
+        }
     }
 ?>
