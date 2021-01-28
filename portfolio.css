@@ -470,7 +470,7 @@ h2, h3 {
 	width: 100%;
 }
 
-input[type=text], textarea {
+input[type=text], input[type=email], textarea {
 	border: none;
 	border-bottom: 0.2rem solid #00b55d;
 	background-color: #f0f0f0;
