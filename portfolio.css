@@ -362,7 +362,7 @@ h2, h3 {
 	display: flex;
 	flex-wrap: wrap;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	min-height: 35vh;
+	min-height: 40vh;
 	width: auto;
 	margin-bottom: 5vh;
 }
@@ -371,6 +371,8 @@ h2, h3 {
 	background-color: #262e33;
 	flex-grow: 1;
 	overflow: hidden;
+	height: 40vh;
+	width:65%; 
 }
 
 .projectImg img {
