@@ -117,16 +117,20 @@
 				<!-- <form id="emailForm" method="POST" action="/emailform.php"> -->
 					<input type="text" name="name" placeholder="Name *" required
 						oninvalid="this.setCustomValidity('Please enter your name!')"
-						oninput="setCustomValidity('')">
+						oninput="setCustomValidity('')"
+						title="Please enter your name!">
 					<input type="email" name="email" placeholder="Email Address *" required
 						oninvalid="this.setCustomValidity('Please enter a valid email!')"
-						oninput="setCustomValidity('')">
+						oninput="setCustomValidity('')"
+						title="Please enter a valid email!">
 					<input type="text" name="subject" placeholder="Subject *" required
 						oninvalid="this.setCustomValidity('Please enter a subject!')"
-						oninput="setCustomValidity('')">
+						oninput="setCustomValidity('')"
+						title="Please enter a subject!">
 					<textarea name="message" placeholder="Your Message *" required
 						oninvalid="this.setCustomValidity('Please enter your message!')"
-						oninput="setCustomValidity('')"></textarea>
+						oninput="setCustomValidity('')"
+						title="Please enter your message!"></textarea>
 					<input type="submit" name="submit" value="Send Message">
 				</form>
 			</div>
