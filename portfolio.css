@@ -536,17 +536,17 @@ input[type=submit]:disabled {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
-.contactBox-email:hover {
+.contactBox-email {
 	color:#f0f0f0;
 	background-color: #00b55d;
 }
 
-.contactBox-github:hover {
+.contactBox-github {
 	color:#f0f0f0;
 	background-color: #211f1f;
 }
 
-.contactBox-linkedin:hover {
+.contactBox-linkedin {
 	color:#f0f0f0;
 	background-color: #0077B5;
 }
@@ -742,9 +742,26 @@ input[type=submit]:disabled {
 		font-size: 3rem;
 	}
 
-/* 	#emailForm {
-		width: 80%;
-	} */
+	[class^="contactBox"] {
+		background-color:#f0f0f0;
+		color:#000000;
+	}
+	
+
+	.contactBox-email:hover {
+		color:#f0f0f0;
+		background-color: #00b55d;
+	}
+	
+	.contactBox-github:hover {
+		color:#f0f0f0;
+		background-color: #211f1f;
+	}
+	
+	.contactBox-linkedin:hover {
+		color:#f0f0f0;
+		background-color: #0077B5;
+	}	
 }
 
 /* <---- Animations ----> */
