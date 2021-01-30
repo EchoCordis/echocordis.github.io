@@ -518,7 +518,7 @@ input[type=submit]:disabled {
 	justify-content: center;
 }
 
-.contactBox {
+[class^="contactBox"] {
 	background-color:#f0f0f0;
 	color:#000000;
 	font-size: 1rem;
@@ -527,22 +527,40 @@ input[type=submit]:disabled {
 	width: 27vh;
 	margin: 1vh;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	transition: background-color 0.3s ease;
+	transition: all 0.3s ease;
 	text-align: center;
-}
-
-.contactBox:hover {
-	background-color: #00b55d;
-}
-
-.contactBox h2 {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
-.contactIcon {
+[class^="contactBox"] h2 {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.contactBox-email:hover {
+	color:#f0f0f0;
+	background-color: #00b55d;
+}
+
+.contactBox-email a:hover {
+	color:#f0f0f0;
+	background-color: #00b55d;
+}
+
+.contactBox-github:hover {
+	color:#f0f0f0;
+	background-color: #211f1f;
+}
+
+.contactBox-linkedin:hover {
+	color:#f0f0f0;
+	background-color: #0077B5;
+}
+
+[class^="contactIcon"] {
 	font-size: 3rem;
 	margin: 0.5em 1em 0 1em;
 }
+
 
 /* <---- Settings for Other Devices ----> */
 
