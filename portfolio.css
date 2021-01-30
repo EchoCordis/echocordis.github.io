@@ -27,7 +27,7 @@ h2, h3 {
 	background-color:#f0f0f0;
 	color:#000000;
 	width: 100%;
-	min-height: 80vh;
+	min-height: 50vh;
 	height: auto;
 	display: flex;
 	flex-basis: 0 0 50%;
@@ -80,18 +80,11 @@ h2, h3 {
 	z-index:6;	/* Displays above overlay and page content */
 }
 
-.navbar_opac {
-	background-color: rgba(38, 46, 51, 0) !important;
-}
-
-.navbar_filled {
-	background-color: rgb(38, 46, 51) !important;
-}
-
 #navbar li {
     list-style-type: none;
 }
 
+/* The links in the navbar */
 #navbar li a:link, #navbar li a:visited{
     position: relative;
     color:#f2f2f2;
@@ -160,6 +153,7 @@ h2, h3 {
 	align-items: center;
 }
 
+/* Container for all of the text in the banner */
 .bannerText {
 	position: absolute;
 	text-align: center;
@@ -193,6 +187,7 @@ h2, h3 {
 	align-items: center;
 }
 
+/* Container for the text in the index page's banner */
 .indexBannerText {
 	position: absolute;
 	text-align: center;
@@ -214,6 +209,7 @@ h2, h3 {
 	font-family: Inconsolata-Regular, Helvetica, Arial, sans-serif;
 }
 
+/* Special button for the index page that goes to the projects page */
 #indexButton {
 	font-family: Inconsolata-Regular, Helvetica, Arial, sans-serif;
 	font-size: 1.5rem;
@@ -240,6 +236,7 @@ h2, h3 {
 	z-index: -10;
 }
 
+/* Container for the basic info for each project page */
 #infoRec {
 	display:flex;
 	flex-wrap: nowrap;
@@ -264,6 +261,10 @@ h2, h3 {
 	text-transform: uppercase;
 }
 
+/* 
+	Table that contains the info for the project page.
+	Each table has Role, Context and Date.
+*/
 #infoTable {
 	width: 100%;
 	min-height: 10vh;
@@ -282,6 +283,7 @@ h2, h3 {
 	padding-bottom: 4vh;
 }
 
+/* Container for the overview section for individual project pages */
 #overview {
 	display:flex;
 	flex-wrap: nowrap;
@@ -306,6 +308,7 @@ h2, h3 {
 	text-transform: uppercase;
 }
 
+/* Overview table inside the overview div for the information */
 #ovTable {
 	text-align: center;
 }
@@ -317,10 +320,12 @@ h2, h3 {
 	line-height: 1.5rem;
 }
 
+/* Links in the overview table that links to the project's website(s) */
 .links {
 	position: relative;
 }
 
+/* Underline for the links in the overview table */
 .links::before {
 	content: "";
 	position: absolute;
@@ -337,6 +342,7 @@ h2, h3 {
 	bottom: -1vh;
 }
 
+/* Styling for links located in the middle of text */
 .midtextLink {
 	transition: all 0.3s ease-in-out 0s;
 	color: #00ec7a !important;
@@ -346,6 +352,7 @@ h2, h3 {
 	color: #008344 !important;
 }
 
+/* Container for each project on the Projects page */
 .project {
 	font-family: Inconsolata-Regular, Helvetica, Arial, sans-serif;
 	display: flex;
@@ -356,6 +363,7 @@ h2, h3 {
 	margin-bottom: 5vh;
 }
 
+/* The container for each image inside each project div */
 .projectImg {
 	background-color: #262e33;
 	flex-grow: 1;
@@ -364,6 +372,7 @@ h2, h3 {
 	width:65%; 
 }
 
+/* The image inside the project divs */
 .projectImg img {
 	object-fit: fill;
 	width:100%; 
@@ -373,15 +382,18 @@ h2, h3 {
 	overflow: hidden;
 }
 
+/* Causes the image to zoom in on hover */
 .projectImg:hover img {
 	transform: scale(1.3);
 }
 
+/* Container for the text inside each project div */
 .projectTxt {
 	flex-grow: 0.5;
 	padding: 2vh 3vh;
 }
 
+/* Button inside the projectTxt that links to the individual project page */
 .projectTxt button {
 	font-family: Inconsolata-Regular, Helvetica, Arial, sans-serif;
 	font-size: 1rem;
@@ -399,10 +411,12 @@ h2, h3 {
 	color: black;
 }
 
+/* Text that gives brief summary of the prog languages/software/technique used in each project */
 .tags {
 	color: #8d8d8d;
 }
 
+/* Footer at the bottom of the page */
 #footer {
 	background-color: #262e33;
 	color: #a7a7a7;
@@ -413,6 +427,7 @@ h2, h3 {
 	text-align:center;
 }
 
+/* Container for the links in the footer */
 .linkSet{
 	display:flex;
 	flex-wrap: wrap;
@@ -420,6 +435,7 @@ h2, h3 {
 	align-items: center;
 }
 
+/* Styling for the icons for each link in the footer */
 .linkIcon {
 	color: white;
 	font-size: 2rem;
@@ -431,6 +447,7 @@ h2, h3 {
 	transition: color 0.5s ease;
 }
 
+/* Special styling for the icons on the index page */
 .indexLinkIcon {
 	color: white;
 	font-size: 2rem;
@@ -446,20 +463,24 @@ h2, h3 {
 	color:#ffd728;
 }
 
+/* Highlight for important text on the page */
 .greenHighlight {
 	color: #00ec7a;
 }
 
+/* Container for the email contact form */
 #emailDiv {
 	display:flex;
 	justify-content: center;
 	align-items: center;
 }
 
+/* The email form */
 #emailForm {
 	width: 100%;
 }
 
+/* Styling for each element in the contact form */
 input[type=text], input[type=email], textarea {
 	border: none;
 	border-bottom: 0.2rem solid #00b55d;
@@ -477,6 +498,7 @@ textarea {
 	min-height: 10rem;
 }
 
+/* Styling for the submit button in the contact form */
 input[type=submit] {
 	font-family: Inconsolata-Regular, Helvetica, Arial, sans-serif;
 	font-size: 1.1rem;
@@ -508,6 +530,10 @@ input[type=submit]:disabled {
 	justify-content: center;
 }
 
+/* 
+	All of the individual boxes for the different contact methods.
+	Each box is separated so that the boxes can have different background colours. 
+*/
 [class^="contactBox"] {
 	background-color:#f0f0f0;
 	color:#000000;
@@ -522,25 +548,30 @@ input[type=submit]:disabled {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
+/* Changes font for all h2 in contactBox */
 [class^="contactBox"] h2 {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
+/* Contact box for email */
 .contactBox-email {
 	color:#f0f0f0;
 	background-color: #00b55d;
 }
 
+/* Contact box for GitHub link */
 .contactBox-github {
 	color:#f0f0f0;
 	background-color: #211f1f;
 }
 
+/* Contact box for LinkedIn link */
 .contactBox-linkedin {
 	color:#f0f0f0;
 	background-color: #0077B5;
 }
 
+/* Selector for the icons in each contactBox */
 [class^="contactIcon"] {
 	font-size: 3rem;
 	margin: 0.5em 1em 0 1em;
@@ -732,12 +763,15 @@ input[type=submit]:disabled {
 		font-size: 3rem;
 	}
 
+	/* 
+		Different styling for the contactBoxes on desktop.
+		contactBoxes change colour on hover instead of being permanently coloured. 
+	*/
 	[class^="contactBox"] {
 		background-color:#f0f0f0;
 		color:#000000;
 	}
 	
-
 	.contactBox-email:hover {
 		color:#f0f0f0;
 		background-color: #00b55d;
