@@ -520,10 +520,10 @@ input[type=submit]:disabled {
 
 .contactBox {
 	background-color:#f0f0f0;
+	color:#000000;
 	font-size: 1rem;
 	line-height: 2.5rem;
-	cursor: pointer;
-	border: none;
+	text-decoration: none;
 	width: 27vh;
 	margin: 1vh;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
