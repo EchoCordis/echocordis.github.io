@@ -513,10 +513,18 @@ input[type=submit]:disabled {
 	cursor: not-allowed;
 }
 
-#contactList {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+#contactContainer {
+	display: flex;
+}
+
+.contactBox {
+	width: 35vh;
+	margin: 1vh;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contactBox:hover {
+	background-color: #00b55d;
 }
 
 /* <---- Settings for Other Devices ----> */
