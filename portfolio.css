@@ -598,12 +598,16 @@ input[type=submit]:disabled {
 		height: 5.5vh;
 	}
 
+	#banner {
+		height: 50vh;
+	}
+
 	#banner h1{
 		font-size: 3rem;
 	}
 
 	#banner h2 {
-		font-size: 1.25rem;
+		font-size: 1.4rem;
 	}
 
 	#indexBanner h1{
@@ -652,6 +656,10 @@ input[type=submit]:disabled {
 
 	#banner h1{
 		font-size: 3rem;
+	}
+
+	#banner h2 {
+		font-size: 1.4rem;
 	}
 
 	#indexBanner h1{
