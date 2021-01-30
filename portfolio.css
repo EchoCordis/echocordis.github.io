@@ -465,7 +465,6 @@ h2, h3 {
 	display:flex;
 	justify-content: center;
 	align-items: center;
-	/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
 #emailForm {
@@ -515,12 +514,16 @@ input[type=submit]:disabled {
 
 #contactContainer {
 	display: flex;
+	flex-wrap:wrap;
+	justify-content: center;
 }
 
 .contactBox {
-	width: 35vh;
+	width: 25vh;
 	margin: 1vh;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: background-color 0.3s ease;
+	text-align: center;
 }
 
 .contactBox:hover {
