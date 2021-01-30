@@ -16,15 +16,9 @@ body {
 	padding-top: 10vh;
 	/* animation: fadeIn 1.5s ease; */
 }
-/* h1 {
-	text-align: left;
-	font-family: Helvetica, Arial, sans-serif;
-	text-decoration: underline;
-} */
 
 h2, h3 {
-	/* color:#222222; */
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 /* Main Website Structure Flexbox */
