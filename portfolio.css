@@ -501,6 +501,7 @@ input[type=submit]:disabled {
 	cursor: not-allowed;
 }
 
+/* Flex container for the contact boxes on contact page */
 #contactContainer {
 	display: flex;
 	flex-wrap:wrap;
