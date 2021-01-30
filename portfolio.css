@@ -519,7 +519,12 @@ input[type=submit]:disabled {
 }
 
 .contactBox {
-	width: 25vh;
+	background-color:#f0f0f0;
+	font-size: 1rem;
+	line-height: 2.5rem;
+	cursor: pointer;
+	border: none;
+	width: 27vh;
 	margin: 1vh;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	transition: background-color 0.3s ease;
@@ -528,6 +533,15 @@ input[type=submit]:disabled {
 
 .contactBox:hover {
 	background-color: #00b55d;
+}
+
+.contactBox h2 {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.contactIcon {
+	font-size: 3rem;
+	margin: 0.5em 1em 0 1em;
 }
 
 /* <---- Settings for Other Devices ----> */
