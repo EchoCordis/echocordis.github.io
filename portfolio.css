@@ -578,7 +578,7 @@ input[type=submit]:disabled {
 }
 
 #slideshowContainer {
-	max-width: 1000px;
+	max-width: 50vh;
 	position: relative;
 	margin: auto;
 }
