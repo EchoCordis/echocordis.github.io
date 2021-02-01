@@ -78,28 +78,3 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].classList.add("active");
 } 
-
-/* document.addEventListener('click', (e) => {
-    if(!menu.contains(e.target) && menu.querySelector(".menuitems_show")){
-        menuToggle();
-    }
-    else{
-        console.log("Inside");
-    }
-}); */
-
-/* Changes navbar's BG opacity based on vertical scroll distance */
-/* window.onscroll = function() {
-    let vh = window.innerHeight * 0.01;
-
-    if (window.pageYOffset >= 50 * vh) {
-        menu.classList.add("navbar_filled");
-        menu.classList.remove("navbar_opac");
-        console.log("Visible");
-    }
-    else {
-        menu.classList.add("navbar_opac");
-        menu.classList.remove("navbar_filled");
-        console.log("Invisible");
-    }
-}; */
