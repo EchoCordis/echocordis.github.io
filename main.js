@@ -73,10 +73,10 @@ function showSlides(n) {
       slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace("active", "");
+      dots[i].classList.toggle("active");
   }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  dots[slideIndex-1].classList.toggle("active");
 } 
 
 /* document.addEventListener('click', (e) => {
