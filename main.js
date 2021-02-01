@@ -73,10 +73,10 @@ function showSlides(n) {
       slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-      dots[i].classList.toggle("active");
+      dots[i].classList.remove("active");
   }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].classList.toggle("active");
+  dots[slideIndex-1].classList.add("active");
 } 
 
 /* document.addEventListener('click', (e) => {
