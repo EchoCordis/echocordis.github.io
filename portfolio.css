@@ -595,19 +595,21 @@ input[type=submit]:disabled {
 	width: 100%;
 }
 
+/* Buttons used to access previous/next slides */
 .prev, .next {
 	cursor: pointer;
 	position: absolute;
 	top: 50%;
 	width: auto;
 	margin-top: -22px;
-	padding: 16px;
+	padding: 1rem;
 	color: white;
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 1.2rem;
 	transition: 0.4s ease;
 	border-radius: 0 3px 3px 0;
 	user-select: none;
+	background-color: rgba(0, 0, 0, 0.3);
 }
 
 .next {
