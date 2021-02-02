@@ -585,10 +585,6 @@ input[type=submit]:disabled {
 	margin: auto;
 }
 
-#slideshowContainer:hover > .prev .next {
-	opacity: 1;
-}
-
 /* Slide with the image; set not to show by default */
 .slide {
 	display: none;
@@ -612,7 +608,6 @@ input[type=submit]:disabled {
 	transition: 0.4s ease;
 	border-radius: 0 3px 3px 0;
 	user-select: none;
-	opacity: 0;
 }
 
 .next {
@@ -855,6 +850,18 @@ input[type=submit]:disabled {
 		color:#f0f0f0;
 		background-color: #0077B5;
 	}	
+
+	/* 
+		Sets the prev/next buttons to be visible when the cursor 
+		hovers over the slideshow gallery. 
+	*/
+	#slideshowContainer:hover > .prev, #slideshowContainer:hover > .next {
+		opacity: 1;
+	}
+
+	.prev, .next {
+		opacity: 0;
+	}
 }
 
 /* <---- Animations ----> */
