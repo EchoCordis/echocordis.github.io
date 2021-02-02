@@ -602,7 +602,7 @@ input[type=submit]:disabled {
 	top: 50%;
 	width: auto;
 	margin-top: -22px;
-	padding: 1rem;
+	padding: 0.5rem;
 	color: white;
 	font-weight: bold;
 	font-size: 1.2rem;
@@ -679,6 +679,11 @@ input[type=submit]:disabled {
 	.indexLinkIcon {
 		font-size: 2.5rem;
 	}
+
+	.prev, .next {
+		padding: 0.8rem;
+		font-size: 1.2rem;
+	}
 }
 
 /* Tablet layout - Landscape */
@@ -730,6 +735,11 @@ input[type=submit]:disabled {
 
 	.indexLinkIcon {
 		font-size: 2.5rem;
+	}
+
+	.prev, .next {
+		padding: 0.8rem;
+		font-size: 1.2rem;
 	}
 }
 
@@ -862,6 +872,8 @@ input[type=submit]:disabled {
 	}
 
 	.prev, .next {
+		padding: 1rem;
+		font-size: 1.2rem;
 		opacity: 0;
 	}
 }
