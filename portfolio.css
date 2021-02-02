@@ -586,7 +586,7 @@ input[type=submit]:disabled {
 
 /* Slide with the image; set not to show by default */
 .slide {
-	height: 45vh;
+	height: 30vh;
 	display: none;
 }
 
@@ -872,6 +872,10 @@ input[type=submit]:disabled {
 	*/
 	#slideshowContainer:hover > .prev, #slideshowContainer:hover > .next {
 		opacity: 1;
+	}
+
+	.slide {
+		height: 45vh;
 	}
 
 	.prev, .next {
