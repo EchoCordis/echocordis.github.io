@@ -369,7 +369,7 @@ h2, h3 {
 	flex-grow: 1;
 	overflow: hidden;
 	height: 40vh;
-	width:65%; 
+	width: 75%; 
 }
 
 /* The image inside the project divs */
@@ -577,14 +577,26 @@ input[type=submit]:disabled {
 	margin: 0.5em 1em 0 1em;
 }
 
+/* Container for the slideshow gallery */
 #slideshowContainer {
-	max-width: 50vh;
+	max-width: 60vh;
+	/* max-height: 50vh; */
 	position: relative;
 	margin: auto;
 }
 
+#slideshowContainer:hover > .prev .next {
+	opacity: 1;
+}
+
+/* Slide with the image; set not to show by default */
 .slide {
 	display: none;
+}
+
+.slide img {
+	object-fit: contain;
+	width: 100%;
 }
 
 .prev, .next {
@@ -597,9 +609,10 @@ input[type=submit]:disabled {
 	color: white;
 	font-weight: bold;
 	font-size: 18px;
-	transition: 0.6s ease;
+	transition: 0.4s ease;
 	border-radius: 0 3px 3px 0;
 	user-select: none;
+	opacity: 0;
 }
 
 .next {
@@ -615,7 +628,7 @@ input[type=submit]:disabled {
 	cursor: pointer;
 	height: 1rem;
 	width: 1rem;
-	margin: 0 2px;
+	margin: 0 0.1rem;
 	background-color: #bbb;
 	border-radius: 50%;
 	display: inline-block;
