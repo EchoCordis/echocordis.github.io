@@ -579,7 +579,7 @@ input[type=submit]:disabled {
 
 /* Container for the slideshow gallery */
 #slideshowContainer {
-	max-width: 60vh;
+	max-width: 80vh;
 	position: relative;
 	margin: 2vh auto;
 }
