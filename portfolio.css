@@ -638,6 +638,13 @@ input[type=submit]:disabled {
 .active, .dot:hover {
 	background-color: #008a47;
 }
+
+.embed-yt {
+	display: block; 
+	margin: auto;
+	width: 100%;
+	height: 25vh;
+}
 /* <---- Settings for Other Devices ----> */
 
 /* Tablet layout - Portrait */
@@ -882,6 +889,11 @@ input[type=submit]:disabled {
 		padding: 1rem;
 		font-size: 1.2rem;
 		opacity: 0;
+	}
+
+	.embed-yt {
+		width: 70%;
+		height: 35vh;
 	}
 }
 
