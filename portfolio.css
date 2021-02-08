@@ -645,6 +645,10 @@ input[type=submit]:disabled {
 	width: 100%;
 	height: 25vh;
 }
+
+.line-heading {
+	text-align: center;
+}
 /* <---- Settings for Other Devices ----> */
 
 /* Tablet layout - Portrait */
