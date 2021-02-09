@@ -1,7 +1,20 @@
+body {
+    height: 100%;
+    margin: 0 2.5vh;
+}
+
 .nightmode {
     background-color: rgb(45, 45, 45);
 }
 
-.header {
+.nightText {
+    color: white;
+}
+
+#header {
+
+}
+
+#footer {
 
 }

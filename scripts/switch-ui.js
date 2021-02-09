@@ -8,4 +8,5 @@ function displayClock(){
 
 function setNightMode() {
   document.body.classList.toggle("nightmode");
+  document.querySelector("#clock").classList.toggle("nightText");
 }
