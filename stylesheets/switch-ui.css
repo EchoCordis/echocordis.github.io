@@ -1,7 +1,7 @@
 body {
     height: 100%;
     margin: 0 3vh;
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(235, 235, 235);
 }
 
 .nightmode {
@@ -35,10 +35,35 @@ body {
     text-align: right;
 }
 
+#cartContainer {
+    margin: 5vh 5vw;
+}
+
+.cart {
+    height: 20rem;
+    width: 20rem;
+    background-color: rgb(71, 58, 58);
+}
+
+.cart:hover, .cart:focus {
+    box-shadow: 0 0 0 0.5vh rgb(75, 195, 222);
+}
+
+#optionsContainer {
+    display: flex;
+    justify-content: center;
+}
+
 .optionBtn {
-    height: 6.5vh;
-    width: 6.5vh;
+    height: 8vh;
+    width: 8vh;
     border-radius: 50%;
-    border:none;
+    border: none;
+    box-shadow: 0 0 0 0.2vh rgb(161, 161, 161);
     background-color: rgb(255, 255, 255);
+    
+}
+
+.optionBtn:hover, .optionBtn:focus {
+    box-shadow: 0 0 0 0.5vh rgb(75, 195, 222);
 }
