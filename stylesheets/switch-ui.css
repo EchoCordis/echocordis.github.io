@@ -83,11 +83,18 @@ body {
     width: 6rem;
     border-radius: 50%;
     border: none;
-    box-shadow: 0 0 0 0.2vh rgb(161, 161, 161);
+    box-shadow: 0 0 0 0.2vh rgb(207, 207, 207);
     background-color: rgb(255, 255, 255);
     outline: none;
 }
 
 .optionBtn:hover, .optionBtn:focus {
     box-shadow: 0 0 0 0.5vh rgb(75, 195, 222);
+}
+
+.nightBtn {
+    color: white;
+    border: none;
+    background-color: rgb(80, 80, 80);
+    box-shadow: 0 0 0 0.2vh rgb(36, 36, 36);
 }

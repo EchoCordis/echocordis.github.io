@@ -11,6 +11,11 @@ function setNightMode() {
   document.body.classList.toggle("nightmode");
   document.querySelector("#header").classList.toggle("nightHeader");
   document.querySelector("#footer").classList.toggle("nightFooter");
+
+  document.querySelectorAll(".optionBtn").forEach((el) => {
+    el.classList.toggle('nightBtn');
+  });
+
   if (nightMode) {
     document.querySelector("#footer").style.borderColor ="black";
     nightMode = false;
