@@ -1,12 +1,25 @@
 window.onload = displayClock();
+var nightMode = false;
 
 function displayClock(){
-  var display = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+  var display = new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
   document.querySelector("#clock").textContent = display;
   setTimeout(displayClock, 1000); 
 }
 
 function setNightMode() {
   document.body.classList.toggle("nightmode");
-  document.querySelector("#clock").classList.toggle("nightText");
+  document.querySelector("#header").classList.toggle("nightHeader");
+  document.querySelector("#footer").classList.toggle("nightFooter");
+  if (nightMode) {
+    document.querySelector("#footer").style.borderColor ="black";
+    nightMode = false;
+    console.log("Night mode off");
+  }
+  else {
+    document.querySelector("#footer").style.borderColor ="white";
+    nightMode = true;
+    console.log("Night mode on");
+  }
+  
 }

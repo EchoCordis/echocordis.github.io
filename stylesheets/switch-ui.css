@@ -1,6 +1,7 @@
 body {
     height: 100%;
-    margin: 0 2.5vh;
+    margin: 0 3vh;
+    background-color: rgb(240, 240, 240);
 }
 
 .nightmode {
@@ -12,9 +13,32 @@ body {
 }
 
 #header {
+    padding: 2vh 2vw;
+}
 
+.nightHeader{
+    color: white;
 }
 
 #footer {
+    margin-top: 2vh;
+    border-top: 0.15rem solid black;
+    padding: 2vh 2vw;
+}
 
+.nightFooter{
+    border-color: white;
+    color: white;
+}
+
+#clock {
+    text-align: right;
+}
+
+.optionBtn {
+    height: 6.5vh;
+    width: 6.5vh;
+    border-radius: 50%;
+    border:none;
+    background-color: rgb(255, 255, 255);
 }
