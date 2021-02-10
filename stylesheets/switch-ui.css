@@ -13,7 +13,7 @@ body {
 }
 
 #header {
-    padding: 2vh 2vw;
+    margin: 5vh 5vw;
 }
 
 .nightHeader{
@@ -35,10 +35,22 @@ body {
     text-align: right;
 }
 
-#cartContainer {
+#cartsContainer {
     display:flex;
     justify-content: center;
     margin: 5vh 5vw;
+}
+
+.cartBox {
+    outline: none;
+}
+
+.cartBox:hover > .cartName, .cartBox:focus > .cartName {
+    opacity: 1;
+}
+
+.cartBox:hover > .cart, .cartBox:focus > .cart {
+    box-shadow: 0 0 0 0.5vh rgb(75, 195, 222);
 }
 
 .cart {
@@ -53,23 +65,27 @@ body {
     border: 0.3rem solid white;
 }
 
-.cart:hover, .cart:focus {
-    box-shadow: 0 0 0 0.5vh rgb(75, 195, 222);
+.cartName {
+    opacity: 0;
+    cursor: default;
+    color: rgb(75, 195, 222);
 }
 
 #optionsContainer {
     display: flex;
     justify-content: center;
+    margin: 5vh 0;
+    padding: 1vh 0;
 }
 
 .optionBtn {
-    height: 8vh;
-    width: 8vh;
+    height: 6rem;
+    width: 6rem;
     border-radius: 50%;
     border: none;
     box-shadow: 0 0 0 0.2vh rgb(161, 161, 161);
     background-color: rgb(255, 255, 255);
-    
+    outline: none;
 }
 
 .optionBtn:hover, .optionBtn:focus {
