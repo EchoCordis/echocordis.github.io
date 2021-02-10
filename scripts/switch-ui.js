@@ -12,6 +12,11 @@ function setNightMode() {
   document.querySelector("#header").classList.toggle("nightHeader");
   document.querySelector("#footer").classList.toggle("nightFooter");
 
+  document.querySelectorAll(".cart").forEach((el) => {
+    el.classList.toggle('nightCart');
+    el.classList.toggle('nightEmpty');
+  });
+
   document.querySelectorAll(".optionBtn").forEach((el) => {
     el.classList.toggle('nightBtn');
   });

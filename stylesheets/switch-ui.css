@@ -55,14 +55,22 @@ body {
 
 .cart {
     display: inline-block;
-    height: 30rem;
-    width: 30rem;
+    height: 40vh;
+    width: 40vh;
     background-color: rgb(238, 237, 240);
     margin: 0 0.5vh;
 }
 
+.nightCart {
+    background-color: rgb(49, 47, 50);
+}
+
 .empty {
     border: 0.3rem solid white;
+}
+
+.nightEmpty {
+    border: 0.3rem solid rgb(80, 80, 80);;
 }
 
 .cartName {
@@ -79,8 +87,8 @@ body {
 }
 
 .optionBtn {
-    height: 6rem;
-    width: 6rem;
+    height: 10vh;
+    width: 10vh;
     border-radius: 50%;
     border: none;
     box-shadow: 0 0 0 0.2vh rgb(207, 207, 207);
