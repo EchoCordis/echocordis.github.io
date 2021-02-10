@@ -14,6 +14,10 @@ body {
 
 #header {
     margin: 5vh 5vw;
+    padding: 3vh 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nightHeader{
@@ -33,6 +37,7 @@ body {
 
 #clock {
     text-align: right;
+    margin: 0;
 }
 
 #cartsContainer {
@@ -110,4 +115,16 @@ body {
     border: none;
     background-color: rgb(80, 80, 80);
     box-shadow: 0 0 0 0.2vh rgb(36, 36, 36);
+}
+
+.profileBtn {
+    height: 5vh;
+    width: 5vh;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0.2vh rgb(207, 207, 207);
+    background-color: rgb(255, 255, 255);
+}
+
+.profileBtn:hover, .profileBtn:focus {
+    box-shadow: 0 0 0 0.5vh rgb(75, 195, 222);
 }
