@@ -31,5 +31,4 @@ function setNightMode() {
     nightMode = true;
     console.log("Night mode on");
   }
-  
 }
