@@ -14,7 +14,7 @@ body {
 }
 
 #header {
-    margin: 0 5vw 2vh 5vw;
+    margin: 1.5vh 5vw 2vh 5vw;
     padding: 3vh 0;
     display: flex;
     justify-content: space-between;
