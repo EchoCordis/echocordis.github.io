@@ -147,6 +147,16 @@ body {
     max-height: 100%;
 }
 
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    /* padding-left: 12vh; */
+}
+
+.swiper-slide {
+    width: auto;
+}
+
 /* Custom Fonts */
 @font-face {
 	font-family: Shin Go Pro;

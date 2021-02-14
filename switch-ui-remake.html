@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/stylesheets/switch-ui.css">
     <script src="https://kit.fontawesome.com/46b8ebbbd6.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,6 +20,7 @@
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
 </head>
+
 <body>
     <div id="header">
         <div style="display: flex;">
@@ -34,7 +36,7 @@
     </div>
     
     <div>
-        <div id="cartsContainer">
+        <!-- <div id="cartsContainer">
             <div class="cartBox" tabindex="1">
                 <h2 class="cartName">Zenith</h2>
                 <a class="cart empty">
@@ -59,15 +61,67 @@
                     
                 </a>
             </div>
+        </div> -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="cartBox" tabindex="1">
+                        <h2 class="cartName">Zenith</h2>
+                        <a class="cart empty">
+                            <img src="/images/testimage.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cartBox" tabindex="3">
+                        <h2 class="cartName">GAMER</h2>
+                        <a class="cart empty">
+                            
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cartBox" tabindex="3">
+                        <h2 class="cartName">GAMER</h2>
+                        <a class="cart empty">
+                            
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cartBox" tabindex="3">
+                        <h2 class="cartName">GAMER</h2>
+                        <a class="cart empty">
+                            
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cartBox" tabindex="3">
+                        <h2 class="cartName">GAMER</h2>
+                        <a class="cart empty">
+                            
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="optionsContainer">
             <button class="optionBtn" onclick="setNightMode()" style="font-size: 5vh;"><i class="far fa-sun"></i></button>
         </div>
     </div>
+    
     <div id="footer">
         <i class="fas fa-mouse"></i>
     </div>
 
     <script src="/scripts/switch-ui.js" async defer></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 'auto',
+        });
+    </script>
 </body>
 </html>
