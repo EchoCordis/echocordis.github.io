@@ -40,7 +40,7 @@
 		<div class="bannerText">
 			<h1 data-aos="fade-up">SWITCH-THEMED GAME SELECTOR</h1>
 			<h2 data-aos="fade-up" data-aos-delay="500">
-				A remake of the Nintendo Switch's user interface in a webpage, used to display my own game projects.
+				A remake of the Nintendo Switch's user interface in a webpage and used to display my own game projects.
 			</h2>
 		</div>
 		<div id="particles-js"></div>
@@ -66,9 +66,8 @@
 			</tr>
 			<tr>
 				<td colspan="2">
-					Zenith was developed during a group assignment that was structured similarily to a game jam, which required the project to incorporate two themes: 
-					<span class="greenHighlight">"Let's try this again"</span> & <span class="greenHighlight">"Change your perspective"</span>.
-					<br><br>This project was developed in partnership with Thalia Johnson and Peter Deghaim.
+					The Switch-themed Game Selector is based on the <a class="midtextLink" href="https://www.google.com/search?q=nintendo+switch+home+menu&tbm=isch" target="_blank">Nintendo Switch's home screen UI <i class="fas fa-external-link-alt"></i></a>. 
+					The project came about as a personal challenge to see if I could recreate the Switch's UI using only HTML, CSS and JavaScript.
 				</td>
 			</tr>
 			<tr>
@@ -79,6 +78,27 @@
 	<div id="main">
 		<div></div>
 		<div id="middlecol">
+			<!-- Slideshow Gallery -->
+			<div id="slideshowContainer">
+				<div class="slide">
+				  <img src="/images/projects/switch-ui/switch-ui-1.jpg">
+				</div>
+				<div class="slide">
+				  <img src="/images/projects/switch-ui/switch-ui-2.jpg">
+				</div>
+				<div class="slide">
+				  <img src="/images/projects/switch-ui/switch-ui-3.jpg">
+				</div>
+				<!-- Next and previous buttons -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<!-- The dots/circles representing each slide -->
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+			</div>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean condimentum elit et orci consectetur
 				blandit. Proin quam diam, rhoncus id lacinia in, tincidunt sit amet nunc. Fusce aliquet in justo
