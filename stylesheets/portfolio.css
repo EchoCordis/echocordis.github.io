@@ -752,8 +752,7 @@ input[type=submit]:disabled {
 	}
 
 	.projectImg {
-		width: auto;
-		max-width: 60%; 
+		width: 60%;
 	}
 
 	.projectTxt {
@@ -859,8 +858,7 @@ input[type=submit]:disabled {
 	}
 
 	.projectImg {
-		width: auto;
-		max-width: 60%; 
+		width: 60%;
 	}
 
 	.projectTxt {
