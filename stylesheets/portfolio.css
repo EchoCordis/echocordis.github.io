@@ -893,6 +893,11 @@ input[type=submit]:disabled {
 		background-color: #0077B5;
 	}	
 
+	.contactBox-itch:hover {
+		color:#f0f0f0;
+		background-color: #fa5c5c;
+	}	
+
 	/* 
 		Sets the prev/next buttons to be visible when the cursor 
 		hovers over the slideshow gallery. 
