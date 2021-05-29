@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Donavan Le | Outside the Box</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta content="utf-8" http-equiv="encoding">
+	<link rel="stylesheet" href="/stylesheets/portfolio.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+	<script src="https://kit.fontawesome.com/46b8ebbbd6.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="/scripts/main.js" defer></script>
+
+	<!-- Favicon for the different platforms -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+	<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="/images/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+	<div class="navOverlay"></div>
+	<a name="top"></a>
+	<nav>
+		<ul id="navbar">
+            <li class="logotext">Donavan Le</li>
+            <li class="menuitem" tabindex="0"><a href="/about">About</a></li>
+            <li class="menuitem"><a href="/projects">Projects</a></li>
+            <li class="menuitem"><a href="/contact">Contact</a></li>
+			<li class="menutoggle"><a href="javascript:void(0);"><i class="fas fa-bars"></i></a></li>
+        </ul>
+	</nav>
+	<div id="banner">
+		<div class="bannerText">
+			<h1 data-aos="fade-up">OUTSIDE THE BOX</h1>
+			<h2 data-aos="fade-up" data-aos-delay="500">A toy-themed tower defense game, built using the Unity engine.</h2>
+		</div>
+		<div id="particles-js"></div>
+	</div>
+	<div id="infoRec">
+		<table id="infoTable">
+			<tr>
+				<th><h2>Role</h2></th>
+				<th><h2>Context</h2></th>
+				<th><h2>Date</h2></th>
+			</tr>
+			<tr>
+				<td>UI Designer / Programmer</td>
+				<td>University Project</td>
+				<td>2021</td>
+			</tr>
+		</table>
+	</div>
+	<div id="overview">
+		<table id="ovTable">
+			<tr>
+				<th colspan="2"><h2>OVERVIEW</h2></th>
+			</tr>
+			<tr>
+				<td colspan="2">
+                    Outside the Box is a <span class="greenHighlight">multiplayer tower defense game</span> inspired by the Overcooked! series. 
+                    In the game, the player must defend the workshop against increasing amounts of toy-themed enemies by managing their turrets.
+                    <br><br>Unlike other tower defense games, the player must <span class="greenHighlight">actively control their character</span> and move around the level to collect currency,
+                    manage their turret's ammunition levels and unlock new turrets.
+                    As a result, the gameplay is hectic yet engaging and rewarding for players <span class="greenHighlight">playing alone or with a friend</span>. 
+                    <br><br>Outside the Box was developed during a group assignment structured as an <span class="greenHighlight">agile project</span>. 
+                    This game was developed over 8 weeks, broken up into 4 sprints with each sprint lasting 2 weeks.
+					<br><br>This project was developed in partnership with Roy Fu, Padriac Heaton, Rhys Vincent and Long Vo.
+				</td>
+			</tr>
+			<tr>
+				<td><a href="https://pheaton.itch.io/outside-the-box" target="_blank" class="links"><i class="fab fa-itch-io"></i> Play Game <i class="fas fa-arrow-right"></i></a></td>
+			</tr>
+		</table>
+	</div>
+	<div id="main">
+		<div></div>
+		<div id="middlecol">
+			<h1 class="project-heading">Gallery</h1>
+			<!-- Slideshow Gallery -->
+			<!-- TODO: Replace with gameplay images -->
+			<div id="slideshowContainer">
+				<div class="slide">
+				  <img src="/images/projects/zenith/zenith-1.jpg">
+				</div>
+				<div class="slide">
+				  <img src="/images/projects/zenith/zenith-2.png">
+				</div>
+				<div class="slide">
+				  <img src="/images/projects/zenith/zenith-3.png">
+				</div>
+				<!-- Next and previous buttons -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<!-- The dots/circles representing each slide -->
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+			</div>
+			<h1 class="project-heading">Game Trailer</h1>
+			<iframe class="embed-yt" src="https://www.youtube-nocookie.com/embed/gVZvWcYKPtw" 
+				frameborder="0" 
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+				allowfullscreen>
+			</iframe>
+		</div>
+		<div></div>
+	</div>
+	<div id="footer">
+		<div class="linkSet">
+			<a href="mailto:donavan.le@gmail.com" class="linkIcon"><i class="fas fa-envelope"></i></a>
+			<a href="https://github.com/EchoCordis" class="linkIcon" target="_blank"><i class="fab fa-github"></i></a>
+			<a href="https://www.linkedin.com/in/donavan-le-573831183/" class="linkIcon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+			<a href="https://echocordis.itch.io/" class="linkIcon" target="_blank"><i class="fab fa-itch-io"></i></a>
+		</div>
+		© 2021 Donavan Le
+	</div>
+	<script>
+		AOS.init({
+			once: true,
+			duration: "1000",
+		});
+   </script>
+</body>
+</html>
