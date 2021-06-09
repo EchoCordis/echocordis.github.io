@@ -447,18 +447,6 @@ h2, h3 {
 	transition: color 0.5s ease;
 }
 
-/* Special styling for the icons on the index page */
-.indexLinkIcon {
-	color: white;
-	font-size: 2rem;
-	margin: 1em;
-}
-
-.indexLinkIcon:hover {
-	color: #00b55d;
-	transition: color 0.5s ease;
-}
-
 #toplink {
 	color:#ffd728;
 }
@@ -466,61 +454,6 @@ h2, h3 {
 /* Highlight for important text on the page */
 .greenHighlight {
 	color: #00ec7a;
-}
-
-/* Container for the email contact form */
-#emailDiv {
-	display:flex;
-	justify-content: center;
-	align-items: center;
-}
-
-/* The email form */
-#emailForm {
-	width: 100%;
-}
-
-/* Styling for each element in the contact form */
-input[type=text], input[type=email], textarea {
-	border: none;
-	border-bottom: 0.2rem solid #00b55d;
-	background-color: #f0f0f0;
-	width: 100%;
-	margin: 2vh 0;
-	font-size: 1.2rem;
-	font-family: Helvetica, Arial, sans-serif;
-	min-height: 1.8rem;
-	margin-bottom: 1rem;
-}
-
-textarea {
-	resize: vertical;
-	min-height: 10rem;
-}
-
-/* Styling for the submit button in the contact form */
-input[type=submit] {
-	font-family: Inconsolata-Regular, Helvetica, Arial, sans-serif;
-	font-size: 1.1rem;
-	color: #f0f0f0;
-	background-color: #00b55d;
-	border: 0.2vh solid #00b55d;
-	cursor: pointer;
-	margin: 2vh 0;
-	padding: 1vh 2vh;
-	transition-duration: 0.4s;
-}
-
-input[type=submit]:hover {
-	background-color: #f0f0f0;
-	border: 0.2vh solid #00b55d;
-	color: black;
-}
-
-input[type=submit]:disabled {
-	background-color: #00b55e88;
-	color: #f0f0f0;
-	cursor: not-allowed;
 }
 
 /* Flex container for the contact boxes on contact page */
