@@ -59,6 +59,27 @@ h2, h3 {
 	margin: 1vh 0;
 }
 
+/* Alternative verision of the middle column for the All Projects page. */
+#middlecolAllProjects {
+	z-index:1;
+	width: 10%;
+	padding: 0 20px;
+	margin: 3vh 0;
+	line-height: 1.6;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+#middlecolAllProjects h1 {
+	font-family: Helvetica, Arial, sans-serif;
+	border-bottom: 0.25rem solid #00b55d;
+}
+
+#middlecolAllProjects h2 {
+	list-style-type: none;
+	padding: 0;
+	margin: 1vh 0;
+}
+
 /* Website Navigation Bar */
 #navbar {
 	box-sizing: border-box;
@@ -738,6 +759,11 @@ input[type=submit]:disabled {
 	#main > div:nth-of-type(odd) {flex-grow: 0.5;}
 	#main > div:nth-of-type(even) {flex-grow: 1;}
 
+	/* Sets the middle column of the All Projects page bigger than other columns */
+	#main > div#middlecolAllProjects{
+		flex-grow: 4;
+	}
+
 	.menuitem {
         display:block;
 		width: auto;
@@ -802,6 +828,11 @@ input[type=submit]:disabled {
 	/* Sets the middle column of the page bigger than other columns */
 	#main > div:nth-of-type(odd) {flex-grow: 0.75;}
 	#main > div:nth-of-type(even) {flex-grow: 1;}
+
+	/* Sets the middle column of the All Projects page bigger than other columns */
+	#main > div#middlecolAllProjects{
+		flex-grow: 4;
+	}
 
 	#navbar {
         justify-content: center;
