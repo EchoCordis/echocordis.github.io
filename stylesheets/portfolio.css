@@ -720,7 +720,7 @@ input[type=submit]:disabled {
 	margin: 1vh 0;
 }
 
-/* Button inside the projectTxt that links to the individual project page */
+/* Button linking Projects page to All Projects page */
 .allProjectBtn {
 	font-family: Inconsolata-Regular, Helvetica, Arial, sans-serif;
 	font-size: 1rem;
