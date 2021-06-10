@@ -720,6 +720,24 @@ input[type=submit]:disabled {
 	margin: 1vh 0;
 }
 
+/* Button inside the projectTxt that links to the individual project page */
+.allProjectBtn {
+	font-family: Inconsolata-Regular, Helvetica, Arial, sans-serif;
+	font-size: 1rem;
+	color: #f0f0f0;
+	background-color: #00b55d;
+	border: 0.2vh solid #00b55d;
+	cursor: pointer;
+	padding: 1vh 2vh;
+	transition-duration: 0.4s;
+}
+
+.allProjectBtn:hover {
+	background-color: #f0f0f0;
+	border: 0.2vh solid #00b55d;
+	color: black;
+}
+
 /* <---- Settings for Other Devices ----> */
 
 /* Phone layout - Landscape */
