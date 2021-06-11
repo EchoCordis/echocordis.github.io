@@ -700,7 +700,7 @@ input[type=submit]:disabled {
     margin: 1vh;
 	height: 30vh;
 	width: 40vh;
-	background-color: black;
+	background-color: #000000;
 	transition: 0.4s ease;
 	position: relative;
 	text-align: center;
@@ -709,7 +709,7 @@ input[type=submit]:disabled {
 }
 
 .projectThumb:hover {
-	background-color: rgb(34, 34, 34);
+	background-color: #222222;
 }
 
 .projectThumb img {
