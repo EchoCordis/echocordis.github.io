@@ -6,17 +6,26 @@ body {
 
 #center {
     width: 66vh;
-    margin:auto;
+    margin: auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 #title {
     color: white;
     text-align: center;
+    margin-top: 3vh;
 }
 
 #instaPost {
     display: flex;
     justify-content: center;
+    margin: 5vh 0;
+}
+
+#randomiseButton {
+    margin: auto;
+    width: 50%;
+    height: 5vh;
 }
