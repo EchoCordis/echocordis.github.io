@@ -1,0 +1,22 @@
+body {
+    background-color: #1c1f20;
+    padding: 7.5vh 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#center {
+    width: 66vh;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#title {
+    color: white;
+    text-align: center;
+}
+
+#instaPost {
+    display: flex;
+    justify-content: center;
+}
