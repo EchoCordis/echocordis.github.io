@@ -18,10 +18,21 @@ body {
     margin-top: 3vh;
 }
 
+a:visited {
+    text-decoration: none;
+    color: rgb(184, 182, 182);
+}
+
+#subtitle {
+    color: rgb(184, 182, 182);
+    text-align: center;
+    margin-top: 1vh;
+}
+
 #instaPost {
     display: flex;
     justify-content: center;
-    margin: 5vh 0;
+    margin: 3vh 0;
 }
 
 #randomiseButton {
@@ -29,3 +40,4 @@ body {
     width: 50%;
     height: 5vh;
 }
+
