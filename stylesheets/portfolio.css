@@ -250,6 +250,12 @@ h2, h3 {
 	color: rgb(27, 27, 27);
 }
 
+#indexButton:active {
+	background-color: #adadad;
+	border: 0.2vh solid #00b55d;
+	color: rgb(27, 27, 27);
+}
+
 /* Settings for the particles in the BG */
 #particles-js {
 	background-color: #262e33;
@@ -437,6 +443,12 @@ h2, h3 {
 	color: black;
 }
 
+.projectTxt button:active {
+	background-color: #adadad;
+	border: 0.2vh solid #00b55d;
+	color: black;
+}
+
 /* Text that gives brief summary of the prog languages/software/technique used in each project */
 .tags {
 	color: #8d8d8d;
@@ -482,6 +494,11 @@ h2, h3 {
 
 .indexLinkIcon:hover {
 	color: #00b55d;
+	transition: color 0.5s ease;
+}
+
+.indexLinkIcon:active {
+	color: #008143;
 	transition: color 0.5s ease;
 }
 
@@ -749,6 +766,12 @@ input[type=submit]:disabled {
 
 .allProjectBtn:hover {
 	background-color: #f0f0f0;
+	border: 0.2vh solid #00b55d;
+	color: black;
+}
+
+.allProjectBtn:active {
+	background-color: #adadad;
 	border: 0.2vh solid #00b55d;
 	color: black;
 }
@@ -1044,21 +1067,37 @@ input[type=submit]:disabled {
 		color:#f0f0f0;
 		background-color: #00b55d;
 	}
+	.contactBox-email:active {
+		color:#f0f0f0;
+		background-color: #008143;
+	}
 	
 	.contactBox-github:hover {
 		color:#f0f0f0;
 		background-color: #211f1f;
 	}
+	.contactBox-github:active {
+		color:#f0f0f0;
+		background-color: #424242;
+	}
 	
 	.contactBox-linkedin:hover {
 		color:#f0f0f0;
 		background-color: #0077B5;
-	}	
+	}
+	.contactBox-linkedin:active {
+		color:#f0f0f0;
+		background-color: #014f79;
+	}		
 
 	.contactBox-itch:hover {
 		color:#f0f0f0;
 		background-color: #fa5c5c;
-	}	
+	}
+	.contactBox-itch:active {
+		color:#f0f0f0;
+		background-color: #b84242;
+	}		
 
 	/* 
 		Sets the prev/next buttons to be visible when the cursor 
