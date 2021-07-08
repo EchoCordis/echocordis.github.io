@@ -5,11 +5,14 @@ body {
 }
 
 #center {
-    width: 66vh;
-    margin: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+}
+
+#center > div {
+    margin: 3vh 5vh;
+    min-width: 40vh;
 }
 
 #title {
@@ -32,12 +35,21 @@ a:visited {
 #instaPost {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 2vh 0 3vh 0;
 }
 
 #randomiseButton {
-    margin: auto;
-    width: 50%;
+    margin-top: 3vh;
+    width: 100%;
     height: 5vh;
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
 }
 
