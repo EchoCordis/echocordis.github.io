@@ -11,8 +11,10 @@ function generate() {
     if (document.querySelector('#nameField').value.length > 0) {
         var name = capitaliseName(document.querySelector('#nameField').value);
         var template = templateData[Math.floor(Math.random() * templateData.length)];
+        
         // Used function to load string and template literal
-        var command = "console.log(" + template.replace('${name}', name) + ")";
+        //var command = "console.log(" + template.replace('${name}', name) + ")";
+        var command = "document.getElementById('name').innerHTML = " + template.replace('${name}', name);
         new Function(command)();
     }   
 }
@@ -26,7 +28,7 @@ function capitaliseName(name) {
         for (i = 0; i < nameArray.length; i++) {
             capName += nameArray[i].charAt(0).toUpperCase();
             capName += nameArray[i].slice(1);
-            // Doesn't add a space to end of final word
+            // Prevents a space being added to end of final word
             if (i < nameArray.length - 1) {
                 capName += " ";
             }
