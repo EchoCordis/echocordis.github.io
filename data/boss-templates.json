@@ -1,5 +1,6 @@
 {
     "templates": [
-        "`Lord ${name} of the Divine Valley`"
+        "`Lord ${name} of the Divine Valley`",
+        "`${name}, the Fallen`"
     ]
 }
