@@ -1,4 +1,5 @@
-var templateData;
+var templateData;   // Stores JSON data of all name templates
+var prevTemplate;   // Stores previously used name template
 fetch("./data/boss-templates.json")
     .then(response => response.json())
     .then(data => {
@@ -11,7 +12,13 @@ function generate() {
     if (document.querySelector('#nameField').value.length > 0) {
         var name = capitaliseName(document.querySelector('#nameField').value);
         var template = templateData[Math.floor(Math.random() * templateData.length)];
-        
+
+        // Reselects a new name template if it is the same as the previous template
+        while (template == prevTemplate) {
+            template = templateData[Math.floor(Math.random() * templateData.length)];
+        }
+        prevTemplate = template;
+
         // Used function to load string and template literal
         //var command = "console.log(" + template.replace('${name}', name) + ")";
         var command = "document.getElementById('name').innerHTML = " + template.replace('${name}', name);
