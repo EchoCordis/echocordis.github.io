@@ -61,6 +61,7 @@ input[type=text] {
     min-height: 5vh;
     min-width: 50vh;
     font-size: 1.5rem;
+    margin: 0 3vh;
 }
 
 #genBtn:hover {
@@ -74,4 +75,5 @@ input[type=text] {
 	background-color: #008143;
 	transition: 0.2s ease;
     color: white;
+    transform: scale(0.9);
 }

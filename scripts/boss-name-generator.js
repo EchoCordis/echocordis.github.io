@@ -1,5 +1,7 @@
 var templateData;   // Stores JSON data of all name templates
 var prevTemplate;   // Stores previously used name template
+
+// Load JSON data into respective variables
 fetch("./data/boss-templates.json")
     .then(response => response.json())
     .then(data => {
