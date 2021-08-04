@@ -3,6 +3,7 @@
         "`Lord ${name} of the Divine Valley`",
         "`${name}, the Fallen`",
         "`Unchained ${name}`",
-        "`Twin-Fangs ${name}`"
+        "`Twin-Fangs ${name}`",
+        "`${name} the Old One`"
     ]
 }

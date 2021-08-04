@@ -493,12 +493,12 @@ h2, h3 {
 }
 
 .indexLinkIcon:hover {
-	color: #00b55d;
+	background-color: #00b55d;
 	transition: color 0.5s ease;
 }
 
 .indexLinkIcon:active {
-	color: #008143;
+	background-color: #008143;
 	transition: color 0.5s ease;
 }
 

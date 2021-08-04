@@ -1,3 +1,77 @@
-#mainSentence {
-    
+body {
+    background-color: #1c1f20;
+    padding: 7.5vh 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+#center > div {
+    margin: 3vh 5vh;
+    min-width: 40vh;
+}
+
+#title {
+    color: white;
+    text-align: center;
+    margin: 3vh 0;
+}
+
+#name {
+    color: white;
+    text-align: center;
+    margin: 3vh 0;
+    font-size: 4rem;
+}
+
+#userInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#userInput > * {
+    margin: 3vh 0;
+}
+
+#nameField {
+    min-width: 30vh;
+    color: white;
+    font-size: 1.6rem;
+}
+
+input[type=text] {
+	border: none;
+	border-bottom: 0.2rem solid #00b55d;
+    background-color: #ffffff00;
+    text-align: center;
+}
+
+#genBtn {
+    background-color: #00b55d;
+    color: white;
+    border: none;
+    min-height: 5vh;
+    min-width: 50vh;
+    font-size: 1.5rem;
+}
+
+#genBtn:hover {
+	background-color: #cecece;
+	border: 0.2vh solid #00b55d;
+	color: black;
+    transition: 0.2s ease;
+}
+
+#genBtn:active {
+	background-color: #008143;
+	transition: 0.2s ease;
+    color: white;
 }

@@ -9,9 +9,13 @@
     <link rel="stylesheet" href="/stylesheets/boss-name-generator.css">
 </head>
 <body>
-    <h1 id="mainSentence">Use the button below to generate a random sentence.</h1>
-    <h1 id="name">...</h1>
-    <input type="text" id="nameField">
-    <button onclick="generate()">Generate Sentence</button>
+    <div id="center">
+        <h1 id="title">Boss Name Generator</h1>
+        <h1 id="name">...</h1>
+        <div id="userInput">
+            <input type="text" id="nameField" placeholder="Enter a name here...">
+            <button onclick="generate()" id="genBtn">Generate Sentence</button>
+        </div>
+    </div>
 </body>
 </html>
