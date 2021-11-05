@@ -96,5 +96,5 @@ function restartAutoplay() {
 function resetInterval() {
     clearInterval(slideInterval);
     slideInterval = null;
-    setTimeout(restartAutoplay, autoplayDelay);
+    restartAutoplay();
 }
