@@ -50,24 +50,25 @@ window.addEventListener('orientationchange', () => {
     }
 });
 
-
+/* Slideshow image gallery related functions */
 var slideIndex = 1;
 // List of all slides in the gallery.
 const slides = document.querySelectorAll(".slide");
 // List of all dots in the gallery for controlling slide.
 const dots = document.querySelectorAll(".dot");
+const autoplayDelay = 4000;   // Delay for auto-switching slides
+// Variable to store autoplay interval
+var slideInterval = setInterval(function() {plusSlides(1);}, autoplayDelay);
 showSlides(slideIndex); // Show first gallery slide.
 
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
-  resetInterval();
 }
 
 // Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
-  resetInterval();
 }
 
 // Show the selected gallery slide.
@@ -83,16 +84,13 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].classList.add("active");
+  resetInterval();
 }
 
 // Begin auto-play for the gallery slides on projects page.
 function restartAutoplay() {
     slideInterval = setInterval(function() {plusSlides(1);}, autoplayDelay);
 }
-
-const autoplayDelay = 4000;   // Delay for auto-switching slides
-// Variable to store autoplay interval
-var slideInterval = setInterval(function() {plusSlides(1);}, autoplayDelay);
 
 // Reset interval time for gallery auto-play.
 function resetInterval() {
