@@ -50,23 +50,29 @@ window.addEventListener('orientationchange', () => {
     }
 });
 
+
 var slideIndex = 1;
-showSlides(slideIndex);
+// List of all slides in the gallery.
+const slides = document.querySelectorAll(".slide");
+// List of all dots in the gallery for controlling slide.
+const dots = document.querySelectorAll(".dot");
+showSlides(slideIndex); // Show first gallery slide.
 
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
+  resetInterval();
 }
 
 // Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
+  resetInterval();
 }
 
+// Show the selected gallery slide.
 function showSlides(n) {
   var i;
-  var slides = document.querySelectorAll(".slide");
-  var dots = document.querySelectorAll(".dot");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
@@ -77,4 +83,20 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].classList.add("active");
-} 
+}
+
+// Begin auto-play for the gallery slides on projects page.
+function restartAutoplay() {
+    slideInterval = setInterval(function() {plusSlides(1);}, autoplayDelay);
+}
+
+const autoplayDelay = 3000;   // Delay for auto-switching slides
+// Variable to store autoplay interval
+var slideInterval = setInterval(function() {plusSlides(1);}, autoplayDelay);
+
+// Reset interval time for gallery auto-play.
+function resetInterval() {
+    clearInterval(slideInterval);
+    slideInterval = null;
+    setTimeout(restartAutoplay, autoplayDelay);
+}
