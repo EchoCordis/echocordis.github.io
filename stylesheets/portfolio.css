@@ -689,6 +689,23 @@ input[type=submit]:disabled {
 	background-color: #008a47;
 }
 
+/* Fading animation for the gallery */
+.fade {
+	-webkit-animation: fade ease 3s;
+	animation: fade ease 3s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .6} 
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .6} 
+	to {opacity: 1}
+}
+  
+
 .embed-yt {
 	display: block; 
 	margin: auto;

@@ -90,7 +90,7 @@ function restartAutoplay() {
     slideInterval = setInterval(function() {plusSlides(1);}, autoplayDelay);
 }
 
-const autoplayDelay = 3000;   // Delay for auto-switching slides
+const autoplayDelay = 4000;   // Delay for auto-switching slides
 // Variable to store autoplay interval
 var slideInterval = setInterval(function() {plusSlides(1);}, autoplayDelay);
 
