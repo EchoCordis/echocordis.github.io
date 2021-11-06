@@ -428,7 +428,7 @@ h2, h3 {
 }
 
 /* Button inside the projectTxt that links to the individual project page */
-.projectTxt button {
+.projectTxt a {
 	font-family: Inconsolata-Regular, Helvetica, Arial, sans-serif;
 	font-size: 1rem;
 	color: #f0f0f0;
@@ -438,15 +438,17 @@ h2, h3 {
 	padding: 1vh 2vh;
 	transition-duration: 0.4s;
 	border-radius: 3%;
+	margin-top: 5vh;
+	text-decoration: none;
 }
 
-.projectTxt button:hover {
+.projectTxt a:hover {
 	background-color: #f0f0f0;
 	border: 0.2vh solid #00b55d;
 	color: black;
 }
 
-.projectTxt button:active {
+.projectTxt a:active {
 	background-color: #adadad;
 	border: 0.2vh solid #00b55d;
 	color: black;
@@ -782,6 +784,7 @@ input[type=submit]:disabled {
 	padding: 1vh 2vh;
 	transition-duration: 0.4s;
 	border-radius: 3%;
+	text-decoration: none;
 }
 
 .allProjectBtn:hover {
