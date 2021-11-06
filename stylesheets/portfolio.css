@@ -242,7 +242,6 @@ h2, h3 {
 	margin: 5vh auto 3vh auto;
 	display:block;
 	transition: background-color 0.4s;
-	border-radius: 3%;
 	max-width: 50%;
 	text-decoration: none;
 }
