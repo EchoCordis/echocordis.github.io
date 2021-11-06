@@ -497,12 +497,12 @@ h2, h3 {
 }
 
 .indexLinkIcon:hover {
-	background-color: #00b55d;
+	color: #00b55d;
 	transition: color 0.5s ease;
 }
 
 .indexLinkIcon:active {
-	background-color: #008143;
+	color: #008143;
 	transition: color 0.5s ease;
 }
 
