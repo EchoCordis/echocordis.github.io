@@ -238,12 +238,12 @@ h2, h3 {
 	background-color: #00b55d;
 	border: 0.2vh solid #00b55d;
 	cursor: pointer;
-	padding: 1.5vh 2vh;
+	padding: 1.5vh 5vh;
 	margin: 5vh auto 3vh auto;
 	display:block;
 	transition: background-color 0.4s;
 	border-radius: 3%;
-	max-width: 30%;
+	max-width: 50%;
 	text-decoration: none;
 }
 
