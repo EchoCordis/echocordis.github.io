@@ -494,16 +494,15 @@ h2, h3 {
 	color: white;
 	font-size: 2rem;
 	margin: 1em;
+	transition: color 0.5s ease;
 }
 
 .indexLinkIcon:hover {
 	color: #00b55d;
-	transition: color 0.5s ease;
 }
 
 .indexLinkIcon:active {
 	color: #008143;
-	transition: color 0.5s ease;
 }
 
 #toplink {
