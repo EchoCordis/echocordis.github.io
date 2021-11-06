@@ -238,10 +238,13 @@ h2, h3 {
 	background-color: #00b55d;
 	border: 0.2vh solid #00b55d;
 	cursor: pointer;
-	padding: 1vh 2vh;
-	margin: 3vh 0 2vh 0;
+	padding: 1.5vh 2vh;
+	margin: 5vh auto 3vh auto;
+	display:block;
 	transition: background-color 0.4s;
 	border-radius: 3%;
+	max-width: 30%;
+	text-decoration: none;
 }
 
 #indexButton:hover {
