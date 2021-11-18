@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://donavanle.com/</loc>
+		<loc>https://donavanle.com/projects/deliveroids</loc>
 	</url>
 	<url>
-		<loc>https://donavanle.com/projects/</loc>
+		<loc>https://donavanle.com/projects/mas-game</loc>
 	</url>
     <url>
-		<loc>https://donavanle.com/contact/</loc>
+		<loc>https://donavanle.com/projects/outside-the-box</loc>
 	</url>
     <url>
-		<loc>https://donavanle.com/about/</loc>
+		<loc>https://donavanle.com/projects/portfolio-website</loc>
 	</url>
     <url>
-		<loc>https://donavanle.com/all-projects/</loc>
+		<loc>https://donavanle.com/projects/spelunka-bot</loc>
 	</url>
 	<url>
-		<loc>https://donavanle.com/boss-name-generator/</loc>
+		<loc>https://donavanle.com/projects/switch-game-selector</loc>
 	</url>
 	<url>
-		<loc>https://donavanle.com/switch-ui-remake/</loc>
+		<loc>https://donavanle.com/projects/uts-data-visualiser</loc>
+	</url>
+	<url>
+		<loc>https://donavanle.com/projects/zenith</loc>
 	</url>
 </urlset>
