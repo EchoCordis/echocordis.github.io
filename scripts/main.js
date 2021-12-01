@@ -57,9 +57,12 @@ const slides = document.querySelectorAll(".slide");
 // List of all dots in the gallery for controlling slide.
 const dots = document.querySelectorAll(".dot");
 const autoplayDelay = 6000;   // Delay for auto-switching slides
-// Variable to store autoplay interval
-var slideInterval = setInterval(function() {plusSlides(1);}, autoplayDelay);
-showSlides(slideIndex); // Show first gallery slide.
+if (slides.length >= 1) {
+    // Variable to store autoplay interval
+    var slideInterval = setInterval(function() {plusSlides(1);}, autoplayDelay);
+    showSlides(slideIndex); // Show first gallery slide.
+}
+
 
 // Next/previous controls
 function plusSlides(n) {
