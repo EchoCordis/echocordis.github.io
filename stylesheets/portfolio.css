@@ -131,7 +131,7 @@ h2, h3 {
 .logotext {
     color:#f2f2f2;
     font-size: 1.25em;
-    padding: 0.75em;
+    padding: 0.25em 0.75em;
 }
 
 /* Toggle for the mobile navbar */
@@ -1023,6 +1023,7 @@ input[type=submit]:disabled {
         flex:1;
         font-size: 1.5em;
         padding-left: 23vw;
+		padding-top: 0.2em;
 	}
 	
 	.menutoggle {
