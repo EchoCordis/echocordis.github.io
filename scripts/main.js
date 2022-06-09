@@ -10,6 +10,8 @@ const menu = document.querySelector("#navbar");
 /* Boolean to control if the menu items in the navbar are shown */
 var toggleInfo = true;
 
+window.onload = updateCopyright();
+
 /* Controls the opening/closing of the mobile navmenu */
 function menuToggle() {
     if (toggleInfo) {
@@ -100,4 +102,11 @@ function resetInterval() {
     clearInterval(slideInterval);
     slideInterval = null;
     restartAutoplay();
+}
+
+// Automatically updates the year in copyright text
+function updateCopyright() {
+    const year = new Date().getFullYear();
+    var copyrightTxt = `© ${year} Donavan Le`;
+    document.querySelector("#copyrightTxt").textContent = copyrightTxt;
 }
