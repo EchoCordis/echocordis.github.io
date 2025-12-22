@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta content="utf-8" http-equiv="encoding">
-	<link rel="stylesheet" href="/stylesheets/portfolio.css">
+	<link rel="stylesheet" href="/stylesheets/tailwind.css">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> 
@@ -44,37 +44,119 @@
 	<div class="navOverlay"></div>
 	<a name="top"></a>
 	<nav>
-		<ul id="navbar" style="background-color:rgba(38, 46, 51, 0);">
-            <li class="logotext"></li>
-            <li class="menuitem" tabindex="0"><a href="/about">About</a></li>
+		<ul id="navbar" class="bg-[#007a3f] lg:bg-transparent">
+            <li class="logotext"><a href="/index"><b>Donavan Le</b></a></li>
             <li class="menuitem"><a href="/projects">Projects</a></li>
-			<li class="menuitem"><a href="/contact">Contact</a></li>
             <li class="menutoggle"><a href="javascript:void(0);"><i class="fas fa-bars"></i></a></li>
         </ul>
 	</nav>
-	<header id="indexBanner">
-		<div class="indexBannerText">
-			<h1 data-aos="fade-up">Hi, I'm Donavan Le</h1>
-			<h2 data-aos="fade-up" data-aos-delay="500">Game Developer | Front End Developer | UI/UX Designer</h2>
-			<div data-aos="fade-up" data-aos-delay="1000">
-				<a href="/projects" id="indexButton">
-					View Projects
+	<div class="bg-darkslate-700 flex flex-col justify-center items-center">
+		<div class="text-white m-auto p-2 grid grid-rows-8 grid-cols-1 lg:grid-cols-6 gap-2 sm:gap-4 max-w-6xl relative w-full lg:h-screen lg:max-h-[800px]">
+			<div class="border border-gray-300 hover:border-[#00b55d] transition ease-in-out duration-200 rounded-lg bg-[#262e33] col-span-4 row-span-4 p-6 max-w-6xl w-full">
+				<h2 class="text-xl">
+					Hi, I'm
+				</h2>
+				<h1 class="text-[#00b55d] text-6xl py-4 font-bold">Donavan Le!</h1>
+				<h2 class="text-xl">I'm a <span class="underline">full-stack developer</span> focused on adding the details that turn a solution from good to great.</h2>
+				<p class="py-4">
+					Currently, I'm working as a Technical Analyst for <a class="midtextLink" href="https://www.nconnectgroup.com/" target="_blank">nConnect Group</a>.
+				</p>
+				<p>
+					In my spare time, I like to dabble in photography and play video games.
+				</p>
+				<div class="link-set">
+					<a href="mailto:donavan.le@gmail.com" class="index-link-icon"><i class="fas fa-envelope"></i></a>
+					<a href="https://github.com/EchoCordis" class="index-link-icon" target="_blank"><i class="fab fa-github"></i></a>
+					<a href="https://www.linkedin.com/in/donavan-le-573831183/" class="index-link-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+					<a href="https://echocordis.itch.io/" class="index-link-icon" target="_blank"><i class="fab fa-itch-io"></i></a>
+				</div>
+			</div>
+			<div class="border border-gray-300 hover:border-[#00b55d] transition ease-in-out duration-200 rounded-lg bg-[#262e33] col-span-4 lg:col-span-2 row-span-6 p-6 w-full h-full">
+				<h2 class="text-xl lg:hidden font-bold">Experience</h2>
+				<div class="py-2">
+					<p class="text-gray-400">2023 - Present</p>
+					<h3 class="font-bold py-1 text-xl">Technical Analyst, nConnect Group</h3>
+					<p>
+						Analyse client requirements and design new widgets for nConnect's proprietary website, nPE Portal.
+						Maintain existing features and develop new components using Angular and TypeScript.
+						Collaborate with clients and internal teams to integrate nPE Portal with existing Warehouse Management Systems.
+						Deploy updates and provide technical support for clients post-launch. 
+					</p>
+				</div>
+				<h2 class="text-xl lg:hidden font-bold pt-2">Education</h2>
+				<div class="py-2">
+					<p class="text-gray-400">2019 - 2022</p>
+					<h3 class="font-bold py-1 text-xl">Student, University of Technology Sydney</h3>
+					<p>Bachelor of Science in Games Development - GPA: 6.54 (Distinction)</p>
+				</div>
+			</div>
+			<div class="border border-gray-300 hover:border-[#00b55d] transition ease-in-out duration-200 rounded-lg bg-[#262e33] col-span-4 lg:col-span-4 row-span-2 p-10 w-full">
+				<h2 class="text-xl lg:hidden font-bold pb-2">Technologies</h2>
+				<div class="grid grid-cols-2 lg:grid-cols-6 grid-rows-1 place-items-center gap-2">
+					<div class="flex aspect-square w-24 flex-col items-center justify-center gap-2 rounded-lg transition-transform hover:scale-110 bg-[#007a3f]">
+						<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+							<path fill="currentColor" d="M10.174 12.594h3.652L12 8.095z" />
+							<path fill="currentColor" d="M12 1L2 4.652l1.525 13.541L12 23l8.475-4.807L22 4.652zm6.24 16.786h-2.33l-1.257-3.212H9.347L8.09 17.786H5.76L12 3.431z" />
+						</svg>
+						<span>Angular</span>
+					</div>
+					<div class="flex aspect-square w-24 flex-col items-center justify-center gap-2 rounded-lg transition-transform hover:scale-110 bg-[#007a3f]">
+						<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+							<g fill="none">
+								<g clip-path="url(#SVGXv8lpc2Y)">
+									<path fill="currentColor" d="M23.429 0H.57A.57.57 0 0 0 0 .571V23.43a.57.57 0 0 0 .571.571H23.43a.57.57 0 0 0 .571-.571V.57a.57.57 0 0 0-.572-.57m-9.143 12.826h-2.857v8.888H9.143v-8.888H6.286v-1.969h8zm.64 8.38v-2.375s1.298.978 2.855.978s1.497-1.018 1.497-1.158c0-1.477-4.412-1.477-4.412-4.751c0-4.452 6.429-2.695 6.429-2.695l-.08 2.116s-1.078-.719-2.296-.719s-1.657.58-1.657 1.198c0 1.597 4.452 1.438 4.452 4.652c0 4.95-6.788 2.755-6.788 2.755"/>
+								</g>
+								<defs>
+									<clipPath id="SVGXv8lpc2Y"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath>
+								</defs>
+							</g>
+						</svg>
+						<span>TypeScript</span>
+					</div>
+					<div class="flex aspect-square w-24 flex-col items-center justify-center gap-2 rounded-lg transition-transform hover:scale-110 bg-[#007a3f]">
+						<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+							<path fill="currentColor" d="M5.423 3.038c-1.284 0-2.233 1.124-2.19 2.342c.04 1.171-.013 2.688-.395 3.924c-.383 1.24-1.03 2.026-2.088 2.127v1.138c1.058.101 1.705.887 2.088 2.127c.382 1.237.435 2.753.394 3.924c-.042 1.218.907 2.342 2.192 2.342h13.154c1.284 0 2.234-1.124 2.192-2.342c-.041-1.171.012-2.687.393-3.924c.384-1.24 1.03-2.026 2.087-2.127v-1.138c-1.058-.101-1.703-.887-2.087-2.127c-.381-1.236-.434-2.753-.393-3.924c.042-1.218-.908-2.342-2.192-2.342zm10.581 11.033c0 1.678-1.251 2.696-3.328 2.696H9.14a.38.38 0 0 1-.382-.381V7.614a.38.38 0 0 1 .382-.38h3.515c1.732 0 2.869.937 2.869 2.378c0 1.01-.765 1.916-1.739 2.074v.053c1.326.145 2.22 1.064 2.22 2.332M12.29 8.442h-2.016v2.848h1.698c1.313 0 2.036-.529 2.036-1.474c0-.885-.622-1.374-1.718-1.374m-2.016 3.977v3.139h2.09c1.367 0 2.09-.549 2.09-1.58c0-1.03-.743-1.559-2.178-1.559z" />
+						</svg>
+						<span>Bootstrap</span>
+					</div>
+					<div class="flex aspect-square w-24 flex-col items-center justify-center gap-2 rounded-lg transition-transform hover:scale-110 bg-[#007a3f]">
+						<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 128 128">
+							<path fill="currentColor" d="M64.36.006c-1.045 0-2.091.27-3.027.812l-49.82 28.75l53.63 98.38a6.1 6.1 0 0 0 2.244-.757l50.17-28.97a6.07 6.07 0 0 0 2.607-3.05L64.934.042c-.19-.018-.38-.037-.572-.037zm1.9.32l35.65 61.39l16.86-31.02a6 6 0 0 0-1.211-.926L67.389.82a6 6 0 0 0-1.125-.492zm-55.6 29.79a6.06 6.06 0 0 0-2.518 4.9v57.95a6.06 6.06 0 0 0 1.15 3.537l19.36-33.38l-18-33.01zm108.8 1.408l-16.97 31.21l18.03 31.06q.057-.406.059-.824V35.02a6.05 6.05 0 0 0-1.123-3.496zm-90.25 32.63L9.98 97.304a6 6 0 0 0 1.186.906l50.16 28.97a6.1 6.1 0 0 0 2.682.786l-34.79-63.82z" />
+						</svg>	
+						<span>Node.js</span>
+					</div>
+					<div class="flex aspect-square w-24 flex-col items-center justify-center gap-2 rounded-lg transition-transform hover:scale-110 bg-[#007a3f]">
+						<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+							<path fill="currentColor" d="M16.805 1a10 10 0 0 0-2.603.37l-.06.018a10.6 10.6 0 0 0-1.615-.151c-1.113-.019-2.07.243-2.84.68c-.76-.256-2.336-.697-3.997-.609c-1.157.061-2.419.402-3.354 1.36c-.933.958-1.426 2.44-1.322 4.457c.028.557.191 1.464.463 2.64c.27 1.175.652 2.55 1.127 3.805s.996 2.384 1.81 3.15c.406.384.965.707 1.624.68c.463-.018.882-.215 1.243-.506c.176.225.364.323.535.414c.215.114.425.192.642.244a4.6 4.6 0 0 0 1.84.091c.267-.043.548-.127.828-.247c.01.302.022.598.035.898c.038.95.063 1.827.357 2.596c.047.126.176.773.687 1.344c.51.572 1.51.928 2.648.692c.803-.167 1.825-.468 2.503-1.404c.67-.926.973-2.254 1.033-4.409c.015-.116.033-.215.052-.308l.16.014h.018c.857.038 1.787-.08 2.564-.43c.688-.31 1.208-.622 1.587-1.177c.095-.137.199-.303.227-.59c.028-.285-.14-.733-.421-.939c-.563-.414-.916-.257-1.295-.18q-.56.12-1.136.133c1.093-1.784 1.876-3.68 2.323-5.358c.264-.99.413-1.903.425-2.701s-.055-1.505-.548-2.117c-1.541-1.91-3.708-2.438-5.384-2.456q-.078-.002-.156-.001zm-.044.587c1.585-.015 3.611.417 5.065 2.22c.327.405.424.997.413 1.727c-.012.729-.151 1.601-.405 2.557c-.493 1.852-1.425 4.01-2.738 5.948a.7.7 0 0 0 .15.079c.274.11.898.204 2.145-.044c.313-.065.543-.108.781.068a.48.48 0 0 1 .173.39a.64.64 0 0 1-.123.308c-.24.351-.716.684-1.326.958c-.539.244-1.313.371-1.999.379c-.344.003-.661-.023-.93-.104l-.018-.006c-.104.971-.343 2.89-.498 3.765c-.125.706-.343 1.267-.76 1.687c-.416.42-1.004.673-1.796.838c-.981.204-1.696-.016-2.157-.393c-.46-.375-.671-.874-.798-1.18c-.087-.21-.132-.483-.176-.848a18 18 0 0 1-.097-1.315a46 46 0 0 1-.028-2.312c-.41.363-.92.605-1.467.696c-.65.107-1.232.002-1.579-.082a2.2 2.2 0 0 1-.49-.185c-.162-.083-.315-.177-.417-.363a.5.5 0 0 1-.054-.35a.56.56 0 0 1 .206-.303c.188-.148.435-.23.808-.306c.68-.135.917-.228 1.061-.339c.123-.095.262-.287.508-.57l-.003-.037a2.9 2.9 0 0 1-1.257-.328c-.141.144-.865.887-1.748 1.917c-.371.431-.781.678-1.214.696s-.824-.194-1.156-.506c-.665-.626-1.195-1.703-1.657-2.92c-.46-1.218-.836-2.574-1.102-3.729c-.268-1.155-.426-2.086-.448-2.535c-.1-1.909.36-3.195 1.15-4.006S4.652 1.94 5.708 1.882c1.894-.106 3.693.535 4.057.673c.701-.462 1.604-.75 2.733-.732a7.2 7.2 0 0 1 1.588.2l.019-.008q.344-.117.698-.196a9.4 9.4 0 0 1 1.957-.23zm.143.614h-.137a8.5 8.5 0 0 0-1.61.176a7.05 7.05 0 0 1 2.692 2.062a7.7 7.7 0 0 1 1.07 1.76c.104.242.174.447.213.605c.02.08.034.147.038.217a.4.4 0 0 1-.011.132l-.006.012c.029.803-.176 1.347-.201 2.113c-.019.556.127 1.209.163 1.92c.034.67-.049 1.405-.497 2.127q.056.066.108.132c1.185-1.81 2.04-3.814 2.495-5.521c.243-.92.373-1.753.384-2.413c.01-.66-.117-1.139-.279-1.338c-1.268-1.573-2.983-1.974-4.422-1.985m-4.525.235c-1.117.002-1.919.33-2.526.82c-.627.507-1.047 1.2-1.323 1.911a7.9 7.9 0 0 0-.485 2.213l.013-.007c.337-.184.78-.367 1.254-.473c.475-.106.986-.139 1.449.035s.846.584.985 1.206c.665 2.986-.207 4.096-.529 4.933a9 9 0 0 0-.312.929q.06-.017.121-.024a1.06 1.06 0 0 1 .51.1c.324.13.546.402.666.714q.047.124.067.26q.02.057.019.117a49 49 0 0 0 .012 3.426c.022.494.054.928.095 1.271c.04.342.098.602.135.69c.12.294.297.678.617.939s.777.434 1.614.26c.726-.151 1.174-.36 1.474-.663c.298-.301.477-.72.591-1.363c.171-.963.515-3.754.556-4.28c-.018-.395.042-.7.172-.932c.135-.238.343-.384.522-.463c.09-.04.174-.066.243-.085a6 6 0 0 0-.23-.298a4 4 0 0 1-.629-1.007a8 8 0 0 0-.243-.443c-.125-.22-.284-.495-.45-.804c-.333-.619-.695-1.369-.883-2.1c-.187-.729-.215-1.484.265-2.017c.426-.473 1.172-.669 2.293-.559c-.033-.096-.053-.176-.109-.304a7 7 0 0 0-.983-1.617c-.95-1.178-2.487-2.346-4.863-2.384h-.108zm-6.276.047q-.18 0-.36.01c-.954.053-1.856.322-2.501.986c-.647.663-1.072 1.751-.98 3.553c.019.34.172 1.296.434 2.43c.262 1.136.634 2.471 1.08 3.65c.446 1.18.988 2.207 1.502 2.693c.259.243.484.341.688.333c.205-.01.451-.124.753-.475a40 40 0 0 1 1.71-1.877a3.2 3.2 0 0 1-.932-1.307a3.1 3.1 0 0 1-.17-1.58c.097-.678.11-1.312.099-1.812c-.012-.488-.048-.812-.048-1.015v-.028a8.8 8.8 0 0 1 .559-3.095c.264-.682.658-1.375 1.249-1.936c-.58-.185-1.61-.467-2.725-.52a7 7 0 0 0-.36-.01zm11.714 4.842c-.641.008-1.001.169-1.19.379c-.268.298-.293.82-.127 1.464s.507 1.365.829 1.963c.16.3.316.57.442.788c.127.22.22.376.276.51q.08.181.168.331c.248-.509.293-1.008.267-1.529c-.033-.644-.187-1.303-.164-1.97c.025-.78.184-1.289.198-1.892a6 6 0 0 0-.699-.044m-7.78.105a2.7 2.7 0 0 0-.582.068a4.5 4.5 0 0 0-1.09.412q-.173.09-.33.209l-.02.018c.006.134.033.459.045.936c.01.523-.002 1.19-.106 1.91c-.226 1.568.946 2.866 2.324 2.868c.08-.322.213-.648.345-.992c.384-1.003 1.139-1.734.503-4.589c-.104-.467-.31-.656-.594-.763a1.4 1.4 0 0 0-.495-.077m7.48.187h.048q.094.003.17.02a.4.4 0 0 1 .13.051a.15.15 0 0 1 .071.1v.008a.2.2 0 0 1-.034.124a.6.6 0 0 1-.104.137a.65.65 0 0 1-.364.195a.57.57 0 0 1-.388-.095a.6.6 0 0 1-.123-.108a.24.24 0 0 1-.06-.116a.15.15 0 0 1 .04-.118a.4.4 0 0 1 .111-.082a1.3 1.3 0 0 1 .504-.118zm-7.388.154q.075 0 .157.012c.144.02.273.057.371.112q.072.037.126.097q.028.033.042.073t.009.083a.27.27 0 0 1-.071.141a.6.6 0 0 1-.135.12a.62.62 0 0 1-.424.103a.7.7 0 0 1-.396-.209a.7.7 0 0 1-.112-.15a.25.25 0 0 1-.039-.162c.014-.1.099-.15.18-.18a.8.8 0 0 1 .29-.036zm8.56 6.732h-.003c-.139.05-.253.07-.35.11a.42.42 0 0 0-.225.197c-.06.105-.11.292-.095.61a.5.5 0 0 0 .14.064c.161.048.432.08.735.075c.602-.007 1.344-.143 1.738-.321c.323-.146.623-.336.891-.564c-1.317.264-2.06.194-2.517.011a1.3 1.3 0 0 1-.314-.183m-7.588.086h-.02c-.05.004-.123.02-.263.172c-.33.358-.444.582-.716.792c-.27.21-.623.321-1.327.461c-.223.044-.35.093-.436.132c.028.022.025.028.066.049c.103.055.236.103.342.13c.303.073.8.159 1.319.073s1.058-.327 1.518-.953c.08-.108.088-.268.023-.44c-.067-.17-.211-.318-.313-.36a.6.6 0 0 0-.193-.054z" />
+						</svg>
+						<span>PostgreSQL</span>
+					</div>
+					<div class="flex aspect-square w-24 flex-col items-center justify-center gap-2 rounded-lg transition-transform hover:scale-110 bg-[#007a3f]">
+						<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+							<path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2" />
+						</svg>
+						<span>GitHub</span>
+					</div>
+				</div>
+			</div>
+			<div class="border border-gray-300 hover:border-[#00b55d] transition ease-in-out duration-200 rounded-lg bg-[#262e33] col-span-4 lg:col-span-2 row-span-1 p-7 max-w-6xl w-full max-h-30">
+				<a class="text-xl cursor-pointer h-full w-full " href="/projects">
+					<p class="text-xl">Projects <i class="fas fa-arrow-up-right-from-square pt-1 float-right"></i></p>
 				</a>
 			</div>
-			<div class="linkSet" data-aos="fade-up" data-aos-delay="1500">
-				<a href="mailto:donavan.le@gmail.com" class="indexLinkIcon"><i class="fas fa-envelope"></i></a>
-				<a href="https://github.com/EchoCordis" class="indexLinkIcon" target="_blank"><i class="fab fa-github"></i></a>
-				<a href="https://www.linkedin.com/in/donavan-le-573831183/" class="indexLinkIcon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-				<a href="https://echocordis.itch.io/" class="indexLinkIcon" target="_blank"><i class="fab fa-itch-io"></i></a>
+			<div class="border border-gray-300 hover:border-[#00b55d] transition ease-in-out duration-200 rounded-lg bg-[#262e33] col-span-4 lg:col-span-2 row-span-1 p-7 max-w-6xl w-full max-h-30">
+				<a class="text-xl cursor-pointer h-full w-full " href="resume.pdf" target="_blank">
+					<p class="text-xl">Résumé<i class="fas fa-arrow-up-right-from-square pt-1 float-right"></i></p>
+				</a>
+			</div>
+			<div class="border border-gray-300 hover:border-[#00b55d] transition ease-in-out duration-200 rounded-lg bg-[#262e33] col-span-4 lg:col-span-2 row-span-1 p-7 max-w-6xl w-full max-h-30">
+				<p class="text-xl">
+					<i class="fas fa-map-marker-alt pr-4"></i>Sydney, Australia
+				</p>
 			</div>
 		</div>
-		<div id="particles-js"></div>
-	</header>
-	<script>
-		AOS.init({
-			once: true,
-			duration: "1000",
-		});
-   </script>
+	</div>
+	<!-- <div id="particles-js"></div> -->
+	</div>
 </body>
 </html>

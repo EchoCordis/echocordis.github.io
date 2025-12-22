@@ -1,7 +1,7 @@
 /* Loads the particles.js module onto the page */
-particlesJS.load('particles-js', '/particles.json', function() {
-    console.log('callback - particles.js config loaded');
-});
+// particlesJS.load('particles-js', '/particles.json', function() {
+//     console.log('callback - particles.js config loaded');
+// });
 
 /* The navbar's toggle button on mobile */
 const toggle = document.querySelector(".menutoggle");
@@ -107,6 +107,6 @@ function resetInterval() {
 // Automatically updates the year in copyright text
 function updateCopyright() {
     const year = new Date().getFullYear();
-    var copyrightTxt = `© ${year} Donavan Le`;
-    document.querySelector("#copyrightTxt").textContent = copyrightTxt;
+    // var copyrightTxt = `© ${year} Donavan Le`;
+    // document.querySelector("#copyrightTxt").textContent = copyrightTxt;
 }

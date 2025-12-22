@@ -1,3 +1,4 @@
+@import "tailwindcss";
 /* <---- Styling for Mobile Devices ----> */
 html {
 	height:100%;
@@ -9,16 +10,16 @@ body {
 	margin:0px;
 	padding:0px;
 	background-color:#f0f0f0;
-	background-color: #262e33;
+	background-color: #191f22;
 	/* background-color:#000000; */
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: Inconsolata-Regular, Helvetica, Arial, sans-serif;
 	/* Padding to compensate for the fixed navigation bar on mobile */
 	padding-top: 10vh;
 	/* animation: fadeIn 1.5s ease; */
 }
 
 h2, h3 {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: Inconsolata-Regular, Helvetica, Arial, sans-serif;
 }
 
 /* Main Website Structure Flexbox */
@@ -88,8 +89,8 @@ h2, h3 {
 	top:0;  /* Used to keep the navbar at the top */
 	margin-top: 0;	/* Removes gap at the top of the navbar */
     width:100%;
-	background-color: #262e33;
-    text-transform: uppercase;
+	/* background-color: #262e33; */
+    text-transform: lowercase;
     padding: 0 0.5%;
     font-size: 1.5rem;
     display: flex;
@@ -260,10 +261,13 @@ h2, h3 {
 
 /* Settings for the particles in the BG */
 #particles-js {
-	background-color: #262e33;
+	background-color: #191f22;
 	width: 100%;
 	height: 100%;
-	z-index: -10;
+	z-index: -100;
+	position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /* Container for the basic info for each project page */
@@ -470,7 +474,7 @@ h2, h3 {
 }
 
 /* Container for the links in the footer */
-.linkSet{
+.link-set{
 	display:flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -490,18 +494,18 @@ h2, h3 {
 }
 
 /* Special styling for the icons on the index page */
-.indexLinkIcon {
+.index-link-icon {
 	color: white;
 	font-size: 2rem;
-	margin: 1em;
+	margin: 1rem;
 	transition: color 0.5s ease;
 }
 
-.indexLinkIcon:hover {
+.index-link-icon:hover {
 	color: #00b55d;
 }
 
-.indexLinkIcon:active {
+.index-link-icon:active {
 	color: #008143;
 }
 
@@ -856,10 +860,6 @@ input[type=submit]:disabled {
 		font-size: 1.35rem;
 	}
 
-	.indexLinkIcon {
-		font-size: 2.5rem;
-	}
-
 	.prev, .next {
 		padding: 0.8rem;
 		font-size: 1.2rem;
@@ -931,10 +931,6 @@ input[type=submit]:disabled {
 
 	#indexBanner h2 {
 		font-size: 1.35rem;
-	}
-
-	.indexLinkIcon {
-		font-size: 2.5rem;
 	}
 
 	.projectImg {
@@ -1070,10 +1066,6 @@ input[type=submit]:disabled {
 
 	.projectTxt {
 		max-width: 40%; 
-	}
-
-	.indexLinkIcon {
-		font-size: 3rem;
 	}
 
 	/* 
