@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta content="utf-8" http-equiv="encoding">
-	<link rel="stylesheet" href="/stylesheets/portfolio.css">
+	<link rel="stylesheet" href="/stylesheets/tailwind.css">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> 
@@ -42,147 +42,100 @@
 	<div class="navOverlay"></div>
 	<a name="top"></a>
 	<nav>
-		<ul id="navbar">
-            <li class="logotext"><a href="/">Donavan Le</a></li>
-            <li class="menuitem" tabindex="0"><a href="/about">About</a></li>
-            <li class="menuitem"><a href="/projects" id="currentPage">Projects</a></li>
-            <li class="menuitem"><a href="/contact">Contact</a></li>
+		<ul id="navbar" class="bg-[#007a3f] lg:bg-[#111618]">
+            <li class="logotext"><a href="/index"><b>Donavan Le</b></a></li>
+            <li class="menuitem"><a href="/projects">Projects</a></li>
             <li class="menutoggle"><a href="javascript:void(0);"><i class="fas fa-bars"></i></a></li>
         </ul>
 	</nav>
-	<header id="banner">
-		<div class="bannerText">
-			<h1 data-aos="fade-up">PROJECTS</h1>
-			<h2 data-aos="fade-up" data-aos-delay="500">A list of my best projects.</h2>
+	<div class="bg-darkslate-700 flex flex-col justify-center items-center">
+		<div class="text-white m-auto p-2 grid grid-rows-8 grid-cols-1 lg:grid-cols-6 gap-2 sm:gap-4 max-w-6xl relative w-full">
+			<a class="cursor-pointer h-full w-full border border-gray-300 hover:border-[#00b55d] transition ease-in-out duration-200 rounded-lg bg-[#262e33] 
+			col-span-4 lg:col-span-4 row-span-1 lg:row-span-2 p-6">
+				<h2 class="text-xl">Portfolio Website V2<i class="fas fa-arrow-up-right-from-square pt-1 float-right"></i></h2>
+				<div class="flex my-2">
+					<p class="bg-[#007a3f] px-4 py-1 mb-1 mr-2 rounded-4xl">HTML</p>
+					<p class="bg-[#007a3f] px-4 py-1 mb-1 mr-2 rounded-4xl">JavaScript</p>
+					<p class="bg-[#007a3f] px-4 py-1 mb-1 mr-2 rounded-4xl">Tailwind</p>
+					<p class="bg-[#007a3f] px-4 py-1 mb-1 mr-2 rounded-4xl">CSS</p>
+				</div>
+				<p class="italic">The current version of my portfolio website created at the end of 2025.</p>
+			</a>
+			<a class="cursor-pointer h-full w-full border border-gray-300 hover:border-[#00b55d] transition ease-in-out duration-200 rounded-lg bg-[url(/images/projects/portfolio-website.png)] bg-cover bg-center bg-black/75 bg-blend-overlay
+			col-span-4 lg:col-span-2 row-span-1 lg:row-span-2 p-6" href="/projects/portfolio-websitel" target="_blank">
+				<h2 class="text-xl">Portfolio Website V1<i class="fas fa-arrow-up-right-from-square pt-1 float-right"></i></h2>
+				<div class="flex my-2">
+					<p class="bg-[#007a3f] px-4 py-1 mb-1 mr-2 rounded-4xl">HTML</p>
+					<p class="bg-[#007a3f] px-4 py-1 mb-1 mr-2 rounded-4xl">JavaScript</p>
+					<p class="bg-[#007a3f] px-4 py-1 mb-1 mr-2 rounded-4xl">CSS</p>
+				</div>
+				<p class="italic">The first version of my portfolio website created back in 2022.</p>
+			</a>
+			<a class="cursor-pointer h-full w-full border border-gray-300 hover:border-[#00b55d] transition ease-in-out duration-200 rounded-lg bg-[url(/images/projects/otb-cart-image.png)] bg-cover bg-center bg-black/75 bg-blend-overlay
+			col-span-4 lg:col-span-3 row-span-1 lg:row-span-2 p-6" href="/projects/outside-the-box" target="_blank">
+				<h2 class="text-xl">Outside the Box<i class="fas fa-arrow-up-right-from-square pt-1 float-right"></i></h2>
+				<div class="flex flex-wrap my-2">
+					<p class="bg-[#007a3f] px-4 py-1 mb-1 mr-2 rounded-4xl">Unity</p>
+					<p class="bg-[#007a3f] px-4 py-1 mb-1 mr-2 rounded-4xl">C#</p>
+				</div>
+				<p class="italic">A toy-themed tower defense game, built using the Unity engine.</p>
+			</a>
+			<a class="cursor-pointer h-full w-full border border-gray-300 hover:border-[#00b55d] transition ease-in-out duration-200 rounded-lg bg-[url(/images/projects/deliveroids-cart-image.png)] bg-cover bg-center bg-black/75 bg-blend-overlay
+			col-span-4 lg:col-span-3 row-span-1 lg:row-span-2 p-6" href="/projects/deliveroids" target="_blank">
+				<h2 class="text-xl">Deliveroids<i class="fas fa-arrow-up-right-from-square pt-1 float-right"></i></h2>
+				<div class="flex my-2">
+					<p class="bg-[#007a3f] px-4 py-1 mb-1 mr-2 rounded-4xl">Unity</p>
+					<p class="bg-[#007a3f] px-4 py-1 mb-1 mr-2 rounded-4xl">C#</p>
+				</div>
+				<p class="italic">A cyberpunk, voxel-style delivery racing game, built using the Unity engine.</p>
+			</a>
+			<a class="cursor-pointer h-full w-full border border-gray-300 hover:border-[#00b55d] transition ease-in-out duration-200 rounded-lg bg-[url(/images/projects/zenith-cart-image.png)] bg-cover bg-center bg-black/75 bg-blend-overlay
+			col-span-4 lg:col-span-2 row-span-1 lg:row-span-4 p-6" href="/projects/zenith" target="_blank">
+				<h2 class="text-xl">Zenith<i class="fas fa-arrow-up-right-from-square pt-1 float-right"></i></h2>
+				<div class="flex my-2">
+					<p class="bg-[#007a3f] px-4 py-1 mb-1 mr-2 rounded-4xl">Unity</p>
+					<p class="bg-[#007a3f] px-4 py-1 mb-1 mr-2 rounded-4xl">C#</p>
+				</div>
+				<p class="italic">A cyberpunk themed 2D platformer game, built using the Unity engine.</p>
+			</a>
+			<a class="cursor-pointer h-full w-full border border-gray-300 hover:border-[#00b55d] transition ease-in-out duration-200 rounded-lg bg-[url(/images/projects/switch-game-selector-cart.png)] bg-cover bg-left bg-black/75 bg-blend-overlay
+			col-span-4 lg:col-span-4 row-span-1 lg:row-span-2 p-6" href="/projects/switch-game-selector" target="_blank">
+				<h2 class="text-xl">Switch-Themed Game Selector<i class="fas fa-arrow-up-right-from-square pt-1 float-right"></i></h2>
+				<div class="flex my-2">
+					<p class="bg-[#007a3f] px-4 py-1 mb-1 mr-2 rounded-4xl">HTML</p>
+					<p class="bg-[#007a3f] px-4 py-1 mb-1 mr-2 rounded-4xl">JavaScript</p>
+					<p class="bg-[#007a3f] px-4 py-1 mb-1 mr-2 rounded-4xl">CSS</p>
+				</div>
+				<p class="italic">A remake of the Nintendo Switch's user interface in a webpage and used to display my own game projects.</p>
+			</a>
+			<a class="cursor-pointer h-full w-full border border-gray-300 hover:border-[#00b55d] transition ease-in-out duration-200 rounded-lg bg-[url(/images/projects/uts-data-vis.png)] bg-cover bg-left bg-black/75 bg-blend-overlay
+			col-span-4 lg:col-span-2 row-span-1 lg:row-span-2 p-6" href="/projects/uts-data-visualiser" target="_blank">
+				<h2 class="text-xl">UTS Data Visualiser<i class="fas fa-arrow-up-right-from-square pt-1 float-right"></i></h2>
+				<div class="flex my-2">
+					<p class="bg-[#007a3f] px-4 py-1 mb-1 mr-2 rounded-4xl">Processing</p>
+					<p class="bg-[#007a3f] px-4 py-1 mb-1 mr-2 rounded-4xl">Java</p>
+				</div>
+				<p class="italic">A data visualisation of the impact of COVID-19 on the on-campus attendance of students and staff of the University of Technology Sydney.</p>
+			</a>
+			<a class="cursor-pointer h-full w-full border border-gray-300 hover:border-[#00b55d] transition ease-in-out duration-200 rounded-lg bg-[url(/images/projects/spelunk-cart-image.png)] bg-cover bg-left bg-black/75 bg-blend-overlay
+			col-span-4 lg:col-span-2 row-span-1 lg:row-span-2 p-6" href="/projects/spelunka-bot" target="_blank">
+				<h2 class="text-xl">Spelunka-Bot<i class="fas fa-arrow-up-right-from-square pt-1 float-right"></i></h2>
+				<div class="flex my-2">
+					<p class="bg-[#007a3f] px-4 py-1 mb-1 mr-2 rounded-4xl">Unity</p>
+					<p class="bg-[#007a3f] px-4 py-1 mb-1 mr-2 rounded-4xl">C#</p>
+				</div>
+				<p class="italic">A recreation of the NES game Bomberman (1985), built using the Unity engine.</p>
+			</a>
+			<a class="cursor-pointer h-full w-full border border-gray-300 hover:border-[#00b55d] transition ease-in-out duration-200 rounded-lg bg-[url(/images/projects/mash-cart-image-2.png)] bg-cover bg-left bg-black/75 bg-blend-overlay
+			col-span-4 lg:col-span-2 row-span-1 lg:row-span-2 p-6" href="/projects/mash-game" target="_blank">
+				<h2 class="text-xl">M*A*S*H* Recreation<i class="fas fa-arrow-up-right-from-square pt-1 float-right"></i></h2>
+				<div class="flex my-2">
+					<p class="bg-[#007a3f] px-4 py-1 mb-1 mr-2 rounded-4xl">Unity</p>
+					<p class="bg-[#007a3f] px-4 py-1 mb-1 mr-2 rounded-4xl">C#</p>
+				</div>
+				<p class="italic">A recreation of the Atari 2600 game, M*A*S*H* (1983), built using the Unity engine.</p>
+			</a>
 		</div>
-		<div id="particles-js"></div>
-	</header>
-	<div id="infoRec">
-		<a data-aos="fade-right" data-aos-delay="1000" class="allProjectBtn" href="/all-projects">View All Projects</a>
 	</div>
-	<div id="main">
-		<div></div>
-		<div id="middlecol">
-			<div id="projectCase">
-				<div class="project" data-aos="fade-right" data-aos-delay="1000" data-aos-anchor-placement="center-bottom" dir="rtl">
-					<div class="projectImg">
-						<img src="/images/projects/deliveroids-cart-image.png" alt="Cover image of the game Deliveroids">
-					</div>
-					<div class="projectTxt" dir="ltr">
-						<h2>DELIVEROIDS</h2>
-						<p class='tags'>Unity, C#, UI/UX, Game Design</p>
-						<p style="margin-bottom: 3vh;">A cyberpunk, voxel-style delivery racing game, built using the Unity engine.</p>
-						<a href="/projects/deliveroids">View Project</a>
-					</div>
-				</div>
-				<div class="project" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
-					<div class="projectImg">
-						<img src="/images/projects/uts-data-vis.png" alt="Screenshot of the UTS Data Visualiser project">
-					</div>
-					<div class="projectTxt" dir="ltr">
-						<h2>UTS DATA VISUALISER</h2>
-						<p class='tags'>Processing, Java, UI/UX, Data Visualisation</p>
-						<p style="margin-bottom: 3vh;">
-							A data visualisation of the impact of COVID-19 on the on-campus attendance of students and staff of the University of Technology Sydney.
-						</p>
-						<a href="/projects/uts-data-visualiser">View Project</a>
-					</div>
-				</div>
-				<div class="project" data-aos="fade-right" data-aos-anchor-placement="center-bottom"  dir="rtl">
-					<div class="projectImg">
-						<img src="/images/projects/otb-cart-image.png" alt="Cover image of the game Outside the Box">
-					</div>
-					<div class="projectTxt" dir="ltr">
-						<h2>OUTSIDE THE BOX</h2>
-						<p class='tags'>Unity, C#, UI/UX, Game Design</p>
-						<p style="margin-bottom: 3vh;">A toy-themed tower defense game, built using the Unity engine.</p>
-						<a href="/projects/outside-the-box">View Project</a>
-					</div>
-				</div>
-				<div class="project" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
-					<div class="projectImg">
-						<img src="/images/projects/spelunk-cart-image.png" alt="Cover image of the game Spelunka-Bot">
-					</div>
-					<div class="projectTxt" dir="ltr">
-						<h2>SPELUNKA-BOT</h2>
-						<p class='tags'>Unity, C#, UI/UX, Game Design</p>
-						<p style="margin-bottom: 3vh;">A recreation of the NES game Bomberman (1985), built using the Unity engine.</p>
-						<a href="/projects/spelunka-bot">View Project</a>
-					</div>
-				</div>
-				<div class="project" data-aos="fade-right" data-aos-anchor-placement="center-bottom" dir="rtl">
-					<div class="projectImg">
-						<img src="/images/projects/zenith-cart-image.png" alt="Cover image of the game Zenith">
-					</div>
-					<div class="projectTxt" dir="ltr">
-						<h2>ZENITH</h2>
-						<p class='tags'>Unity, C#, UI/UX, Level Design, Game Design</p>
-						<p style="margin-bottom: 3vh;">A cyberpunk themed 2D platformer game, built using the Unity engine.</p>
-						<a href="/projects/zenith">View Project</a>
-					</div>
-				</div>
-				<div class="project" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
-					<div class="projectImg">
-						<img src="/images/projects/portfolio-website.png" alt="Screenshot of the Portfolio Website project">
-					</div>
-					<div class="projectTxt">
-						<h2>PORTFOLIO WEBSITE</h2>
-						<p class='tags'>HTML/CSS, JavaScript</p>
-						<p style="margin-bottom: 3vh;">A personal portfolio website built to showcase my projects.</p>
-						<a href="/projects/portfolio-website">View Project</a>
-					</div>
-				</div>
-				<div class="project" data-aos="fade-right" data-aos-anchor-placement="center-bottom" dir="rtl">
-					<div class="projectImg">
-						<img src="/images/projects/switch-game-selector-cart.png" alt="Screenshot of the Switch-Themed Game Selector project">
-					</div>
-					<div class="projectTxt" dir="ltr">
-						<h2>SWITCH-THEMED GAME SELECTOR</h2>
-						<p class='tags'>HTML/CSS, JavaScript</p>
-						<p style="margin-bottom: 3vh;">A remake of the Nintendo Switch's user interface in a webpage and used to display my own game projects.</p>
-						<a href="/projects/switch-game-selector">View Project</a>
-					</div>
-				</div>
-				<div class="project" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
-					<div class="projectImg">
-						<img src="/images/projects/mash-cart-image-2.png" alt="Cover image of the game M*A*S*H*">
-					</div>
-					<div class="projectTxt">
-						<h2>M*A*S*H* Recreation</h2>
-						<p class='tags'>Unity, C#, Game Design</p>
-						<p style="margin-bottom: 3vh;">A recreation of the Atari 2600 game, M*A*S*H* (1983), built using the Unity engine.</p>
-						<a href="/projects/mash-game">View Project</a>
-					</div>
-				</div>
-				<!-- <div class="project" data-aos="fade-right" data-aos-anchor-placement="center-bottom" dir="rtl">
-					<div class="projectImg">
-						<img src="/images/placeholder-image.png">
-					</div>
-					<div class="projectTxt" dir="ltr">
-						<h2>TEXT BOUNCER</h2>
-						<p class='tags'>Processing, Java</p>
-						<p>An interactive program that takes user text input and bounces the text around the screen while playing musical notes.</p>
-						<button onclick="window.location.href='/projects/text-bouncer'" disabled>View Project</button>
-					</div>
-				</div> -->
-			</div>
-		</div>
-		<div></div>
-	</div>
-	<div id="footer">
-		<div class="link-set">
-			<a href="mailto:donavan.le@gmail.com" class="linkIcon"><i class="fas fa-envelope"></i></a>
-			<a href="https://github.com/EchoCordis" class="linkIcon" target="_blank"><i class="fab fa-github"></i></a>
-			<a href="https://www.linkedin.com/in/donavan-le-573831183/" class="linkIcon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-			<a href="https://echocordis.itch.io/" class="linkIcon" target="_blank"><i class="fab fa-itch-io"></i></a>
-		</div>
-		<span id="copyrightTxt">© Donavan Le</span>
-	</div>
-	<script>
-		AOS.init({
-			once: true,
-			duration: "1000",
-		});
-	</script>
 </body>
 </html>
