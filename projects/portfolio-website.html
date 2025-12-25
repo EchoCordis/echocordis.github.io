@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta content="utf-8" http-equiv="encoding">
-	<link rel="stylesheet" href="/stylesheets/portfolio.css">
+	<link rel="stylesheet" href="/stylesheets/tailwind.css">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> 
@@ -24,85 +24,52 @@
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#262e33">
 </head>
-
 <body>
 	<div class="navOverlay"></div>
 	<a name="top"></a>
 	<nav>
-		<ul id="navbar">
-            <li class="logotext"><a href="/">Donavan Le</a></li>
-            <li class="menuitem" tabindex="0"><a href="/about">About</a></li>
+		<ul id="navbar" class="bg-[#007a3f] lg:bg-transparent">
+            <li class="logotext"><a href="/index"><b>Donavan Le</b></a></li>
             <li class="menuitem"><a href="/projects">Projects</a></li>
-            <li class="menuitem"><a href="/contact">Contact</a></li>
-			<li class="menutoggle"><a href="javascript:void(0);"><i class="fas fa-bars"></i></a></li>
+            <li class="menutoggle"><a href="javascript:void(0);"><i class="fas fa-bars"></i></a></li>
         </ul>
 	</nav>
-	<header id="banner">
-		<div class="bannerText">
-			<h1 data-aos="fade-up">PERSONAL PORTFOLIO WEBSITE</h1>
-			<h2 data-aos="fade-up" data-aos-delay="500">
-				A personal portfolio website built to showcase my projects.
-			</h2>
-		</div>
-		<div id="particles-js"></div>
-	</header>
-	<div id="infoRec">
-		<table id="infoTable">
-			<tr>
-				<th><h2>Role</h2></th>
-				<th><h2>Context</h2></th>
-				<th><h2>Date</h2></th>
-			</tr>
-			<tr>
-				<td>Creator</td>
-				<td>Personal Project</td>
-				<td>2021</td>
-			</tr>
-		</table>
-	</div>
-	<div id="overview">
-		<table id="ovTable">
-			<tr>
-				<th colspan="2"><h2>OVERVIEW</h2></th>
-			</tr>
-			<tr>
-				<td colspan="2">
-					This portfolio website was <span class="greenHighlight">designed from scratch to showcase my projects online</span>.
+	<div class="bg-darkslate-700 flex flex-col justify-center items-center">
+		<div class="text-white m-auto p-2 grid grid-rows-8 grid-cols-1 lg:grid-cols-6 gap-2 sm:gap-4 max-w-6xl relative w-full lg:h-screen lg:max-h-[800px]">
+			<div class="border border-gray-300 hover:border-[#00b55d] transition ease-in-out duration-200 rounded-lg bg-[#262e33] col-span-6 lg:col-span-4 row-span-3 p-6 max-w-6xl w-full">
+				<h2 class="text-2xl mb-2 pb-1 border-b-2 border-white font-bold text-[#00b55d]">Portfolio Website</h2>
+				<p>
+					This is the V1 of my Portfolio Website created back in 2021.
+					This portfolio website was a personal project <span class="greenHighlight">designed from scratch to showcase my projects online</span>.
 					HTML, CSS and JavaScript were used to create this website, alongside multiple JS libraries found online.
 					<br><br>This website is currently being hosted using GitHub Pages and the repository can be <a class="mid-text-link" href="https://github.com/EchoCordis/echocordis.github.io" target="_blank">found here <i class="fas fa-external-link-alt"></i></a>.
-				</td>
-			</tr>
-			<tr>
-				<td><a href="https://echocordis.github.io" target="_blank" class="links"> View Site <i class="fas fa-arrow-right"></i></a></td>
-			</tr>
-		</table>
-	</div>
-	<div id="main">
-		<div></div>
-		<div id="middlecol">
-			<h1 class="project-heading">Libraries Used</h1>
-			<ul>
-				<li><a href="https://vincentgarreau.com/particles.js/" target="_blank">particles.js by Vincent Garreau <i class="fas fa-external-link-alt"></i></a></li>
-				<li><a href="https://michalsnik.github.io/aos/" target="_blank">aos.js by Michał Sajnóg <i class="fas fa-external-link-alt"></i></a></li>
-				<li><a href="https://swiperjs.com/" target="_blank">swiper.js by Vladimir Kharlampidi <i class="fas fa-external-link-alt"></i></a></li>
-			</ul>
+				</p>
+			</div>
+			<div class="border border-gray-300 hover:border-[#00b55d] transition ease-in-out duration-200 rounded-lg bg-[#262e33] col-span-6 lg:col-span-1 row-span-3 p-6 max-w-6xl w-full">
+				<p class="text-gray-400">Created In</p>
+				<p>2021</p>
+				<p class="text-gray-400 mt-2">Role</p>
+				<p>Creator</p>
+				<p class="text-gray-400 mt-2">Context</p>
+				<p>Personal Project</p>
+			</div>
+			<div class="border border-gray-300 hover:border-[#00b55d] transition ease-in-out duration-200 rounded-lg bg-[#262e33] col-span-6 lg:col-span-1 row-span-3 p-6 max-w-6xl w-full">
+				<p class="bg-[#007a3f] px-4 py-1 mb-2 mr-2 rounded-4xl">HTML</p>
+				<p class="bg-[#007a3f] px-4 py-1 mb-2 mr-2 rounded-4xl">JavaScript</p>
+				<p class="bg-[#007a3f] px-4 py-1 mb-2 mr-2 rounded-4xl">Tailwind</p>
+				<p class="bg-[#007a3f] px-4 py-1 mb-2 mr-2 rounded-4xl">CSS</p>
+			</div>
+			<div class="border border-gray-300 hover:border-[#00b55d] transition ease-in-out duration-200 rounded-lg bg-[#262e33] col-span-6 row-span-1 lg:row-span-2 p-6 max-w-6xl w-full">
+				<h2 class="text-xl mb-2 pb-1 border-b-2 font-bold">Libraries Used</h2>
+				<ul>
+					<li><a href="https://vincentgarreau.com/particles.js/" target="_blank">particles.js by Vincent Garreau <i class="fas fa-external-link-alt"></i></a></li>
+					<li><a href="https://michalsnik.github.io/aos/" target="_blank">aos.js by Michał Sajnóg <i class="fas fa-external-link-alt"></i></a></li>
+					<li><a href="https://swiperjs.com/" target="_blank">swiper.js by Vladimir Kharlampidi <i class="fas fa-external-link-alt"></i></a></li>
+				</ul>
+			</div>
 		</div>
-		<div></div>
 	</div>
-	<div id="footer">
-		<div class="link-set">
-			<a href="mailto:donavan.le@gmail.com" class="linkIcon"><i class="fas fa-envelope"></i></a>
-			<a href="https://github.com/EchoCordis" class="linkIcon" target="_blank"><i class="fab fa-github"></i></a>
-			<a href="https://www.linkedin.com/in/donavan-le-573831183/" class="linkIcon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-			<a href="https://echocordis.itch.io/" class="linkIcon" target="_blank"><i class="fab fa-itch-io"></i></a>
-		</div>
-		<span id="copyrightTxt">© Donavan Le</span>
+	<!-- <div id="particles-js"></div> -->
 	</div>
-	<script>
-		AOS.init({
-			once: true,
-			duration: "1000",
-		});
-   </script>
 </body>
 </html>
