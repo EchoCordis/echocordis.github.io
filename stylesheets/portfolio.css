@@ -375,12 +375,12 @@ h2, h3 {
 }
 
 /* Styling for links located in the middle of text */
-.midtextLink {
+.mid-text-link {
 	transition: all 0.3s ease-in-out 0s;
 	color: #00ec7a !important;
 }
 
-.midtextLink:hover {
+.mid-text-link:hover {
 	color: #008344 !important;
 }
 
